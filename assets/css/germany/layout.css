@@ -1,0 +1,254 @@
+/* ══════════════════════════════════
+   GERMANY LAYOUT (2 Columns)
+══════════════════════════════════ */
+
+/* The root theme variables that dynamic themes will override */
+:root {
+  --theme-bg:        #fafafa;
+  --theme-hero-bg:   transparent;
+  --theme-accent:    var(--ink);
+  --theme-text:      var(--ink);
+  --theme-card-bg:   #ffffff;
+  --theme-font-body: 'Nunito', sans-serif;
+}
+
+body {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  font-family: var(--theme-font-body);
+  transition: background 0.4s ease;
+}
+
+.dot-bg {
+  display: none !important;
+}
+
+.g-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.g-main {
+  width: 65%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--theme-card-bg);
+  padding: 40px;
+  border-radius: 24px;
+  border: 2.5px solid var(--theme-accent);
+  box-shadow: 4px 4px 0 var(--theme-accent);
+}
+
+.g-sidebar {
+  width: 35%;
+  flex-shrink: 0;
+  position: sticky;
+  top: 100px; /* Below nav */
+}
+
+.g-sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: var(--theme-card-bg);
+  padding: 32px;
+  border-radius: 24px;
+  border: 2.5px solid var(--theme-accent);
+  box-shadow: 4px 4px 0 var(--theme-accent);
+}
+
+.g-sb-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--theme-text);
+}
+
+.g-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.g-tag-item {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.05);
+  color: var(--theme-text);
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: all 0.2s;
+  cursor: none;
+}
+
+.g-tag-item:hover, .g-tag-item.active {
+  border-color: var(--theme-accent);
+  background: var(--theme-accent);
+  color: #fff;
+}
+
+.g-recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.g-recent-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--theme-text);
+  transition: all 0.2s;
+  border: 1.5px solid transparent;
+  cursor: none;
+}
+
+.g-recent-item:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.g-recent-item.is-active {
+  border-color: var(--theme-accent);
+  background: rgba(0,0,0,0.03);
+}
+
+.g-recent-date {
+  font-size: 11px;
+  font-weight: 800;
+  opacity: 0.6;
+}
+
+.g-recent-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Post Card */
+.g-post-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--theme-text);
+  transition: all 0.25s;
+  cursor: none;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed rgba(0,0,0,0.1);
+}
+
+.g-post-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.g-post-card:hover {
+  transform: translateY(-4px);
+}
+
+.g-card-img {
+  width: 100%;
+  height: 220px;
+  background: #eee;
+  border-radius: 16px;
+  border: 2.5px solid var(--theme-accent);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.g-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.g-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.g-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.g-card-date {
+  font-size: 12px;
+  font-weight: 800;
+  color: #888;
+}
+
+.g-card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 8px;
+  background: var(--theme-accent);
+  color: #fff;
+}
+
+.g-card-title {
+  font-size: 24px;
+  font-family: 'Fredoka One', cursive;
+  line-height: 1.2;
+}
+
+.g-card-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* Post Detail */
+.g-post-header {
+  margin-bottom: 30px;
+}
+
+.g-post-header-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  border: 2.5px solid var(--theme-accent);
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.g-post-body {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.g-post-body h2, .g-post-body h3 {
+  font-family: 'Fredoka One', cursive;
+  margin: 40px 0 20px;
+  line-height: 1.3;
+}
+
+.g-post-body p {
+  margin-bottom: 20px;
+}
+
+.g-post-body ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .g-container {
+    flex-direction: column-reverse; /* Sidebar goes to bottom naturally */
+  }
+  .g-main { width: 100%; padding: 24px; }
+  .g-sidebar { width: 100%; position: static; }
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO: Primary ═══ -->
+  <title>lena-var4 — Lena's Corner of the Internet</title>
+  <meta name="description" content="Lena's personal site. Life in Germany, AI & automation, game reviews, web games and psychology tests — in Korean and English.">
+  <meta name="author" content="Lena">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lena2027.github.io/lenaportal/">
+
+  <!-- ═══ SEO: Open Graph (SNS 공유) ═══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lena2027.github.io/lenaportal/">
+  <meta property="og:title" content="lena-var4 — Lena's Corner of the Internet">
+  <meta property="og:description" content="Life in Germany, AI & automation, game reviews, web games and psychology tests — in Korean and English.">
+  <meta property="og:image" content="https://lena2027.github.io/lenaportal/assets/images/og-cover.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta property="og:site_name" content="lena-var4">
+
+  <!-- ═══ SEO: Twitter Card ═══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://lena2027.github.io/lenaportal/">
+  <meta name="twitter:title" content="lena-var4 — Lena's Corner of the Internet">
+  <meta name="twitter:description" content="Life in Germany, AI & automation, game reviews, web games and psychology tests — in Korean and English.">
+  <meta name="twitter:image" content="https://lena2027.github.io/lenaportal/assets/images/og-cover.jpg">
+
+  <!-- ═══ SEO: hreflang (한/영 병행) ═══ -->
+  <link rel="alternate" hreflang="en" href="https://lena2027.github.io/lenaportal/">
+  <link rel="alternate" hreflang="en" href="https://lena2027.github.io/lenaportal/ko/">
+  <link rel="alternate" hreflang="x-default" href="https://lena2027.github.io/lenaportal/">
+
+  <!-- ═══ SEO: Structured Data (JSON-LD) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "lena-var4",
+    "url": "https://lena2027.github.io/lenaportal",
+    "description": "Lena's personal site — life in Germany, AI, game reviews, web games and psychology tests.",
+    "author": {
+      "@type": "Person",
+      "name": "Lena",
+      "url": "https://lena2027.github.io/lenaportal/about/"
+    },
+    "inLanguage": ["en", "ko"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://lena2027.github.io/lenaportal/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- ═══ Fonts ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ══════════════════════════════════
+       VARIABLES
+    ══════════════════════════════════ */
+    :root {
+      --yellow:   #FFD93D;
+      --pink:     #FF6B9D;
+      --mint:     #4ECDC4;
+      --blue:     #4D96FF;
+      --purple:   #C77DFF;
+      --coral:    #FF6B6B;
+      --orange:   #FF9F43;
+      --ink:      #2d2d44;
+      --white:    #FEFEFE;
+      --dot-size: 3px;
+      --dot-gap:  22px;
+    }
+
+    /* ══════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fafafa;
+      color: var(--ink);
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* ══════════════════════════════════
+       CUSTOM CURSOR
+    ══════════════════════════════════ */
+    .cursor {
+      width: 14px; height: 14px;
+      background: var(--pink);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, background 0.3s;
+      mix-blend-mode: multiply;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 2.5px solid var(--pink);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease;
+      opacity: 0.5;
+    }
+
+    /* ══════════════════════════════════
+       BACKGROUND: DOTS + BLOBS
+    ══════════════════════════════════ */
+    .dot-bg {
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, #ddd var(--dot-size), transparent var(--dot-size));
+      background-size: var(--dot-gap) var(--dot-gap);
+      z-index: 0; pointer-events: none;
+    }
+    .blob {
+      position: fixed; border-radius: 50%;
+      filter: blur(80px); opacity: 0.18;
+      pointer-events: none; z-index: 0;
+      animation: blobdrift ease-in-out infinite alternate;
+    }
+    .blob1 { width:400px;height:400px;background:var(--yellow);top:-80px;left:-100px;animation-duration:12s; }
+    .blob2 { width:300px;height:300px;background:var(--pink);top:40%;right:-80px;animation-duration:9s; }
+    .blob3 { width:350px;height:350px;background:var(--mint);bottom:-100px;left:30%;animation-duration:14s; }
+    .blob4 { width:250px;height:250px;background:var(--blue);top:20%;left:40%;animation-duration:11s; }
+    @keyframes blobdrift {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(30px, 20px) scale(1.08); }
+    }
+
+    /* ══════════════════════════════════
+       LAYOUT
+    ══════════════════════════════════ */
+    .page {
+      position: relative; z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 88px 32px 90px;
+    }
+
+    /* ══════════════════════════════════
+       NAV (fixed top)
+    ══════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254, 254, 254, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e0e0e0;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; background: var(--pink);
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: var(--ink);
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s; letter-spacing: 0.3px;
+    }
+    .nav-links a:hover { border-color: var(--ink); background: var(--yellow); }
+    .nav-links .disabled { opacity: 0.35; pointer-events: none; }
+
+    /* ══════════════════════════════════
+       HERO
+    ══════════════════════════════════ */
+    .hero {
+      padding: 80px 0 60px;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 40px; align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--pink); margin-bottom: 20px;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 24px; height: 3px;
+      background: var(--pink); border-radius: 2px;
+    }
+    .hero-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(52px, 7vw, 88px);
+      line-height: 1.0; color: var(--ink); margin-bottom: 12px;
+    }
+    .hero-title .name-block {
+      display: inline-block; position: relative;
+    }
+    .hero-title .name-block::after {
+      content: ''; position: absolute;
+      bottom: 4px; left: 0; width: 100%; height: 12px;
+      background: var(--yellow); z-index: -1;
+      border-radius: 4px; transform: rotate(-1deg);
+    }
+    .hero-subtitle {
+      font-size: 18px; font-weight: 600;
+      color: #666; line-height: 1.7;
+      max-width: 480px; margin-bottom: 32px;
+    }
+    .hero-subtitle span { color: var(--ink); font-weight: 800; }
+    .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: 50px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px; font-weight: 800;
+      text-decoration: none; cursor: none;
+      border: 2.5px solid var(--ink);
+      transition: all 0.2s; letter-spacing: 0.3px;
+    }
+    .btn-fill { background: var(--ink); color: var(--white); }
+    .btn-fill:hover { background: var(--pink); border-color: var(--pink); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--ink); }
+    .btn-outline:hover { background: var(--yellow); transform: translateY(-2px); }
+
+    /* Hero deco cards */
+    .hero-deco {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 12px; width: 220px;
+    }
+    .deco-card {
+      width: 100px; height: 100px;
+      border-radius: 20px; border: 2.5px solid var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 38px; background: var(--white);
+      box-shadow: 4px 4px 0 var(--ink); cursor: none;
+      animation: cardfloat ease-in-out infinite alternate;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .deco-card:hover { transform: translateY(-4px) rotate(3deg); box-shadow: 6px 8px 0 var(--ink); }
+    .deco-card:nth-child(1) { background: #fff5d6; animation-duration: 3.0s; }
+    .deco-card:nth-child(2) { background: #ffe0ec; animation-duration: 3.5s; }
+    .deco-card:nth-child(3) { background: #d6f5f3; animation-duration: 4.0s; }
+    .deco-card:nth-child(4) { background: #ddeeff; animation-duration: 2.8s; }
+    @keyframes cardfloat {
+      from { transform: translateY(0); }
+      to   { transform: translateY(-8px); }
+    }
+
+
+    /* ══════════════════════════════════
+       MARQUEE
+    ══════════════════════════════════ */
+    .marquee-wrap {
+      overflow: hidden;
+      border-top: 2.5px solid var(--ink);
+      border-bottom: 2.5px solid var(--ink);
+      padding: 14px 0; margin-bottom: 80px;
+      background: var(--yellow);
+    }
+    .marquee-track {
+      display: flex; gap: 0;
+      animation: marquee 24s linear infinite;
+      white-space: nowrap;
+    }
+    .marquee-item {
+      font-family: 'Fredoka One', cursive;
+      font-size: 18px; color: var(--ink);
+      padding: 0 32px;
+      display: flex; align-items: center; gap: 16px;
+      flex-shrink: 0;
+    }
+    .marquee-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink); flex-shrink: 0; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ══════════════════════════════════
+       SECTION LABEL
+    ══════════════════════════════════ */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 12px; font-weight: 800;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: #999; margin-bottom: 24px;
+    }
+    .section-label::after { content: ''; width: 40px; height: 2px; background: #ddd; border-radius: 2px; }
+    .section-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 40px; color: var(--ink); margin-bottom: 32px;
+    }
+
+    /* ══════════════════════════════════
+       SECTION CARDS
+    ══════════════════════════════════ */
+    .sections-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-bottom: 80px;
+    }
+    .section-card {
+      border-radius: 24px; border: 2.5px solid var(--ink);
+      padding: 32px 28px; background: var(--white);
+      text-decoration: none; color: var(--ink);
+      display: flex; flex-direction: column; gap: 16px;
+      transition: all 0.25s;
+      box-shadow: 5px 5px 0 var(--ink); cursor: none;
+      position: relative; overflow: hidden;
+    }
+    .section-card::after {
+      content: ''; position: absolute; inset: 0;
+      opacity: 0; transition: opacity 0.25s;
+    }
+    .section-card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ink); }
+    .section-card:hover::after { opacity: 1; }
+
+    /* Card hover tints */
+    .sc-germany::after  { background: #fff5d6; }
+    .sc-ai::after       { background: #f0e8ff; }
+    .sc-playlog::after  { background: #fff3e0; }
+    .sc-games::after    { background: #d6f5f3; }
+    .sc-psych::after    { background: #ffe0ec; }
+    .sc-about::after    { background: #f5f5f5; }
+
+    /* Disabled cards */
+    .sc-games, .sc-psych { opacity: 0.5; pointer-events: none; }
+
+    .sc-icon {
+      font-size: 42px; position: relative; z-index: 1;
+      display: inline-block;
+      animation: iconbob ease-in-out infinite alternate;
+    }
+    .sc-germany .sc-icon  { animation-duration: 2.8s; }
+    .sc-ai .sc-icon       { animation-duration: 3.2s; }
+    .sc-playlog .sc-icon  { animation-duration: 3.0s; }
+    .sc-games .sc-icon    { animation-duration: 2.5s; }
+    .sc-psych .sc-icon    { animation-duration: 3.6s; }
+    @keyframes iconbob {
+      from { transform: rotate(-3deg) scale(1); }
+      to   { transform: rotate(3deg) scale(1.05); }
+    }
+
+    .sc-tag {
+      display: inline-block; width: fit-content;
+      font-size: 11px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 20px;
+      position: relative; z-index: 1;
+    }
+    .sc-germany .sc-tag  { background: var(--yellow); color: var(--ink); }
+    .sc-ai .sc-tag       { background: var(--purple); color: var(--white); }
+    .sc-playlog .sc-tag  { background: var(--orange); color: var(--white); }
+    .sc-games .sc-tag    { background: #eee; color: #999; }
+    .sc-psych .sc-tag    { background: #eee; color: #999; }
+    .sc-about .sc-tag    { background: #eee; color: #999; }
+
+    .sc-name {
+      font-family: 'Fredoka One', cursive;
+      font-size: 28px; line-height: 1.1;
+      position: relative; z-index: 1;
+    }
+    .sc-desc {
+      font-size: 14px; line-height: 1.7; color: #666;
+      font-weight: 600; flex: 1;
+      position: relative; z-index: 1;
+    }
+    .sc-arrow {
+      font-size: 20px; position: relative; z-index: 1;
+      width: fit-content; transition: transform 0.2s;
+    }
+    .section-card:hover .sc-arrow { transform: translateX(4px); }
+
+    .coming-soon-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 800; color: #bbb;
+      background: #f5f5f5; border: 1.5px dashed #ddd;
+      padding: 3px 10px; border-radius: 20px;
+      width: fit-content; position: relative; z-index: 1;
+    }
+
+    /* ══════════════════════════════════
+       DOT DIVIDER
+    ══════════════════════════════════ */
+    .dot-divider {
+      display: flex; gap: 6px;
+      align-items: center; justify-content: center;
+      margin-bottom: 60px;
+    }
+    .div-dot { width: 8px; height: 8px; border-radius: 50%; background: #ddd; }
+    .div-dot:nth-child(3) { background: var(--pink); width: 10px; height: 10px; }
+
+    /* ══════════════════════════════════
+       RECENT POSTS
+    ══════════════════════════════════ */
+    .recent-section { margin-bottom: 80px; }
+    .recent-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .post-card {
+      border: 2.5px solid var(--ink); border-radius: 20px;
+      padding: 24px 28px; background: var(--white);
+      text-decoration: none; color: var(--ink);
+      display: flex; gap: 20px; align-items: flex-start;
+      transition: all 0.2s; box-shadow: 4px 4px 0 var(--ink); cursor: none;
+    }
+    .post-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); background: #fffdf5; }
+    .post-card.inactive { opacity: 0.4; pointer-events: none; }
+    .post-num {
+      font-family: 'Fredoka One', cursive;
+      font-size: 36px; color: #e0e0e0; line-height: 1; flex-shrink: 0; min-width: 44px;
+    }
+    .post-meta { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #bbb; margin-bottom: 6px; }
+    .post-title { font-size: 16px; font-weight: 800; line-height: 1.4; margin-bottom: 6px; }
+    .post-tag {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 10px;
+      background: var(--yellow); color: var(--ink);
+    }
+    .post-tag.muted { background: #eee; color: #999; }
+
+    /* ══════════════════════════════════
+       FOOTER (fixed bottom)
+    ══════════════════════════════════ */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 200; padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254, 254, 254, 0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e0e0e0;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); }
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid var(--ink);
+      transition: background 0.2s; cursor: none;
+    }
+    .footer-dot:nth-child(1) { background: var(--yellow); }
+    .footer-dot:nth-child(2) { background: var(--pink); }
+    .footer-dot:nth-child(3) { background: var(--mint); }
+    .footer-dot:nth-child(4) { background: var(--blue); }
+    .footer-dot:hover { background: var(--ink) !important; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; }
+
+    /* ══════════════════════════════════
+       SCROLL FADE-IN
+    ══════════════════════════════════ */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════ */
+    @media (max-width: 768px) {
+      .page { padding: 80px 20px 80px; }
+      nav { padding: 14px 20px; }
+      footer { padding: 12px 20px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-deco { display: none; }
+      .about-strip { grid-template-columns: 1fr; padding: 32px 28px; }
+      .sections-grid { grid-template-columns: 1fr 1fr; }
+      .recent-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .sections-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Background -->
+  <div class="dot-bg" aria-hidden="true"></div>
+  <div class="blob blob1" aria-hidden="true"></div>
+  <div class="blob blob2" aria-hidden="true"></div>
+  <div class="blob blob3" aria-hidden="true"></div>
+  <div class="blob blob4" aria-hidden="true"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="./index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./germany/index.html">🇩🇪 Germany Blog</a></li>
+      <li><a href="./ai/index.html">🤖 AI</a></li>
+      <li><a href="./playlog/index.html">🃏 Play Log</a></li>
+      <li><a href="./games/index.html" class="disabled" aria-disabled="true">🎮 Games</a></li>
+      <li><a href="./psychology/index.html" class="disabled" aria-disabled="true">🧠 Psychology</a></li>
+      <li><a href="../index.html">🇰🇷 KO</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero fade-up" aria-label="Introduction">
+      <div class="hero-left">
+        <p class="hero-eyebrow">Welcome to my corner</p>
+        <h1 class="hero-title">
+          Hi, I'm<br>
+          <span class="name-block">Lena.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A <span>solo builder</span> living in Germany —<br>
+          making things with <span>AI</span>, writing about <span>life</span>,<br>
+          and shipping <span>games & tools</span> on the internet.
+        </p>
+        <div class="hero-cta-row">
+          <a href="./germany/index.html" class="btn-pill btn-fill">🇩🇪 Read the blog</a>
+          <a href="#sections" class="btn-pill btn-outline">See everything →</a>
+        </div>
+      </div>
+      <div class="hero-deco" aria-hidden="true">
+        <div class="deco-card">🇩🇪</div>
+        <div class="deco-card">🤖</div>
+        <div class="deco-card">🃏</div>
+        <div class="deco-card">🧠</div>
+      </div>
+    </section>
+
+
+
+    <!-- ═══ MARQUEE ═══ -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="marquee-dot"></span>Life in Germany</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>AI & Automation</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Play Log 🃏</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Web Games</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Psychology Tests</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Solo Building</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>한국어 + English</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>GitHub Pages</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Life in Germany</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>AI & Automation</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Play Log 🃏</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Web Games</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Psychology Tests</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>Solo Building</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>한국어 + English</div>
+        <div class="marquee-item"><span class="marquee-dot"></span>GitHub Pages</div>
+      </div>
+    </div>
+
+    <!-- ═══ SECTIONS ═══ -->
+    <section id="sections" class="fade-up" aria-label="Site sections">
+      <p class="section-label">Explore</p>
+      <h2 class="section-title">What's inside ✦</h2>
+      <div class="sections-grid">
+
+        <a href="./germany/index.html" class="section-card sc-germany">
+          <span class="sc-icon" aria-hidden="true">🇩🇪</span>
+          <span class="sc-tag">Blog</span>
+          <div class="sc-name">Life in<br>Germany</div>
+          <p class="sc-desc">Honest reviews of life in Germany. From weather to visas, things no one tells you.</p>
+          <div class="sc-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="./ai/index.html" class="section-card sc-ai">
+          <span class="sc-icon" aria-hidden="true">🤖</span>
+          <span class="sc-tag">AI</span>
+          <div class="sc-name">AI &<br>Automation</div>
+          <p class="sc-desc">Solo building, automating, and making money with AI tools. Written honestly.</p>
+          <div class="sc-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <a href="./playlog/index.html" class="section-card sc-playlog">
+          <span class="sc-icon" aria-hidden="true">🃏</span>
+          <span class="sc-tag">Play Log</span>
+          <div class="sc-name">Game<br>Reviews</div>
+          <p class="sc-desc">Game reviews, guides, and recommendations. Honest opinions without filters.</p>
+          <div class="sc-arrow" aria-hidden="true">→</div>
+        </a>
+
+        <div class="section-card sc-games" aria-label="Web Games — coming soon">
+          <span class="sc-icon" aria-hidden="true">🎮</span>
+          <span class="sc-tag">Games</span>
+          <div class="sc-name">Web<br>Games</div>
+          <p class="sc-desc">Web games made by myself. Starting with hidden object games, not sure where it will go.</p>
+          <div class="coming-soon-badge">🔧 준비중</div>
+        </div>
+
+        <div class="section-card sc-psych" aria-label="Mind Tests — coming soon">
+          <span class="sc-icon" aria-hidden="true">🧠</span>
+          <span class="sc-tag">Psychology</span>
+          <div class="sc-name">Mind<br>Tests</div>
+          <p class="sc-desc">Psychology tests and mind talks. Everything started from SOULCAKEY gathers here.</p>
+          <div class="coming-soon-badge">🔧 준비중</div>
+        </div>
+
+        <a href="./about/index.html" class="section-card sc-about" style="flex-direction:row; align-items:center; gap:24px;">
+          <span class="sc-icon" style="font-size:52px;" aria-hidden="true">👋</span>
+          <div>
+            <span class="sc-tag">About</span>
+            <div class="sc-name" style="margin-top:8px;">Who is Lena?</div>
+            <p class="sc-desc">Korean solo builder living in Germany. Making things on the internet with AI, games, and writing.</p>
+          </div>
+          <div class="sc-arrow" style="margin-left:auto; font-size:28px;" aria-hidden="true">→</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- dot divider -->
+    <div class="dot-divider" aria-hidden="true">
+      <div class="div-dot"></div>
+      <div class="div-dot"></div>
+      <div class="div-dot"></div>
+      <div class="div-dot"></div>
+      <div class="div-dot"></div>
+    </div>
+
+    <!-- ═══ RECENT POSTS ═══ -->
+    <section class="recent-section fade-up" aria-label="Recent posts">
+      <p class="section-label">Latest</p>
+      <h2 class="section-title">Recent posts ✦</h2>
+                              <div class="recent-grid">
+
+        <a href="./germany/munich-starkbierfest.html" class="post-card">
+          <div class="post-num" aria-hidden="true">01</div>
+          <div>
+            <p class="post-meta">🇩🇪 Germany · Mar 2026</p>
+            <p class="post-title">뮌헨 강한 맥주 축제 슈타르크비어페스트 완벽 가이드 2026</p>
+            <span class="post-tag">#슈타르크비어페스트</span>
+          </div>
+        </a>
+
+        <a href="./germany/lidl-walnuss-honig-brot-v2.html" class="post-card">
+          <div class="post-num" aria-hidden="true">02</div>
+          <div>
+            <p class="post-meta">🇩🇪 Germany · Mar 2026</p>
+            <p class="post-title">Lidl 호두꿀빵, 올해도 나를 비껴갔다</p>
+            <span class="post-tag">#블로그</span>
+          </div>
+        </a>
+
+        <a href="./germany/german-sick.html" class="post-card">
+          <div class="post-num" aria-hidden="true">03</div>
+          <div>
+            <p class="post-meta">🇩🇪 Germany · Mar 2026</p>
+            <p class="post-title">독일에서 아프면 벌어지는 일</p>
+            <span class="post-tag">#블로그</span>
+          </div>
+        </a>
+
+        <a href="./germany/german-weather.html" class="post-card">
+          <div class="post-num" aria-hidden="true">04</div>
+          <div>
+            <p class="post-meta">🇩🇪 Germany · Mar 2026</p>
+            <p class="post-title">독일 날씨가 정신병자인 이유 8가지</p>
+            <span class="post-tag">#블로그</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </div><!-- /page -->
+
+  <!-- ═══ FOOTER (fixed) ═══ -->
+  <footer role="contentinfo">
+    <div class="footer-logo">lena-var4.com</div>
+    <div class="footer-dots" aria-hidden="true">
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
+
+  <script>
+    /* ── Custom cursor ── */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    const colors = ['--pink','--mint','--yellow','--blue','--purple','--coral'];
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+    });
+
+    (function animRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+
+    document.querySelectorAll('a, button, .deco-card, .footer-dot').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        const c = colors[Math.floor(Math.random() * colors.length)];
+        cursor.style.background = `var(${c})`;
+        ring.style.borderColor  = `var(${c})`;
+        cursor.style.transform  = 'translate(-50%,-50%) scale(1.5)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.background = 'var(--pink)';
+        ring.style.borderColor  = 'var(--pink)';
+        cursor.style.transform  = 'translate(-50%,-50%) scale(1)';
+      });
+    });
+
+    /* ── Scroll fade-in ── */
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>

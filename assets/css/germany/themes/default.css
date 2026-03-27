@@ -1,0 +1,8 @@
+:root {
+  --theme-bg:        #fafafa;
+  --theme-hero-bg:   transparent;
+  --theme-accent:    #2d2d44;
+  --theme-text:      #2d2d44;
+  --theme-card-bg:   #ffffff;
+  --theme-font-body: 'Nunito', sans-serif;
+}

@@ -1,0 +1,836 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO ═══ -->
+  <title>독일에서 아프면 벌어지는 일 | Germany Blog — lena-var4</title>
+  <meta name="description" content="독일에서 감기 걸리면 Hausarzt 대기 2시간, 응급실 가면 4시간. 아프지 않는 게 최선인 나라. 우리 집 겨울 생존 키트 공개.">
+  <meta name="author" content="Lena">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lena2027.github.io/lenaportal/germany/german-sick/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lena2027.github.io/lenaportal/germany/german-sick/">
+  <meta property="og:title" content="독일에서 아프면 벌어지는 일">
+  <meta property="og:description" content="Hausarzt 대기 2시간, 응급실 4시간. 아프지 않는 게 최선인 나라.">
+  <meta property="og:site_name" content="lena-var4">
+  <meta property="article:published_time" content="2026-03-15T00:00:00Z">
+  <meta property="article:author" content="Lena">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="독일에서 아프면 벌어지는 일">
+  <meta name="twitter:description" content="Hausarzt 대기 2시간, 응급실 4시간. 아프지 않는 게 최선인 나라.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "독일에서 아프면 벌어지는 일",
+    "description": "독일에서 감기 걸리면 Hausarzt 대기 2시간, 응급실 가면 4시간.",
+    "datePublished": "2026-03-15T00:00:00Z",
+    "author": { "@type": "Person", "name": "Lena", "url": "https://lena2027.github.io/lenaportal/about/" },
+    "publisher": { "@type": "Person", "name": "Lena", "url": "https://lena2027.github.io/lenaportal" },
+    "url": "https://lena2027.github.io/lenaportal/germany/german-sick/",
+    "inLanguage": "ko",
+    "keywords": ["독일생활", "독일병원", "하우스아르츠트", "독일감기", "해외살이"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;700;900&family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --yellow:  #FFD93D;
+      --pink:    #FF6B9D;
+      --mint:    #4ECDC4;
+      --blue:    #4D96FF;
+      --purple:  #C77DFF;
+      --coral:   #FF6B6B;
+      --orange:  #FF9F43;
+      --ink:     #2d2d44;
+      --white:   #FEFEFE;
+
+      /* cozy 테마 */
+      --theme-bg:     #fdf6ee;
+      --theme-accent: #c4622d;
+      --theme-soft:   #f0e0cc;
+      --theme-card:   #fffaf4;
+      --theme-border: #e8d5be;
+      --text:  #2c1f14;
+      --gray:  #8a7060;
+      --green: #5a8a5a;
+      --red:   #c4622d;
+      --warm:  #e8944a;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: var(--theme-bg);
+      color: var(--text);
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* ── 커서 ── */
+    .cursor {
+      width: 14px; height: 14px;
+      background: var(--pink); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, background 0.3s;
+      mix-blend-mode: multiply;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 2.5px solid var(--pink); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease; opacity: 0.5;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(253,246,238,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e8d5be;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--pink);
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes dotpop { from{transform:scale(1)} to{transform:scale(1.6)} }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: var(--ink);
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+    .nav-links a:hover, .nav-links a.active { border-color: var(--ink); background: var(--yellow); }
+    .nav-links .disabled { opacity: 0.35; pointer-events: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(253,246,238,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e8d5be;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); text-decoration: none; }
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid var(--ink); transition: background 0.2s; cursor: none;
+    }
+    .footer-dot:nth-child(1) { background: var(--yellow); }
+    .footer-dot:nth-child(2) { background: var(--pink); }
+    .footer-dot:nth-child(3) { background: var(--mint); }
+    .footer-dot:nth-child(4) { background: var(--blue); }
+    .footer-dot:hover { background: var(--ink) !important; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; font-family: 'Nunito', sans-serif; }
+
+    /* ── LAYOUT ── */
+    .page-wrap { padding-top: 64px; padding-bottom: 56px; }
+
+    .content-row {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-inner {
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(0,0,0,0.07);
+      border-radius: 16px;
+      padding: 18px 16px;
+    }
+    .sidebar-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 14px; color: var(--ink);
+      margin-bottom: 14px;
+      opacity: 0.7;
+    }
+    .sidebar-list { list-style: none; }
+    .sidebar-list li { margin-bottom: 2px; }
+    .sidebar-list a {
+      display: block; padding: 7px 10px; border-radius: 8px;
+      text-decoration: none; font-size: 12px; font-weight: 600;
+      color: #666; font-family: 'Nunito', sans-serif;
+      transition: all 0.15s; line-height: 1.4;
+    }
+    .sidebar-list a:hover { background: rgba(255,211,61,0.3); color: var(--ink); }
+    .sidebar-list a.current { background: rgba(255,211,61,0.5); color: var(--ink); font-weight: 800; }
+    .sidebar-date { display: block; font-size: 10px; color: #aaa; margin-top: 1px; font-weight: 400; }
+    .sidebar-divider { height: 1px; background: rgba(0,0,0,0.06); margin: 12px 0; }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .sidebar-tag {
+      font-size: 10px; font-weight: 700; font-family: 'Nunito', sans-serif;
+      padding: 3px 8px; border-radius: 10px;
+      background: rgba(0,0,0,0.05); color: #666;
+      cursor: none; transition: all 0.15s;
+    }
+    .sidebar-tag:hover { background: rgba(255,107,157,0.15); color: var(--ink); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #f5e6d3 0%, #fdf0e0 50%, var(--theme-bg) 100%);
+      min-height: 380px;
+      position: relative; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      padding: 60px 20px 80px;
+    }
+
+    /* 따뜻한 배경 오브 */
+    .hero-orb {
+      position: absolute; border-radius: 50%;
+      filter: blur(60px); opacity: 0.35; pointer-events: none;
+    }
+    .orb1 { width: 300px; height: 300px; background: #f5c088; top: -80px; right: -60px; animation: orbdrift 8s ease-in-out infinite alternate; }
+    .orb2 { width: 200px; height: 200px; background: #e8a070; bottom: -60px; left: -40px; animation: orbdrift 10s ease-in-out infinite alternate-reverse; }
+    @keyframes orbdrift { from{transform:translate(0,0)} to{transform:translate(20px,15px)} }
+
+    /* 김 모락모락 이모지들 */
+    .steam-wrap { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
+    .steam-emoji {
+      position: absolute;
+      font-size: 20px;
+      animation: steamrise linear infinite;
+      opacity: 0;
+    }
+    @keyframes steamrise {
+      0%   { transform: translateY(0) scale(0.8); opacity: 0; }
+      20%  { opacity: 0.6; }
+      80%  { opacity: 0.3; }
+      100% { transform: translateY(-120px) scale(1.2); opacity: 0; }
+    }
+
+    .hero-content { position: relative; z-index: 10; text-align: center; max-width: 680px; }
+    .hero-tag {
+      display: inline-block; background: var(--theme-accent); color: white;
+      font-size: 12px; font-weight: 700; letter-spacing: 3px;
+      padding: 6px 16px; border-radius: 20px; margin-bottom: 20px;
+      animation: wiggle 3s ease-in-out infinite;
+    }
+    @keyframes wiggle { 0%,100%{transform:rotate(-1deg)} 50%{transform:rotate(1deg)} }
+
+    .hero-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(30px, 5.5vw, 58px);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .hero-title .big { display: block; color: var(--theme-accent); font-size: 1.15em; }
+
+    .hero-sub {
+      font-size: 15px; color: var(--text);
+      background: rgba(255,255,255,0.7);
+      display: inline-block; padding: 10px 22px;
+      border-radius: 10px; line-height: 1.7;
+      backdrop-filter: blur(4px);
+    }
+    .hero-emoji-row { font-size: 28px; margin-bottom: 16px; letter-spacing: 6px; }
+
+    /* ── 본문 ── */
+    .article { max-width: 100%; padding: 40px 0 60px; }
+
+    .intro-box {
+      background: var(--theme-card);
+      border: 2px solid var(--theme-border);
+      border-radius: 16px; padding: 26px 30px;
+      margin-bottom: 44px; position: relative;
+    }
+    .intro-box::before { content: '🤧'; position: absolute; top: -16px; left: 24px; font-size: 26px; }
+    .intro-box p { font-size: 15px; line-height: 2; }
+    .intro-box p + p { margin-top: 12px; }
+
+    .section-label {
+      font-family: 'Nunito', sans-serif;
+      font-size: 11px; font-weight: 800;
+      letter-spacing: 3px; color: var(--gray);
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .section-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(20px, 3.2vw, 26px);
+      font-weight: 800; line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .section-title .hl { background: var(--yellow); padding: 0 5px; border-radius: 4px; }
+    .section-title .red { color: var(--theme-accent); }
+
+    .section-block {
+      margin-bottom: 48px; padding-bottom: 48px;
+      border-bottom: 2px dashed var(--theme-border);
+    }
+    .section-block:last-of-type { border-bottom: none; }
+
+    .body-text { font-size: 15px; line-height: 2.1; }
+    .body-text + .body-text { margin-top: 14px; }
+
+    /* callout */
+    .callout { border-radius: 12px; padding: 16px 20px; margin: 18px 0; font-size: 14px; line-height: 1.9; }
+    .callout-tip   { background: #edf5ed; border-left: 4px solid var(--green); }
+    .callout-tip::before   { content: '💡 '; font-weight: 700; }
+    .callout-warn  { background: #fdecea; border-left: 4px solid #c0392b; }
+    .callout-warn::before  { content: '⚠️ '; font-weight: 700; }
+    .callout-funny { background: #fff8e8; border-left: 4px solid var(--warm); }
+    .callout-funny::before { content: '😂 '; font-weight: 700; }
+    .callout-heart { background: #fef0f0; border-left: 4px solid var(--pink); }
+    .callout-heart::before { content: '🫖 '; font-weight: 700; }
+
+    /* 대기 타임라인 */
+    .wait-bar {
+      background: var(--theme-card);
+      border: 1.5px solid var(--theme-border);
+      border-radius: 14px; padding: 20px 22px;
+      margin: 20px 0;
+    }
+    .wait-title { font-size: 12px; font-weight: 800; color: var(--gray); letter-spacing: 2px; margin-bottom: 14px; font-family: 'Nunito', sans-serif; }
+    .wait-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .wait-icon { font-size: 22px; flex-shrink: 0; width: 32px; text-align: center; }
+    .wait-label { font-size: 13px; line-height: 1.5; flex: 1; }
+    .wait-time {
+      font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: 800;
+      color: white; background: var(--theme-accent);
+      padding: 3px 10px; border-radius: 20px; white-space: nowrap;
+    }
+
+    /* 약 키트 그리드 */
+    .kit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px; margin: 20px 0;
+    }
+    .kit-item {
+      background: var(--theme-card);
+      border: 1.5px solid var(--theme-border);
+      border-radius: 12px; padding: 14px 16px;
+      display: flex; gap: 12px; align-items: flex-start;
+      transition: transform 0.2s;
+    }
+    .kit-item:hover { transform: translateY(-3px); }
+    .kit-emoji { font-size: 24px; flex-shrink: 0; }
+    .kit-info { flex: 1; }
+    .kit-name { font-size: 13px; font-weight: 800; color: var(--text); line-height: 1.3; }
+    .kit-name-ko { font-size: 11px; color: var(--gray); font-family: 'Nunito', sans-serif; margin-top: 1px; }
+    .kit-desc { font-size: 12px; color: var(--gray); margin-top: 5px; line-height: 1.5; }
+
+    /* 약국 비교 */
+    .store-row { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+    .store-badge {
+      background: var(--theme-card);
+      border: 1.5px solid var(--theme-border);
+      border-radius: 10px; padding: 10px 16px;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .store-badge .store-icon { font-size: 18px; }
+
+    strong { font-weight: 700; }
+    em { font-style: normal; color: var(--theme-accent); font-weight: 700; }
+
+    /* closing */
+    .closing-box {
+      background: linear-gradient(135deg, #2c1f14 0%, #4a3020 100%);
+      color: white; border-radius: 20px;
+      padding: 36px 32px; text-align: center;
+      margin-top: 48px; position: relative; overflow: hidden;
+    }
+    .closing-box::before {
+      content: '🤧🍵💊🌿☕🧡';
+      position: absolute; top: 10px; left: 0; right: 0;
+      font-size: 32px; opacity: 0.07; letter-spacing: 10px; text-align: center;
+    }
+    .closing-emoji { font-size: 36px; margin-bottom: 14px; }
+    .closing-title { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; margin-bottom: 12px; line-height: 1.3; }
+    .closing-text { font-size: 14px; line-height: 2; opacity: 0.9; }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+    .tag {
+      background: var(--theme-soft); color: var(--gray);
+      font-size: 12px; padding: 4px 12px;
+      border-radius: 20px; border: 1px solid var(--theme-border);
+    }
+
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 768px) {
+      .content-row { grid-template-columns: 1fr; }
+      .sidebar { position: static; margin-top: 40px; }
+      .kit-grid { grid-template-columns: 1fr; }
+      nav { padding: 14px 20px; }
+      footer { padding: 12px 20px; }
+    }
+    @media (max-width: 480px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-dot"></span>lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">🇩🇪 Germany Blog</a></li>
+      <li><a href="../ai/index.html">🤖 AI</a></li>
+      <li><a href="../playlog/index.html">🃏 Play Log</a></li>
+      <li><a href="../games/index.html" class="disabled">🎮 Games</a></li>
+      <li><a href="../psychology/index.html" class="disabled">🧠 Psychology</a></li>
+      <li><a href="../../germany/german-sick.html">🇰🇷 KO</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="steam-wrap" id="steamWrap"></div>
+      <div class="hero-content">
+        <div class="hero-emoji-row">🤧 💊 🍵 🏥 🌿</div>
+        <div class="hero-tag">🇩🇪 독일 생존 일기</div>
+        <h1 class="hero-title">
+          독일에서 아프면
+          <span class="big">각오해야 한다.</span>
+        </h1>
+        <p class="hero-sub">
+          Hausarzt 대기 두 시간, 응급실 대기 네 시간.<br>
+          그냥 <strong>안 아픈 게 최선</strong>인 나라 이야기.
+        </p>
+      </div>
+    </div>
+
+    <!-- 본문 + 사이드바 -->
+    <div class="content-row">
+      <article class="article">
+
+        <!-- 인트로 -->
+        <div class="intro-box fade-in">
+          <p>목이 칼칼하고 코가 막히고 몸이 찌뿌둥한 느낌이 오면 독일에서는 한숨이 먼저 나온다. 한국이었으면 동네 내과 가서 30분 안에 약 타서 집에 왔을 텐데, 여기는 그게 안 된다. 독일에서 아프다는 건 단순히 몸이 힘든 게 아니라 <strong>멘탈 싸움의 시작</strong>이다.</p>
+        </div>
+
+        <!-- 1. Hausarzt -->
+        <div class="section-block fade-in">
+          <div class="section-label">첫 번째 관문</div>
+          <h2 class="section-title"><span class="hl">Hausarzt</span>(하우스아르츠트)에 전화한다</h2>
+
+          <p class="body-text">독일에서 아프면 제일 먼저 <strong>Hausarzt(하우스아르츠트)</strong>, 주치의한테 가야 한다. 우리나라처럼 아무 병원이나 걸어 들어가는 시스템이 아니고 담당 주치의가 정해져 있어서 거기서 먼저 봐야 한다. 감기 시즌, 그러니까 환절기나 겨울에는 대기실이 완전 전쟁터라서 전화해서 예약하면 오늘은 자리가 없고 이틀 후나 돼야 한다는 말을 듣기 일쑤고 운 좋게 당일에 가도 한 시간, 두 시간은 그냥 기다린다.</p>
+
+          <div class="wait-bar">
+            <div class="wait-title">Hausarzt 대기 현실</div>
+            <div class="wait-row">
+              <div class="wait-icon">📞</div>
+              <div class="wait-label">예약 전화 → "이틀 후에 오세요"</div>
+              <div class="wait-time">이틀 대기</div>
+            </div>
+            <div class="wait-row">
+              <div class="wait-icon">🪑</div>
+              <div class="wait-label">당일 예약이 됐을 때 대기실에서</div>
+              <div class="wait-time">1~2시간</div>
+            </div>
+            <div class="wait-row">
+              <div class="wait-icon">😷</div>
+              <div class="wait-label">좁은 대기실에서 아픈 사람들이랑 같이 기다림</div>
+              <div class="wait-time">병 더 얻어옴</div>
+            </div>
+          </div>
+
+          <p class="body-text">이미 아파서 몸이 무거운 상태로 대기실에 앉아있으면 옆에서 누가 기침을 하고 맞은편 아이는 콧물을 흘리고 창문은 닫혀있다. 병 때려가다가 병을 더 얻어오는 게 아닌가 싶은 그 분위기가 진짜로 있다.</p>
+
+          <div class="callout callout-funny">그렇게 한두 시간 기다려서 들어가면 의사가 청진기 대고 잠깐 보더니 하는 말이 "그냥 쉬세요"다. <strong>Ruhen Sie sich aus.(루엔 지 지히 아우스.)</strong> 집에서 쉬어라. 그게 전부다.</div>
+
+          <p class="body-text">일반 감기면 따로 처방약이 없고 조금 심하면 <strong>Ibuprofen(이부프로펜)</strong> 강한 버전을 처방해주는 정도다. 목감기라서 염증이 확인되면 그나마 <strong>Antibiotika(안티비오티카)</strong>, 항생제를 써주는데 항생제는 <strong>Rezept(레체프트)</strong>, 처방전 없이는 살 수가 없어서 목이 이상하다 싶으면 빨리 병원을 가는 수밖에 없다. 그리고 의사는 꼭 이 말을 덧붙인다.</p>
+
+          <div class="callout callout-heart"><strong>"Salbeitee(잘바이테)랑 Erkältungstee(에어켈퉁스테) 마시고, 물 많이 드세요."</strong> 의사가 차를 처방해준다. 독일에서는 이게 정상이다. 잘바이테는 세이지 차고 에어켈퉁스테는 종합 감기차인데 <strong>dm(데엠)</strong>이나 <strong>Rossmann(로스만)</strong>, 우리나라 올리브영 같은 드럭스토어에서 쉽게 살 수 있다.</div>
+        </div>
+
+        <!-- 2. 응급실 -->
+        <div class="section-block fade-in">
+          <div class="section-label">두 번째 관문</div>
+          <h2 class="section-title"><em>Notaufnahme</em>(노트아우프나메)는 <span class="red">더 큰 모험</span>이다</h2>
+
+          <p class="body-text">Hausarzt는 그나마 양반이고 <strong>Notaufnahme(노트아우프나메)</strong>, 응급실은 진짜 다른 차원이다. 교통사고가 나서 충격이 꽤 컸는데 겉으로 피가 안 나고 뼈가 튀어나오지 않았다면 그냥 대기다. 세 시간, 네 시간을 아무리 아파도 겉으로 멀쩡해 보이면 우선순위에서 밀려서 번호표 들고 의자에 앉아 기다려야 한다.</p>
+
+          <div class="callout callout-warn">독일 응급실은 <strong>중증도 분류(Triage, 트리아제)</strong> 시스템으로 운영된다. 생명에 위협이 없다고 판단되면 경증으로 분류돼서 한없이 밀리는데, 겉으로 멀쩡해 보이는 게 오히려 독이 된다.</div>
+
+          <p class="body-text">임산부도 예외가 없어서 양수가 심상치 않거나 자궁이 심하게 압박이 와서 불안한 마음에 병원에 가도 배 불러서 불편한 의자에 앉아 세 시간씩 기다려야 한다. 옆에서 번호가 불리는데 내 번호는 아직 멀었다.</p>
+
+          <div class="callout callout-funny">이걸 경험하고 나면 독일 임산부들이 왜 그렇게 평정심이 좋은지 알게 된다. 기다림으로 단련된 거다.</div>
+
+          <p class="body-text"><strong>Krankenkasse(크랑켄카세)</strong>, 건강보험이 잘 돼있어서 의료비가 거의 무료에 가깝고 의사들 실력도 좋으니까 독일 의료 시스템이 나쁜 건 아니다. 근데 기다리는 문화는 어떻게 적응이 안 된다. 한국에서 응급실 가면 후다닥 달려오던 그 느낌이 여기선 없어서 이럴 때 진심으로 당장 한국 가고 싶다는 생각이 든다.</p>
+        </div>
+
+        <!-- 3. Apotheke -->
+        <div class="section-block fade-in">
+          <div class="section-label">그나마 위안</div>
+          <h2 class="section-title"><span class="hl">Apotheke</span>(아포테케)는 진짜 친절하다</h2>
+
+          <p class="body-text">그래도 독일에서 아플 때 유일하게 위로가 되는 곳이 <strong>Apotheke(아포테케)</strong>, 약국이다. 독일 약사들은 이 약은 언제 먹고 어떤 증상에 쓰고 이거랑 같이 먹으면 안 되는 게 뭔지를 시간을 충분히 들여서 설명해주는 문화가 있다. 처음엔 독일어로 설명해줘서 반도 못 알아들었는데 지금은 그 시간이 오히려 고맙다.</p>
+
+          <div class="store-row">
+            <div class="store-badge"><span class="store-icon">🏪</span> dm(데엠) — 드럭스토어, 감기차·비타민</div>
+            <div class="store-badge"><span class="store-icon">🏪</span> Rossmann(로스만) — dm 비슷한 체인</div>
+            <div class="store-badge"><span class="store-icon">💊</span> Apotheke(아포테케) — 처방약·전문 상담</div>
+          </div>
+
+          <p class="body-text">일반 감기약이나 차, 비타민 같은 건 dm이나 Rossmann에서 사면 되고 처방전이 필요한 약은 Apotheke에서 산다. Antibiotika(안티비오티카) 같은 처방약은 반드시 Rezept(레체프트)가 있어야 하니까 미리 구비해두고 싶어도 못 한다는 게 아쉽다.</p>
+        </div>
+
+        <!-- 4. 독일 생존 키트 -->
+        <div class="section-block fade-in">
+          <div class="section-label">결론은 이거다</div>
+          <h2 class="section-title">아프기 전에 <span class="hl">막는 게 답</span>이다</h2>
+
+          <p class="body-text">이런 경험들을 몇 번 하고 나면 자연스럽게 결론이 난다. 독일에서 건강 관리는 선택이 아니라 생존 전략이어서 환절기엔 특히 기를 쓰고 안 걸리려고 한다. 그러다 보니 우리 집에는 겨울 비상 키트가 생겼다.</p>
+
+          <div class="kit-grid">
+            <div class="kit-item">
+              <div class="kit-emoji">💊</div>
+              <div class="kit-info">
+                <div class="kit-name">Ibuprofen(이부프로펜)</div>
+                <div class="kit-desc">열, 통증, 두통. 만능이라 항상 구비.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🔵</div>
+              <div class="kit-info">
+                <div class="kit-name">Paracetamol(파라세타몰)</div>
+                <div class="kit-desc">이부프로펜 못 먹을 때 백업용.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍵</div>
+              <div class="kit-info">
+                <div class="kit-name">Erkältungstee(에어켈퉁스테)</div>
+                <div class="kit-desc">종합 감기차. 한 박스 이상 항상 구비.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍊</div>
+              <div class="kit-info">
+                <div class="kit-name">Vitamin C(비타민 체)</div>
+                <div class="kit-desc">풍족하게. 아끼지 않는다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🥄</div>
+              <div class="kit-info">
+                <div class="kit-name">Hustensaft(후스텐자프트)</div>
+                <div class="kit-desc">기침 시럽. 기침 시작되면 바로 꺼낸다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍬</div>
+              <div class="kit-info">
+                <div class="kit-name">Halsbonbons(할스본봉스)</div>
+                <div class="kit-desc">목캔디. 가방에도 항상 하나씩.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍯</div>
+              <div class="kit-info">
+                <div class="kit-name">Honig(호니히)</div>
+                <div class="kit-desc">꿀. 차에 넣고, 그냥 먹고, 목에 바르고.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🌿</div>
+              <div class="kit-info">
+                <div class="kit-name">Minze(민체)</div>
+                <div class="kit-desc">민트. 우리 집은 화분에 직접 키운다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-heart">민트는 아플 때 신선하게 뜯어서 생강꿀차에 넣으면 진짜 살 것 같은 기분이 드는데 직접 키우는 거라 언제든 뜯을 수 있어서 좋다. 이게 은근히 독일 생활의 작은 행복이다.</div>
+
+          <p class="body-text">어른이나 아이나 똑같아서 아이 있는 집은 더 신경 쓴다. 손 자주 씻기고 비타민 챙겨주고 환절기엔 외출 후 무조건 손 씻는 루틴을 만드는 게 결국 제일 현실적인 방법이다.</p>
+        </div>
+
+        <!-- 5. 한국 비상약 -->
+        <div class="section-block fade-in">
+          <div class="section-label">해외살이 꿀팁</div>
+          <h2 class="section-title">한국 갔다 오면 <span class="hl">약을 쓸어온다</span></h2>
+
+          <p class="body-text">독일 살면서 한국에 갈 때마다 챙겨오는 게 있다. 약이다. 독일 약이 없는 건 아닌데 한국 약이 체감상 더 잘 듣는 경우가 있고, 무엇보다 익숙하다. 아플 때 낯선 약보다 내가 아는 약이 심리적으로도 안정이 된다. 그래서 한국 갈 때마다 캐리어 한 칸은 약으로 채워온다.</p>
+
+          <div class="kit-grid">
+            <div class="kit-item">
+              <div class="kit-emoji">🤧</div>
+              <div class="kit-info">
+                <div class="kit-name">판콜 / 판피린</div>
+                <div class="kit-desc">종합감기약. 독일 감기약보다 확실히 더 잘 드는 느낌.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🌡️</div>
+              <div class="kit-info">
+                <div class="kit-name">타이레놀</div>
+                <div class="kit-desc">해열·진통. 독일에도 있지만 한국 거 챙겨온다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">💊</div>
+              <div class="kit-info">
+                <div class="kit-name">이지엔6</div>
+                <div class="kit-desc">두통·생리통에 빠르게 듣는다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍼</div>
+              <div class="kit-info">
+                <div class="kit-name">어린이 부루펜 시럽</div>
+                <div class="kit-desc">아이 열 날 때. 독일 버전은 맛이 달라서 아이가 거부함.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🫃</div>
+              <div class="kit-info">
+                <div class="kit-name">훼스탈 / 베아제</div>
+                <div class="kit-desc">소화제. 독일 음식 기름지게 먹고 나면 필수.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🚽</div>
+              <div class="kit-info">
+                <div class="kit-name">정로환</div>
+                <div class="kit-desc">배탈·설사. 여행 중 갑자기 배 아플 때 진짜 효자다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🔥</div>
+              <div class="kit-info">
+                <div class="kit-name">겔포스</div>
+                <div class="kit-desc">속쓰릴 때. 독일 생활하면서 속 쓰릴 일이 생각보다 많다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">💩</div>
+              <div class="kit-info">
+                <div class="kit-name">둘코락스</div>
+                <div class="kit-desc">변비약. 식습관 바뀌면 장이 먼저 반응한다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🩹</div>
+              <div class="kit-info">
+                <div class="kit-name">후시딘 / 마데카솔</div>
+                <div class="kit-desc">상처연고. 독일 약국에 비슷한 건 있는데 이게 더 익숙하다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🦠</div>
+              <div class="kit-info">
+                <div class="kit-name">에스로반</div>
+                <div class="kit-desc">항생제 연고. 처방 없이 살 수 있는 게 한국의 장점이다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🦟</div>
+              <div class="kit-info">
+                <div class="kit-name">버물리</div>
+                <div class="kit-desc">벌레 물린 데. 여름에 독일도 모기가 꽤 있다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">💪</div>
+              <div class="kit-info">
+                <div class="kit-name">파스 (케토톱 등)</div>
+                <div class="kit-desc">근육통·관절통. 독일에도 있는데 한국 파스가 훨씬 강하다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">👁️</div>
+              <div class="kit-info">
+                <div class="kit-name">인공눈물</div>
+                <div class="kit-desc">실내 난방 틀면 눈이 바짝 마른다. 필수다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🫀</div>
+              <div class="kit-info">
+                <div class="kit-name">우황청심원</div>
+                <div class="kit-desc">긴장하거나 스트레스 심할 때. 심리적 안정 효과가 크다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🌿</div>
+              <div class="kit-info">
+                <div class="kit-name">홍삼 / 비타민제</div>
+                <div class="kit-desc">면역력 관리용. 독일 겨울 버티는 데 진심으로 도움된다.</div>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="kit-emoji">🍺</div>
+              <div class="kit-info">
+                <div class="kit-name">숙취해소제</div>
+                <div class="kit-desc">독일에 맥주가 많으니까... 뭐, 필요할 때가 있다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-funny">캐리어 열면 약이 반이다. 가족이나 친구들한테 설명하면 다들 웃는데 막상 독일 오면 이해한다고들 한다. 해외살이 하는 한국인이라면 공감할 거다.</div>
+
+          <p class="body-text">독일 살면서 처음으로 건강을 진심으로 챙기게 됐다. 아프면 정말 힘들고, 병원 가는 것도 일이고, 약 구하는 것도 일이라는 걸 몸으로 배웠다. 안 아픈 게 최선이라는 말이 이렇게 현실적으로 느껴진 적이 없었다.</p>
+        </div>
+
+        <!-- 마무리 -->
+        <div class="closing-box fade-in">
+          <div class="closing-emoji">🍵</div>
+          <div class="closing-title">결론: 안 아픈 게 최선이다. 진심으로.</div>
+          <p class="closing-text">
+            Erkältungstee(에어켈퉁스테) 항상 구비하고,<br>
+            Vitamin C(비타민 체) 풍족하게 먹고,<br>
+            한국 갈 때 약 쓸어오고,<br>
+            옷 레이어링하고, 손 자주 씻고.<br><br>
+            독일에서 건강은 선택이 아니라 <strong>생존 전략</strong>이다.
+          </p>
+        </div>
+
+        <div class="tag-row fade-in">
+          <span class="tag">#독일생활</span>
+          <span class="tag">#독일병원</span>
+          <span class="tag">#하우스아르츠트</span>
+          <span class="tag">#독일감기</span>
+          <span class="tag">#해외살이</span>
+          <span class="tag">#독일적응기</span>
+          <span class="tag">#독일의료</span>
+          <span class="tag">#한국비상약</span>
+        </div>
+
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-title">🇩🇪 Germany Blog</div>
+          <ul class="sidebar-list">
+            <li>
+              <a href="./lidl-walnuss-honig-brot-v2.html">
+                Lidl 호두꿀빵, 올해도 나를 비껴갔다
+                <span class="sidebar-date">2026.03.17</span>
+              </a>
+            </li>
+            <li>
+              <a href="./german-sick.html" >
+                독일에서 아프면 각오해야 한다
+                <span class="sidebar-date">2026.03.15</span>
+              </a>
+            </li>
+            <li>
+              <a href="./german-weather.html">
+                독일 날씨가 정신병자인 이유 8가지
+                <span class="sidebar-date">2026.03.12</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">#날씨</span>
+            <span class="sidebar-tag">#병원</span>
+            <span class="sidebar-tag">#독일생활</span>
+            <span class="sidebar-tag">#적응기</span>
+            <span class="sidebar-tag">#여행</span>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="../index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-dots">
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
+
+  <script>
+    /* 커서 */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    const colors = ['--pink','--mint','--yellow','--blue','--purple','--coral'];
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => {
+      mx=e.clientX; my=e.clientY;
+      cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+    });
+    (function animRing(){
+      rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(animRing);
+    })();
+    document.querySelectorAll('a,.kit-item,.footer-dot').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        const c=colors[Math.floor(Math.random()*colors.length)];
+        cursor.style.background=`var(${c})`;
+        ring.style.borderColor=`var(${c})`;
+        cursor.style.transform='translate(-50%,-50%) scale(1.5)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.background='var(--pink)';
+        ring.style.borderColor='var(--pink)';
+        cursor.style.transform='translate(-50%,-50%) scale(1)';
+      });
+    });
+
+    /* 김 모락모락 */
+    const steamWrap = document.getElementById('steamWrap');
+    const steamEmojis = ['☕','🌿','💊','🍵','✨'];
+    for(let i=0;i<10;i++){
+      const s=document.createElement('div');
+      s.className='steam-emoji';
+      s.textContent=steamEmojis[Math.floor(Math.random()*steamEmojis.length)];
+      s.style.left=(10+Math.random()*80)+'%';
+      s.style.bottom=(10+Math.random()*30)+'%';
+      s.style.animationDuration=(4+Math.random()*5)+'s';
+      s.style.animationDelay=(Math.random()*6)+'s';
+      steamWrap.appendChild(s);
+    }
+
+    /* 스크롤 fade-in */
+    const obs=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+    },{threshold:0.08});
+    document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+:root {
+  --theme-bg:        #fdf8f5;
+  --theme-hero-bg:   transparent;
+  --theme-accent:    #8b5e3c;
+  --theme-text:      #4a3f35;
+  --theme-card-bg:   rgba(255, 253, 250, 0.9);
+  --theme-font-body: 'Nunito', sans-serif;
+}
+.g-post-header {
+  box-shadow: 0 10px 30px rgba(139, 94, 60, 0.1);
+  border-color: rgba(139, 94, 60, 0.2);
+}
+.g-post-card {
+  box-shadow: 0 8px 20px rgba(139, 94, 60, 0.08);
+  border-color: rgba(139, 94, 60, 0.15);
+}
+.g-post-card:hover {
+  box-shadow: 0 12px 25px rgba(139, 94, 60, 0.15);
+}

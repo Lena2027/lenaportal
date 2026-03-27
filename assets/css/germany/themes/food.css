@@ -1,0 +1,15 @@
+:root {
+  --theme-bg:        #fff5e6;
+  --theme-hero-bg:   transparent;
+  --theme-accent:    #ff6b00;
+  --theme-text:      #5a2a18;
+  --theme-card-bg:   rgba(255, 255, 255, 0.9);
+  --theme-font-body: 'Nunito', sans-serif;
+}
+
+.g-post-card {
+  border-radius: 32px;
+}
+.g-card-img {
+  border-radius: 32px 32px 0 0;
+}

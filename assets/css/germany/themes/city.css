@@ -1,0 +1,22 @@
+:root {
+  --theme-bg:        #121214;
+  --theme-hero-bg:   transparent;
+  --theme-accent:    #00ffd5;
+  --theme-text:      #e0e0e0;
+  --theme-card-bg:   rgba(30, 30, 35, 0.85);
+  --theme-font-body: 'Nunito', sans-serif;
+}
+/* Invert card content that doesn't fit dark mode nicely */
+.g-post-card, .g-sidebar-inner, .g-post-header, .g-post-body {
+  border-color: rgba(0, 255, 213, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 213, 0.1);
+}
+.g-post-card:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.3);
+  border-color: var(--theme-accent);
+}
+.g-card-date, .g-recent-date { color: #888; }
+.g-card-desc, .g-post-body { color: #ccc; }
+.g-sb-title, .g-card-title, .g-post-body h2, .g-post-body h3 { color: #fff; }
+
+.g-card-tag { color: #121214; font-weight: 800; }

@@ -114,11 +114,17 @@ def overwrite_folder_index(directory, latest_post):
     if not latest_post: return
     source_path = os.path.join(directory, latest_post['filename'])
     dest_path = os.path.join(directory, 'index.html')
-    
+
     with open(source_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # We should update canonical properly or just copy. Simple copy is robust.
+
+    # Update canonical and og:url to point to the folder index, not the individual post
+    base_url = 'https://lena2027.github.io/lenaportal'
+    post_name = latest_post['filename'].replace('.html', '')
+    post_url = f'{base_url}/{directory}/{post_name}/'
+    index_url = f'{base_url}/{directory}/'
+    content = content.replace(post_url, index_url)
+
     with open(dest_path, 'w', encoding='utf-8') as f:
         f.write(content)
 

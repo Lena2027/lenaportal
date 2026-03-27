@@ -63,7 +63,11 @@ for f in all_files:
         new_content = content[:match.start()] + ul_content + '  ' + lang_html + '\n    ' + ul_end + content[match.end():]
         content = new_content
         
-    # Translate EN index.html elements
+    # Fix lang attribute for ALL EN files
+    if is_en:
+        content = content.replace('lang="ko"', 'lang="en"')
+
+    # Translate EN index.html elements (root index only)
     if is_en and 'index.html' in parts and len(parts) == 2:
         content = content.replace('독일 생활 솔직 후기. 날씨부터 비자까지, 아무도 알려주지 않는 것들을 씁니다.', 'Honest reviews of life in Germany. From weather to visas, things no one tells you.')
         content = content.replace('AI 툴로 혼자 만들고, 자동화하고, 돈 버는 이야기. 솔직하게 씁니다.', 'Solo building, automating, and making money with AI tools. Written honestly.')
@@ -74,8 +78,6 @@ for f in all_files:
         content = content.replace('Lidl 호두꿀빵, 올해도 나를 비껴갔다', 'Lidl Honey Walnut Bread, missed me again this year')
         content = content.replace('독일에서 아프면 각오해야 한다', 'Be prepared if you get sick in Germany')
         content = content.replace('독일 날씨가 미쳤다 — 정신병자인 이유 8가지', 'German weather is crazy — 8 reasons why it is psychotic')
-        # Also fix hreflang? It's fine for now, user just asked for separation
-        content = content.replace('lang="ko"', 'lang="en"')
 
     with open(f, 'w', encoding='utf-8') as file:
         file.write(content)

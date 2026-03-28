@@ -31,7 +31,7 @@ def get_posts(directory):
         
         date_str = date_match.group(1) if date_match else '2000-01-01'
         try:
-            date_obj = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+            date_obj = datetime.fromisoformat(date_str.replace('Z', '+00:00')).replace(tzinfo=None)
         except:
             try:
                 date_obj = datetime.strptime(date_str, '%Y-%m-%d')
@@ -110,35 +110,41 @@ def update_recent_posts(index_file, posts, is_en=False):
     with open(index_file, 'w', encoding='utf-8') as f:
         f.write(content)
 
-def overwrite_folder_index(directory, latest_post):
-    if not latest_post: return
-    source_path = os.path.join(directory, latest_post['filename'])
-    dest_path = os.path.join(directory, 'index.html')
+def update_category_index(directory, posts):
+    index_path = os.path.join(directory, 'index.html')
+    if not os.path.exists(index_path): return
 
-    with open(source_path, 'r', encoding='utf-8') as f:
+    html = ""
+    for post in posts:
+        html += f'''      <a href="./{post['filename']}" class="post-card">
+        <div class="post-meta">{post['date_str']}</div>
+        <h3 class="post-title">{post['title']}</h3>
+        <span class="post-tag">{post['tag']}</span>
+      </a>\n'''
+
+    with open(index_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Update canonical and og:url to point to the folder index, not the individual post
-    base_url = 'https://lena2027.github.io/lenaportal'
-    post_name = latest_post['filename'].replace('.html', '')
-    post_url = f'{base_url}/{directory}/{post_name}/'
-    index_url = f'{base_url}/{directory}/'
-    content = content.replace(post_url, index_url)
+    # 정규식을 이용해 주석 사이의 내용을 덮어씁니다.
+    content = re.sub(
+        r'<!-- POSTS -->.*?<!-- /POSTS -->',
+        f'<!-- POSTS -->\n{html}      <!-- /POSTS -->',
+        content,
+        flags=re.DOTALL
+    )
 
-    with open(dest_path, 'w', encoding='utf-8') as f:
+    with open(index_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
 if __name__ == "__main__":
     ko_posts = get_posts(PUBLISH_DIR)
-    if ko_posts:
-        overwrite_folder_index(PUBLISH_DIR, ko_posts[0])
+    update_category_index(PUBLISH_DIR, ko_posts)
     update_sidebars(PUBLISH_DIR, ko_posts)
     update_recent_posts(ROOT_INDEX, ko_posts, False)
 
     if os.path.exists(EN_PUBLISH_DIR):
         en_posts = get_posts(EN_PUBLISH_DIR)
-        if en_posts:
-            overwrite_folder_index(EN_PUBLISH_DIR, en_posts[0])
+        update_category_index(EN_PUBLISH_DIR, en_posts)
         update_sidebars(EN_PUBLISH_DIR, en_posts)
         update_recent_posts(EN_ROOT_INDEX, en_posts, True)
 

@@ -20,6 +20,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -63,7 +64,130 @@
       color: var(--text);
       line-height: 2.0;
       font-size: 17px;
+      cursor: none;
+      overflow-x: hidden;
     }
+
+    /* ── Custom cursor ── */
+    .cursor {
+      width: 14px; height: 14px;
+      background: #FF6B9D; border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, background 0.3s;
+      mix-blend-mode: multiply;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 2.5px solid #FF6B9D; border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: all 0.15s ease; opacity: 0.5;
+    }
+
+    /* ── NAV ── */
+    nav[role="navigation"] {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e0e0e0;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: #2d2d44;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; background: #FF6B9D;
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: #2d2d44;
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s; letter-spacing: 0.3px;
+      font-family: 'Nunito', sans-serif;
+    }
+    .nav-links a:hover, .nav-links a.active { border-color: #2d2d44; background: #FFD93D; }
+    .nav-links .disabled { opacity: 0.35; pointer-events: none; }
+
+    /* ── PAGE LAYOUT ── */
+    .page-wrap { padding-top: 64px; padding-bottom: 56px; }
+    .content-row {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-inner {
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 18px 16px;
+    }
+    .sidebar-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 14px; color: #2d2d44;
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 6px;
+      opacity: 0.7;
+    }
+    .sidebar-list { list-style: none; }
+    .sidebar-list li { margin-bottom: 2px; }
+    .sidebar-list a {
+      display: block; padding: 7px 10px; border-radius: 8px;
+      text-decoration: none; font-size: 12px; font-weight: 600;
+      color: #555; font-family: 'Nunito', sans-serif;
+      line-height: 1.45; transition: background 0.15s;
+    }
+    .sidebar-list a:hover { background: rgba(255,211,61,0.3); color: #2d2d44; }
+    .sidebar-list a.current { background: #FFD93D; color: #2d2d44; }
+    .sidebar-date { display: block; font-size: 10px; color: #aaa; margin-top: 2px; font-weight: 400; }
+    .sidebar-divider { height: 1px; background: rgba(0,0,0,0.07); margin: 14px 0; }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .sidebar-tag {
+      font-size: 10px; font-family: 'Nunito', sans-serif;
+      padding: 3px 8px; border-radius: 10px;
+      background: rgba(0,0,0,0.05); color: #666;
+      cursor: default; transition: background 0.15s;
+    }
+    .sidebar-tag:hover { background: rgba(255,107,157,0.15); color: #2d2d44; }
+
+    /* ── FOOTER ── */
+    footer[role="contentinfo"] {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e0e0e0;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: #2d2d44; text-decoration: none; }
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid #2d2d44; transition: background 0.2s; cursor: none;
+    }
+    .footer-dot:nth-child(1) { background: #FFD93D; }
+    .footer-dot:nth-child(2) { background: #FF6B9D; }
+    .footer-dot:nth-child(3) { background: #4ECDC4; }
+    .footer-dot:nth-child(4) { background: #4D96FF; }
+    .footer-dot:hover { background: #2d2d44 !important; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; font-family: 'Nunito', sans-serif; }
 
     /* HERO */
     .hero {
@@ -393,6 +517,28 @@
 </head>
 <body>
 
+  <!-- 커서 -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">🇩🇪 Germany Blog</a></li>
+      <li><a href="../ai/index.html">🤖 AI</a></li>
+      <li><a href="../playlog/index.html">🃏 Play Log</a></li>
+      <li><a href="../games/index.html" class="disabled" aria-disabled="true">🎮 Games</a></li>
+      <li><a href="../psychology/index.html" class="disabled" aria-disabled="true">🧠 Psychology</a></li>
+      <li><a href="../en/germany/frankfurt-flohmarkt-mainufer.html">🇬🇧 EN</a></li>
+    </ul>
+  </nav>
+
+<div class="page-wrap">
+
 <!-- HERO -->
 <header class="hero">
   <div class="container">
@@ -415,11 +561,12 @@
   </div>
 </header>
 
-<div class="container">
-<article>
+    <!-- ═══ 글 + 사이드바 ═══ -->
+    <div class="content-row">
+      <article class="article">
 
   <!-- TOC -->
-  <nav class="toc">
+  <div class="toc">
     <h2>📋 목차</h2>
     <ol>
       <li><a href="#intro">프랑크푸르트 강변 벼룩시장이란?</a></li>
@@ -433,7 +580,7 @@
       <li><a href="#diary">그냥 어느 토요일 이야기</a></li>
       <li><a href="#faq">자주 묻는 질문 FAQ</a></li>
     </ol>
-  </nav>
+  </div>
 
   <!-- INTRO -->
   <section id="intro">
@@ -805,16 +952,101 @@
     </div>
   </div>
 
-</article>
-</div>
+      </article>
 
-<footer class="post-footer">
-  <div class="container">
-    <h3>🌿 Schönen Samstag.</h3>
-    <p>벼룩시장 다녀온 이야기나 질문이 있으면 댓글로 남겨줘도 좋다.</p>
-    <p style="margin-top: 14px; font-size: 0.78rem; opacity: 0.55;">© 2026 Frankfurt Life Blog | 마지막 업데이트: 2026년 3월</p>
-  </div>
-</footer>
+      <!-- ═══ SIDEBAR ═══ -->
+      <aside class="sidebar" aria-label="글 목록">
+        <div class="sidebar-inner">
+          <div class="sidebar-title">🇩🇪 Germany Blog</div>
+          <ul class="sidebar-list" id="postList">
+            <li>
+              <a href="frankfurt-flohmarkt-mainufer.html" class="current">
+                프랑크푸르트 강변 벼룩시장 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.28</span>
+              </a>
+            </li>
+            <li>
+              <a href="munich-starkbierfest.html">
+                뮌헨 강한 맥주 축제 슈타르크비어페스트 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="lidl-walnuss-honig-brot-v2.html">
+                Lidl 호두꿀빵, 올해도 나를 비껴갔다
+                <span class="sidebar-date">2026.03.17</span>
+              </a>
+            </li>
+            <li>
+              <a href="german-sick.html">
+                독일에서 아프면 벌어지는 일
+                <span class="sidebar-date">2026.03.15</span>
+              </a>
+            </li>
+            <li>
+              <a href="german-weather.html">
+                독일 날씨가 정신병자인 이유 8가지
+                <span class="sidebar-date">2026.03.12</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">#날씨</span>
+            <span class="sidebar-tag">#독일생활</span>
+            <span class="sidebar-tag">#적응기</span>
+            <span class="sidebar-tag">#음식</span>
+            <span class="sidebar-tag">#여행</span>
+            <span class="sidebar-tag">#벼룩시장</span>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /.content-row -->
+  </div><!-- /.page-wrap -->
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer role="contentinfo">
+    <a href="../index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-dots" aria-hidden="true">
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
+
+  <script>
+    /* ── 커서 ── */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    const colors = ['--pink','--mint','--yellow','--blue','--purple','--coral'];
+    let mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', e => {
+      mx=e.clientX; my=e.clientY;
+      cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+    });
+    (function animRing(){
+      rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(animRing);
+    })();
+    document.querySelectorAll('a, .footer-dot').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        const c = ['#FF6B9D','#4ECDC4','#FFD93D','#4D96FF','#C77DFF','#FF6B6B'];
+        const col = c[Math.floor(Math.random()*c.length)];
+        cursor.style.background = col;
+        ring.style.borderColor = col;
+        cursor.style.transform = 'translate(-50%,-50%) scale(1.5)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.background = '#FF6B9D';
+        ring.style.borderColor = '#FF6B9D';
+        cursor.style.transform = 'translate(-50%,-50%) scale(1)';
+      });
+    });
+  </script>
 
 </body>
 </html>

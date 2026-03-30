@@ -158,9 +158,87 @@
       .toc{padding:22px 20px}
       h2{font-size:1.2rem}
     }
+
+    /* ════ COMMON NAV & FOOTER ════ */
+    html { cursor: none; }
+    .cursor {
+      width: 14px; height: 14px; background: var(--pink, #FF6B9D); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%); mix-blend-mode: multiply; transition: background 0.2s, transform 0.1s;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px; border: 2.5px solid var(--pink, #FF6B9D); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9998;
+      transform: translate(-50%, -50%); transition: all 0.15s ease; opacity: 0.5;
+    }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-bottom: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif;}
+    .nav-logo { font-size: 22px; color: var(--ink, #2d2d44); text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight:900;}
+    .logo-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--pink, #FF6B9D); animation: dotpop 1.4s ease-in-out infinite alternate; }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 700; text-decoration: none; color: var(--ink, #2d2d44); padding: 6px 14px; border-radius: 20px; border: 2px solid transparent; transition: all 0.2s;}
+    .nav-links a:hover, .nav-links a.active { border-color: var(--ink, #2d2d44); background: var(--yellow, #FFD93D); }
+    .nav-links .disabled { opacity: 0.35; pointer-events: none; }
+    footer { position: relative; bottom: 0; left: 0; right: 0; z-index: 200; padding: 14px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-top: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif;}
+    .footer-logo { font-size: 20px; color: var(--ink, #2d2d44); text-decoration: none; font-weight:900;}
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--ink, #2d2d44); transition: background 0.2s; cursor: none; }
+    .footer-dot:nth-child(1) { background: var(--yellow, #FFD93D); } .footer-dot:nth-child(2) { background: var(--pink, #FF6B9D); } .footer-dot:nth-child(3) { background: var(--mint, #4ECDC4); } .footer-dot:nth-child(4) { background: var(--blue, #4D96FF); }
+    .footer-dot:hover { background: var(--ink, #2d2d44) !important; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; }
+
+    /* Layout */
+    .page-wrap { padding-top: 64px; }
+    .content-row { display: grid; grid-template-columns: 1fr 220px; gap: 24px; max-width: 1000px; margin: 0 auto; padding: 32px 24px; align-items: start; }
+    .article { max-width: 100%; }
+
+    /* Sidebar */
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-inner { background: rgba(255,255,255,0.55); backdrop-filter: blur(12px); border: 1.5px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 18px 16px; }
+    .sidebar-title { font-size: 14px; font-weight:900; color: var(--ink, #2d2d44); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; opacity: 0.7; }
+    .sidebar-list { list-style: none; padding:0; margin:0;}
+    .sidebar-list li { margin-bottom: 2px; }
+    .sidebar-list a { display: block; padding: 7px 10px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600; color: #555; transition: all 0.15s; line-height: 1.4; }
+    .sidebar-list a:hover { background: rgba(255,211,61,0.3); color: var(--ink, #2d2d44); }
+    .sidebar-list a.current { background: rgba(255,211,61,0.5); color: var(--ink, #2d2d44); font-weight: 800; }
+    .sidebar-date { display: block; font-size: 10px; color: #aaa; margin-top: 1px; font-weight: 400; }
+    .sidebar-divider { height: 1px; background: rgba(0,0,0,0.06); margin: 12px 0; }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .sidebar-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; background: rgba(0,0,0,0.05); color: #666; transition: all 0.15s; }
+    .sidebar-tag:hover { background: rgba(255,107,157,0.15); color: var(--ink, #2d2d44); }
+
+    @media (max-width: 768px) {
+      .content-row { grid-template-columns: 1fr; }
+      .sidebar { position: static; margin-top: 40px; }
+      nav { padding: 14px 20px; }
+      footer { padding: 12px 20px; }
+    }
+    @media (max-width: 480px) { .nav-links { display: none; } }
   </style>
 </head>
 <body>
+
+  <!-- 커서 -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">🇩🇪 Germany Blog</a></li>
+      <li><a href="../ai/index.html">🤖 AI</a></li>
+      <li><a href="../playlog/index.html">🃏 Play Log</a></li>
+      <li><a href="../games/index.html" class="disabled" aria-disabled="true">🎮 Games</a></li>
+      <li><a href="../psychology/index.html" class="disabled" aria-disabled="true">🧠 Psychology</a></li>
+      <li><a href="../en/germany/german-weather.html">🇬🇧 EN</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrap">
 
 <section class="hero">
   <div class="hero-label">🇩🇪 독일 생활 · Germany Life</div>
@@ -174,7 +252,7 @@
   </div>
 </section>
 
-<div class="container">
+<div class="content-row">
 
   <div class="toc">
     <span class="toc-title">📋 목차</span>
@@ -385,12 +463,98 @@
     </div>
 
   </article>
-</div>
+
+      <aside class="sidebar" aria-label="글 목록">
+        <div class="sidebar-inner">
+          <div class="sidebar-title">🇩🇪 Germany Blog</div>
+          <ul class="sidebar-list" id="postList">
+            <li>
+              <a href="pfand-germany.html" class="current">
+                빈 병의 가치, 독일 판트(Pfand) 완벽 가이드
+                <span class="sidebar-date">2026.03.30</span>
+              </a>
+            </li>
+            <li>
+              <a href="germany-sunday-stillness.html">
+                독일 일요일의 정적 — 처음엔 무섭고, 나중엔 괜찮아졌다
+                <span class="sidebar-date">2026.03.29</span>
+              </a>
+            </li>
+            <li>
+              <a href="frankfurt-flohmarkt-mainufer.html">
+                프랑크푸르트 강변 벼룩시장 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.28</span>
+              </a>
+            </li>
+            <li>
+              <a href="munich-starkbierfest.html">
+                뮌헨 강한 맥주 축제 슈타르크비어페스트 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="lidl-walnuss-honig-brot-v2.html">
+                Lidl 호두꿀빵, 올해도 나를 비껴갔다
+                <span class="sidebar-date">2026.03.17</span>
+              </a>
+            </li>
+            <li>
+              <a href="german-sick.html">
+                독일에서 아프면 벌어지는 일
+                <span class="sidebar-date">2026.03.15</span>
+              </a>
+            </li>
+            <li>
+              <a href="german-weather.html">
+                독일 날씨가 정신병자인 이유 8가지
+                <span class="sidebar-date">2026.03.12</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">#날씨</span>
+            <span class="sidebar-tag">#독일생활</span>
+            <span class="sidebar-tag">#적응기</span>
+            <span class="sidebar-tag">#음식</span>
+            <span class="sidebar-tag">#여행</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <a href="../index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-dots" aria-hidden="true">
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
 
 <script>
   document.querySelectorAll('.faq-q').forEach(q=>{
     q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
   });
+
+  /* ── 커서 ── */
+  const cursor = document.getElementById('cursor');
+  const ring   = document.getElementById('cursorRing');
+  let mx=0, my=0, rx=0, ry=0;
+  if (cursor && ring) {
+    document.addEventListener('mousemove', e => {
+      mx=e.clientX; my=e.clientY;
+      cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+    });
+    (function animRing(){
+      rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(animRing);
+    })();
+  }
 </script>
 </body>
 </html>

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>독일 기차(DB) 연착 실화 | 나의 독일 기차 서바이벌 일기 | Lena의 독일 생활</title>
+<meta name="description" content="독일 기차 DB가 정시에 온다고? 실제로 살아보니 연착, 취소, 대체 버스가 일상이었다. 독일에서 5년간 기차를 타며 터득한 연착 대처법과 생존 팁을 일기 형식으로 공유합니다.">
+<meta name="keywords" content="독일 기차, DB 연착, Deutsche Bahn, 독일 대중교통, 독일 기차 팁, 독일 생활, 독일 기차 환불, DB Navigator, 독일 교통 서바이벌, 독일 이민">
+<meta name="author" content="Lena">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lena-var4.com/germany/db-train-survival">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="독일 기차(DB) 연착 실화 | 나의 독일 기차 서바이벌 일기">
+<meta property="og:description" content="독일 기차가 정시에 온다는 건 전설이다. 5년간 쌓인 연착 노하우와 생존 팁을 공유합니다.">
+<meta property="og:url" content="https://lena-var4.com/germany/db-train-survival">
+<meta property="og:site_name" content="Lena의 독일 생활">
+<meta property="article:published_time" content="2026-04-02">
+<meta property="article:tag" content="독일 기차, DB, 연착, 독일 생활">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="독일 기차(DB) 연착 실화 | 서바이벌 일기">
+<meta name="twitter:description" content="독일 기차가 정시에 온다고? 실제로는 아무것도 믿을 수 없다.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "독일 기차(DB)는 오늘도 연착? 나의 독일 기차 서바이벌 일기",
+  "description": "독일 DB 기차 연착 경험과 실용적인 대처법을 일기 형식으로 정리한 블로그 포스트",
+  "author": {"@type": "Person", "name": "Lena"},
+  "datePublished": "2026-04-02",
+  "inLanguage": "ko",
+  "url": "https://lena-var4.com/germany/db-train-survival"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Serif+KR:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --accent: #c0392b;
+    --accent-soft: #fdf0ee;
+    --text: #2c2c2c;
+    --text-muted: #666;
+    --text-light: #999;
+    --border: #e8e4e0;
+    --bg: #faf9f7;
+    --bg-card: #ffffff;
+    --bg-diary: #fffef5;
+    --yellow: #f39c12;
+    --yellow-soft: #fef9e7;
+    --green: #27ae60;
+    --green-soft: #eafaf1;
+    --blue-soft: #eaf4fb;
+    --blue: #2980b9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Serif KR', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.9;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--primary);
+    color: white;
+    padding: 80px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 60px,
+      rgba(255,255,255,0.015) 60px,
+      rgba(255,255,255,0.015) 61px
+    );
+  }
+  .hero-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-sub {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+  .hero-sub span { margin: 0 10px; }
+
+  /* LAYOUT */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* TOC */
+  div.toc {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin: 48px 0 40px;
+  }
+  div.toc .toc-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+  div.toc ol {
+    list-style: none;
+    counter-reset: toc;
+  }
+  div.toc ol li {
+    counter-increment: toc;
+    padding: 5px 0;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+  div.toc ol li::before {
+    content: counter(toc, decimal-leading-zero) ". ";
+    color: var(--accent);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 6px;
+  }
+  div.toc ol li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  div.toc ol li a:hover { color: var(--primary); }
+
+  /* SECTIONS */
+  .post-section { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+  .post-section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary);
+    margin: 32px 0 16px;
+  }
+
+  p { margin-bottom: 20px; }
+  p:last-child { margin-bottom: 0; }
+
+  /* DIARY BOX */
+  .diary-box {
+    background: var(--bg-diary);
+    border: 1px solid #e8e2b0;
+    border-left: 3px solid var(--yellow);
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-size: 15.5px;
+    line-height: 1.95;
+  }
+  .diary-label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--yellow);
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  /* INFO / TIP BOX */
+  .info-box {
+    border-radius: 6px;
+    padding: 22px 26px;
+    margin: 28px 0;
+    font-size: 15px;
+  }
+  .info-box.tip {
+    background: var(--green-soft);
+    border-left: 3px solid var(--green);
+  }
+  .info-box.warning {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+  }
+  .info-box.info {
+    background: var(--blue-soft);
+    border-left: 3px solid var(--blue);
+  }
+  .info-box-label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .info-box.tip .info-box-label { color: var(--green); }
+  .info-box.warning .info-box-label { color: var(--accent); }
+  .info-box.info .info-box-label { color: var(--blue); }
+
+  /* TABLE */
+  .table-wrap { overflow-x: auto; margin: 28px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  th {
+    background: var(--primary);
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  tr:nth-child(even) td { background: #f9f8f6; }
+
+  /* CHECKLIST */
+  .checklist {
+    list-style: none;
+    margin: 16px 0;
+  }
+  .checklist li {
+    padding: 8px 0 8px 32px;
+    position: relative;
+    font-size: 15.5px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  /* STEP CARDS */
+  .step-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .step-num {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .step-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .step-desc {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* FAQ */
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 24px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: flex;
+    gap: 10px;
+  }
+  .faq-q::before {
+    content: 'Q';
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    background: var(--primary);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    height: fit-content;
+    margin-top: 3px;
+  }
+  .faq-a {
+    font-size: 15.5px;
+    color: var(--text-muted);
+    padding-left: 30px;
+    line-height: 1.85;
+  }
+
+  /* TAGS */
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  .tag {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  /* STAT ROW */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .stat-label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+  }
+
+  /* DIVIDER */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0 40px;
+    color: var(--text-light);
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.05em;
+  }
+  .section-divider::before, .section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* QUOTE */
+  blockquote {
+    border-left: 3px solid var(--primary);
+    padding: 16px 24px;
+    margin: 28px 0;
+    color: var(--text-muted);
+    font-size: 16px;
+    font-style: italic;
+    background: var(--bg-card);
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* CLOSING */
+  .post-closing {
+    padding: 48px 0;
+    text-align: center;
+  }
+  .post-closing p {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+  .tag-section-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: 600px) {
+    .stat-row { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .stat-num { font-size: 22px; }
+    .hero { padding: 60px 20px 52px; }
+    div.toc { padding: 22px 20px; }
+    .diary-box { padding: 20px; }
+  }
+
+  /* ════ COMMON NAV & FOOTER ════ */
+    :root {
+      --yellow:  #FFD93D; --pink:    #FF6B9D; --mint:    #4ECDC4;
+      --blue:    #4D96FF; --ink:     #2d2d44;
+    }
+    html { cursor: none; }
+    .cursor {
+      width: 14px; height: 14px; background: var(--pink); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%); mix-blend-mode: multiply; transition: background 0.2s, transform 0.1s;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px; border: 2.5px solid var(--pink); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9998;
+      transform: translate(-50%, -50%); transition: all 0.15s ease; opacity: 0.5;
+    }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-bottom: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif;}
+    .nav-logo { font-family: 'Fredoka One', cursive; font-size: 22px; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight:900;}
+    .logo-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--pink); animation: dotpop 1.4s ease-in-out infinite alternate; }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 700; text-decoration: none; color: var(--ink); padding: 6px 14px; border-radius: 20px; border: 2px solid transparent; transition: all 0.2s; font-family: 'Nunito', sans-serif;}
+    .nav-links a:hover, .nav-links a.active { border-color: var(--ink); background: var(--yellow); }
+    .nav-links .disabled { opacity: 0.35; pointer-events: none; }
+    footer { position: relative; bottom: 0; left: 0; right: 0; z-index: 200; padding: 14px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-top: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif;}
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); text-decoration: none; font-weight:900;}
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--ink); transition: background 0.2s; cursor: none; }
+    .footer-dot:nth-child(1) { background: var(--yellow); } .footer-dot:nth-child(2) { background: var(--pink); } .footer-dot:nth-child(3) { background: var(--mint); } .footer-dot:nth-child(4) { background: var(--blue); }
+    .footer-dot:hover { background: var(--ink) !important; }
+    .footer-text { font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 600; color: #aaa; }
+
+    /* Layout */
+    .page-wrap { padding-top: 64px; }
+    .content-row { display: grid; grid-template-columns: 1fr 220px; gap: 24px; max-width: 1000px; margin: 0 auto; padding: 32px 24px; align-items: start; }
+    .article { max-width: 100%; min-width: 0; }
+
+    /* Sidebar */
+    .sidebar { position: sticky; top: 100px; }
+    .sidebar-inner { background: rgba(255,255,255,0.55); backdrop-filter: blur(12px); border: 1.5px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 18px 16px; }
+    .sidebar-title { font-size: 14px; font-weight:900; color: var(--ink); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; opacity: 0.7; }
+    .sidebar-list { list-style: none; padding:0; margin:0;}
+    .sidebar-list li { margin-bottom: 2px; }
+    .sidebar-list a { display: block; padding: 7px 10px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600; color: #555; transition: all 0.15s; line-height: 1.4; }
+    .sidebar-list a:hover { background: rgba(255,211,61,0.3); color: var(--ink); }
+    .sidebar-list a.current { background: rgba(255,211,61,0.5); color: var(--ink); font-weight: 800; }
+    .sidebar-date { display: block; font-size: 10px; color: #aaa; margin-top: 1px; font-weight: 400; }
+    .sidebar-divider { height: 1px; background: rgba(0,0,0,0.06); margin: 12px 0; }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .sidebar-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; background: rgba(0,0,0,0.05); color: #666; transition: all 0.15s; }
+    .sidebar-tag:hover { background: rgba(255,107,157,0.15); color: var(--ink); }
+
+    @media (max-width: 768px) {
+      .content-row { grid-template-columns: 1fr; }
+      .sidebar { position: static; margin-top: 40px; }
+      nav { padding: 14px 20px; }
+      footer { padding: 12px 20px; }
+    }
+    @media (max-width: 480px) { .nav-links { display: none; } }
+</style>
+</head>
+<body>
+
+  <!-- 커서 -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">🇩🇪 Germany Blog</a></li>
+      <li><a href="../ai/index.html">🤖 AI</a></li>
+      <li><a href="../playlog/index.html">🃏 Play Log</a></li>
+      <li><a href="../games/index.html" class="disabled" aria-disabled="true">🎮 Games</a></li>
+      <li><a href="../psychology/index.html" class="disabled" aria-disabled="true">🧠 Psychology</a></li>
+      <li><a href="../en/germany/german-weather.html">🇬🇧 EN</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrap">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-tag">독일 생활 일기</div>
+  <h1>독일 기차(DB)는 오늘도 연착?<br>나의 독일 기차 서바이벌 일기</h1>
+  <p class="hero-sub">
+    <span>2026년 4월 2일</span>
+    <span>·</span>
+    <span>Lena</span>
+    <span>·</span>
+    <span>읽기 약 15분</span>
+  </p>
+</header>
+
+<!-- CONTENT -->
+<div class="content-row">
+<article class="article">
+<main class="container" style="max-width: 100%; padding: 0;">
+
+  <!-- TOC -->
+  <div class="toc">
+    <span class="toc-title">목차 / CONTENTS</span>
+    <ol>
+      <li><a href="#myth">독일 기차는 정시에 온다는 신화</a></li>
+      <li><a href="#data">실제 연착률이 이 정도라고?</a></li>
+      <li><a href="#types">연착의 종류가 있다 — 유형 분류</a></li>
+      <li><a href="#diary1">첫 번째 연착 일기 — Frankfurt Hbf에서의 오후</a></li>
+      <li><a href="#survival">연착 생존 매뉴얼 7단계</a></li>
+      <li><a href="#apps">DB Navigator 완전 정복</a></li>
+      <li><a href="#rights">당신의 권리 — 환불과 보상</a></li>
+      <li><a href="#diary2">두 번째 일기 — 겨울 밤의 Ersatzbus</a></li>
+      <li><a href="#pack">기차 대기 생존 파우치</a></li>
+      <li><a href="#faq">자주 묻는 질문 FAQ</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <section class="post-section" id="myth">
+    <h2>독일 기차는 정시에 온다는 신화</h2>
+    <p>독일에 오기 전에 가장 많이 들은 말 중 하나가 "독일은 시간 약속을 정말 잘 지킨다"는 거였다. 기차도 당연히 그럴 거라고 믿었다. 기차역에 Pünktlichkeit(정시성)가 국가 정체성의 일부처럼 새겨진 민족이라면, 당연히 기차도 초 단위로 맞춰서 오겠지.</p>
+
+    <p>그 믿음이 무너진 건 독일에 온 지 사흘째 되던 날이었다.</p>
+
+    <div class="diary-box">
+      <span class="diary-label">✍️ 일기</span>
+      Frankfurt Hauptbahnhof 대합실에서 전광판을 바라봤다. ICE 1234, 뮌헨행. 출발 예정 14:32. 그런데 전광판에 "Verspätung 18 Minuten"이라는 글씨가 떴다. 처음엔 내가 독일어를 잘못 읽은 줄 알았다. 18분 연착. 그리고 5분 뒤엔 31분으로 바뀌었다. 나는 그냥 의자에 앉아서 초콜릿 하나를 꺼냈다. 별로 놀랍지도 않았는데, 신기하게 화도 안 났다. 그냥, 그런 나라에 온 거구나 싶었다.
+    </div>
+
+    <p>이제 알고 있다. 독일 기차의 정시성은 전설 같은 거다. 예전에는 어느 정도 맞았을지 몰라도, 지금의 DB(Deutsche Bahn)는 연착과 취소로 유럽 전체에서도 손꼽히는 철도로 꼽힌다. 진짜 이야기다.</p>
+
+    <div class="info-box warning">
+      <span class="info-box-label">⚠ 알고 시작하기</span>
+      독일 기차에 탑승할 때 "정시에 온다"를 기대치로 설정하면 매번 실망하게 된다. "언제 올지 모른다"를 기본값으로 두면 오히려 정시에 왔을 때 기쁘다.
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="post-section" id="data">
+    <h2>실제 연착률이 이 정도라고?</h2>
+
+    <p>숫자로 보면 더 실감이 난다. DB 자체 공개 자료 기준으로도, 장거리 열차(Fernverkehr)의 정시 도착률은 최근 몇 년간 70% 내외를 맴돌고 있다. 좋을 때는 75%, 나쁠 때는 60% 초반대까지 떨어지기도 한다.</p>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="stat-num">~70%</div>
+        <div class="stat-label">장거리 열차 정시율<br>(Fernverkehr)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">~80%</div>
+        <div class="stat-label">지역 열차 정시율<br>(Nahverkehr)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15분</div>
+        <div class="stat-label">DB 공식 '지각'<br>기준 시간</div>
+      </div>
+    </div>
+
+    <p>중요한 건 DB의 공식 '정시' 기준 자체가 이미 느슨하다는 거다. DB에서 '정시'로 분류되는 건 <strong>예정 시간보다 5분 59초 이내</strong>에 도착한 경우다. 그러니 진짜 오차 없이 도착하는 비율은 저 숫자보다 훨씬 낮다.</p>
+
+    <div class="info-box info">
+      <span class="info-box-label">ℹ 독일어 알아두기</span>
+      <strong>Verspätung</strong> — 연착 (예: "18 Minuten Verspätung" = 18분 연착)<br>
+      <strong>Ausfall / fällt aus</strong> — 운행 취소<br>
+      <strong>Gleiswechsel</strong> — 플랫폼 변경<br>
+      <strong>Ersatzbus</strong> — 대체 버스 (기차 취소 시 운행)<br>
+      <strong>Anschlusszug</strong> — 연결 열차
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="post-section" id="types">
+    <h2>연착의 종류가 있다 — 유형 분류</h2>
+    <p>오래 살다 보니 연착에도 패턴이 있다는 걸 알게 됐다. 그냥 막연하게 "또 늦었어"가 아니라, 원인과 유형이 있다. 이걸 알면 심리적으로 조금 더 편해진다. 이해가 되면 화가 덜 난다.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>연착 유형</th>
+            <th>주요 원인</th>
+            <th>체감 빈도</th>
+            <th>대처법</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>소 연착</strong><br>(5~20분)</td>
+            <td>선로 혼잡, 이전 운행 지연 누적</td>
+            <td>매우 흔함</td>
+            <td>그냥 기다린다</td>
+          </tr>
+          <tr>
+            <td><strong>중 연착</strong><br>(20분~1시간)</td>
+            <td>앞 열차 사고, 신호 장애, 날씨</td>
+            <td>주 1~2회 수준</td>
+            <td>연결 열차 확인, 앱 알림 설정</td>
+          </tr>
+          <tr>
+            <td><strong>대 연착</strong><br>(1시간 이상)</td>
+            <td>인신사고, 선로 공사, 폭풍</td>
+            <td>월 2~3회 경험</td>
+            <td>BahnBonus 포인트나 환불 청구 준비</td>
+          </tr>
+          <tr>
+            <td><strong>운행 취소</strong><br>(Ausfall)</td>
+            <td>기관사 부재, 차량 결함, 파업</td>
+            <td>예고 없이 발생</td>
+            <td>Ersatzbus 탑승 or 다음 열차 대기</td>
+          </tr>
+          <tr>
+            <td><strong>파업</strong><br>(Streik)</td>
+            <td>GDL / EVG 노조 파업</td>
+            <td>연 1~3회</td>
+            <td>미리 확인, 대안 교통 예약</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote>
+      파업이 예고되면 DB 앱에 뜨긴 한다. 그런데 파업 당일 "아 오늘 파업이구나" 하고 역에 나가는 사람들이 꽤 있다. 나도 처음엔 그랬다.
+    </blockquote>
+  </section>
+
+  <!-- SECTION 4 - DIARY 1 -->
+  <section class="post-section" id="diary1">
+    <h2>첫 번째 연착 일기 — Frankfurt Hbf에서의 오후</h2>
+
+    <div class="diary-box">
+      <span class="diary-label">✍️ 일기 — 어느 목요일 오후</span>
+      <p>약속이 있었다. 프랑크푸르트에서 뮌헨으로 가는 ICE. 여유 있게 플랫폼에 도착했고, 전광판에서 내 열차를 찾았다. 13번 플랫폼. 갔더니 전광판이 바뀌어 있었다. 15번.</p>
+      <p>짐을 끌고 15번으로 갔다. 열차가 없었다. 전광판에 "Verspätung: wird aktualisiert" — 연착 시간 업데이트 중. 저게 제일 무섭다. 숫자가 없다는 건 얼마나 늦을지 모른다는 거다.</p>
+      <p>30분을 기다렸다. 앱을 새로고침하다가 배터리가 줄어들기 시작했다. 충전기를 꺼냈다. 콘센트를 찾아서 플랫폼 끝 쪽으로 걸어갔다. 그러다가 갑자기 안내방송. "ICE 1234는 12번 플랫폼에서 출발합니다." 다시 짐을 들었다. 뛰었다.</p>
+      <p>탔다. 숨을 골랐다. 옆에 앉은 독일 아저씨가 아무렇지 않게 샌드위치를 먹고 있었다. 그 표정이 기억에 남는다. 저 사람은 몇 번을 이걸 겪어서 저렇게 됐을까.</p>
+    </div>
+
+    <p>그 날 이후 플랫폼 번호는 직전까지 믿지 않는 게 내 철칙이 됐다. 아무리 사전에 15번이라고 떠 있어도, 출발 5분 전에 바뀌는 경우가 너무 많다.</p>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="post-section" id="survival">
+    <h2>연착 생존 매뉴얼 7단계</h2>
+    <p>경험에서 나온 것들이다. 처음엔 당황하고 뛰고 지쳤는데, 이 루틴을 만들고 나서 마음이 훨씬 편해졌다.</p>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-num">STEP 01</div>
+        <div class="step-title">앱 알림 켜두기</div>
+        <div class="step-desc">DB Navigator에서 열차 저장 후 알림 설정. 연착, 플랫폼 변경 모두 푸시로 온다.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 02</div>
+        <div class="step-title">연결 열차 확인</div>
+        <div class="step-desc">환승이 있다면 '연결 열차 보장 가능 여부'를 앱에서 미리 확인한다.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 03</div>
+        <div class="step-title">플랫폼은 마지막에</div>
+        <div class="step-desc">출발 10분 전까지 플랫폼 번호를 확정으로 믿지 않는다. 마지막에 한 번 더 확인.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 04</div>
+        <div class="step-title">보조배터리 필수</div>
+        <div class="step-desc">연착 30분이면 배터리가 위험해진다. 앱 새로고침이 많아지기 때문. 보조배터리는 필수.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 05</div>
+        <div class="step-title">Ersatzbus 위치 파악</div>
+        <div class="step-desc">운행 취소 시 대체 버스는 보통 역 정면 버스 정류장. 앱에도 뜨지만 안 뜰 때는 역무원에게.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 06</div>
+        <div class="step-title">60분 초과 시 대안 검색</div>
+        <div class="step-desc">연착이 60분 넘어가면 다른 열차나 Flixbus를 빠르게 검색. 옵션이 있으면 마음이 편하다.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">STEP 07</div>
+        <div class="step-title">영수증·티켓 보관</div>
+        <div class="step-desc">환불 청구 시 필요하다. 앱 티켓은 스크린샷으로도 가능하지만 PDF로 저장해두는 게 안전.</div>
+      </div>
+    </div>
+
+    <div class="info-box tip">
+      <span class="info-box-label">✓ 꿀팁</span>
+      독일 기차에서 좌석 예약(Sitzplatzreservierung)은 티켓과 별도다. 연착으로 다른 열차를 타게 됐을 때 예약 좌석이 없더라도 일반적으로 승차는 가능하다. 다만 앉을 자리를 찾는 건 본인 몫.
+    </div>
+  </section>
+
+  <!-- SECTION 6 -->
+  <section class="post-section" id="apps">
+    <h2>DB Navigator 완전 정복</h2>
+    <p>DB Navigator는 독일 철도 공식 앱이다. 티켓 구매부터 연착 알림, 플랫폼 정보, 연결 열차 확인까지 다 된다. 그런데 처음엔 인터페이스가 익숙하지 않아서 헤매는 경우가 많다. 내가 주로 쓰는 기능들을 정리했다.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>기능</th>
+            <th>위치</th>
+            <th>팁</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>실시간 연착 확인</td>
+            <td>내 여정 → 해당 열차 탭</td>
+            <td>"Live" 표시가 있어야 실시간. 없으면 예정 정보만.</td>
+          </tr>
+          <tr>
+            <td>플랫폼 알림</td>
+            <td>여정 저장 후 알림 활성화</td>
+            <td>플랫폼 변경 시 푸시 알림 온다.</td>
+          </tr>
+          <tr>
+            <td>연결 열차 보장</td>
+            <td>환승 구간 → 연결 열차 탭</td>
+            <td>녹색 = 환승 가능, 빨간색 = 위험. 빨간색이면 다음 옵션 미리 확인.</td>
+          </tr>
+          <tr>
+            <td>Fahrgastrechte (승객 권리)</td>
+            <td>메뉴 → 내 여정 → 환불 신청</td>
+            <td>60분 이상 연착 시 여기서 직접 청구 가능.</td>
+          </tr>
+          <tr>
+            <td>Bahncard 연동</td>
+            <td>설정 → Bahncard 등록</td>
+            <td>실물 없이도 앱에서 바코드로 사용 가능.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>앱 외에도 <strong>bahn.de 웹사이트</strong>에서 "Reiseauskunft"(여정 조회) 기능을 이용하면 대안 경로도 쉽게 찾을 수 있다. 연착이 심할 때 앱이 느려지는 경우도 있어서, 웹도 알아두면 좋다.</p>
+
+    <div class="info-box info">
+      <span class="info-box-label">ℹ 앱 하나 더</span>
+      <strong>Zugfinder</strong> 앱 — DB 공식은 아니지만 실시간 열차 위치를 지도에서 확인할 수 있다. "우리 열차가 지금 어디 있는 거야"가 궁금할 때 유용하다. 무료.
+    </div>
+  </section>
+
+  <!-- SECTION 7 -->
+  <section class="post-section" id="rights">
+    <h2>당신의 권리 — 환불과 보상</h2>
+    <p>이 부분을 모르는 사람이 많다. 연착이 심하면 보상받을 수 있다. EU 철도 여객 권리 규정과 DB 내부 정책에 따라, 일정 기준 이상 연착 시 환불 또는 바우처를 받을 수 있다.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>연착 시간</th>
+            <th>보상 내용</th>
+            <th>신청 방법</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>60분 이상</td>
+            <td>티켓 금액의 <strong>25%</strong> 환불</td>
+            <td>DB Navigator 앱 또는 bahn.de</td>
+          </tr>
+          <tr>
+            <td>120분 이상</td>
+            <td>티켓 금액의 <strong>50%</strong> 환불</td>
+            <td>동일. 신청 기한 12개월 이내.</td>
+          </tr>
+          <tr>
+            <td>운행 취소로 불탑승</td>
+            <td>티켓 <strong>전액</strong> 환불 가능</td>
+            <td>탑승 전 취소 시 → 창구 또는 앱</td>
+          </tr>
+          <tr>
+            <td>연착으로 택시 이용</td>
+            <td>합리적 범위 내 택시비 청구 가능</td>
+            <td>영수증 보관 후 서면 청구 필요</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-box tip">
+      <span class="info-box-label">✓ 실전 팁</span>
+      환불 신청은 DB Navigator 앱 내 "Fahrgastrechte" 메뉴에서 바로 할 수 있다. 계좌로 현금 환불과 DB 바우처 중 선택할 수 있는데, 바우처는 금액이 조금 더 높은 경우도 있으니 비교해보자. 신청 시한은 여행일로부터 12개월 이내.
+    </div>
+
+    <p>파업(Streik)으로 인한 지연은 별도 규정이 적용될 수 있으므로, DB 고객센터(0800 150 7090, 무료)나 공식 웹사이트에서 확인하는 것이 정확하다.</p>
+  </section>
+
+  <!-- SECTION 8 - DIARY 2 -->
+  <section class="post-section" id="diary2">
+    <h2>두 번째 일기 — 겨울 밤의 Ersatzbus</h2>
+
+    <div class="diary-box">
+      <span class="diary-label">✍️ 일기 — 12월 어느 금요일 밤</span>
+      <p>겨울이었다. 퇴근길에 지역 열차를 탔는데, 중간 역에서 멈췄다. 방송이 나왔다. 독일어로 뭔가 길게 말하는데, 내가 알아들은 건 "Ersatzbus"라는 단어뿐이었다.</p>
+      <p>대체 버스. 그 말이 나오는 순간 사람들이 우르르 일어났다. 나도 따라 일어나서, 사람들이 가는 방향으로 걸었다. 역 밖으로 나가니 버스 한 대가 서 있었다. 탔다. 어디 가는 버스인지 확실하지 않았지만, 일단 탔다.</p>
+      <p>버스 기사한테 독일어로 "이 버스 OO역 가요?"라고 물었다. 기사가 고개를 끄덕였다. 그게 전부였다. 45분을 달려서 도착했다. 집까지 평소보다 한 시간 이상 더 걸렸다.</p>
+      <p>이상하게 그날 저녁이 기억에 남는다. 버스 창밖으로 하얀 들판이 지나가고 있었고, 나는 핸드폰도 안 보고 그냥 그 풍경을 바라봤다. 별거 아닌데 기억에 남을 것 같다. 독일이 이런 식으로 기억되는 것들이 있다.ㅋㅋ</p>
+    </div>
+
+    <p>Ersatzbus를 탈 때 주의할 점이 있다. 버스는 보통 역 정면 버스 정류장에 서 있는데, 안내 표지가 없는 경우도 많다. 앱을 확인하거나, 다른 승객들을 따라가는 게 가장 빠른 방법이다. 그리고 버스 내에서도 DB 티켓이 그대로 유효하다. 별도 티켓이 필요하지 않다.</p>
+  </section>
+
+  <!-- SECTION 9 -->
+  <section class="post-section" id="pack">
+    <h2>기차 대기 생존 파우치</h2>
+    <p>연착을 반복해서 경험하다 보니 자연스럽게 가방에 챙기는 것들이 생겼다. 거창한 건 아니고, 그냥 기다림을 조금 더 편하게 만드는 것들이다.</p>
+
+    <ul class="checklist">
+      <li><strong>보조배터리</strong> — 10,000mAh 이상. 연착 1시간에 앱 새로고침만 해도 배터리가 빠르게 준다.</li>
+      <li><strong>이어폰</strong> — 역 안 소음이 꽤 크다. 팟캐스트 하나 틀어두면 대기가 훨씬 견딜 만해진다.</li>
+      <li><strong>간식</strong> — 역 안 카페는 비싸다. 간단한 초콜릿이나 바 하나만 있어도 다르다.</li>
+      <li><strong>책 또는 e-북</strong> — 배터리 없이도 쓸 수 있는 유일한 콘텐츠. 요즘은 Kindle 들고 다닌다.</li>
+      <li><strong>작은 담요 또는 스카프</strong> — 겨울 역 대합실은 생각보다 춥다. 특히 오래 기다릴 때.</li>
+      <li><strong>여분 마스크</strong> — 오래된 습관이지만 밀폐된 공간에 오래 있을 경우 여전히 챙긴다.</li>
+      <li><strong>종이 티켓 또는 PDF 저장본</strong> — 앱이 먹통이 될 때를 대비해. 환불 신청 때도 유용.</li>
+    </ul>
+
+    <div class="diary-box">
+      <span class="diary-label">✍️ 메모</span>
+      독일 역 대합실에 오래 앉아 있다 보면 별의별 사람을 다 본다. 체스를 두는 노인 두 명, 기타 케이스를 안고 자는 청년, 강아지랑 같이 기다리는 가족. 연착이 불편한 건 맞는데, 이 시간이 완전히 낭비는 아닌 것 같다는 생각도 든다. 그냥 그랬다.
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="post-section" id="faq">
+    <h2>자주 묻는 질문 FAQ</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">독일 기차 연착이 정말 그렇게 심한가요? 과장 아닌가요?</div>
+      <div class="faq-a">과장이 아니다. DB 자체 통계도 장거리 열차 정시율이 70% 내외다. 짧은 여행이라면 운이 좋을 수도 있지만, 독일에 오래 살다 보면 연착은 그냥 일상이다. 특히 겨울, 파업 시즌, 성수기에는 더 심해진다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">독일어를 못하는데 연착 방송을 어떻게 이해하나요?</div>
+      <div class="faq-a">DB Navigator 앱이 영어를 지원하므로 앱 기준으로 확인하면 된다. 방송에서 꼭 알아야 할 단어는 "Verspätung"(연착), "Gleis"(플랫폼), "fällt aus"(취소), "Ersatzbus"(대체 버스) 정도다. 이 네 단어만 귀에 들려도 상황 파악이 된다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">연착 때문에 약속을 못 지키게 됐는데 증명이 되나요?</div>
+      <div class="faq-a">된다. DB Navigator 앱에서 해당 열차의 실제 도착 시간 기록을 확인할 수 있고, DB 웹사이트에서 '지연 확인서(Bescheinigung der Verspätung)'를 출력할 수 있다. 직장이나 학교에 제출할 서류가 필요할 때 사용 가능하다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Bahncard가 연착과 무슨 관계가 있나요?</div>
+      <div class="faq-a">직접적인 관계는 없다. 다만 Bahncard 25나 50을 사용하면 티켓 가격이 낮아지고, 연착으로 환불을 받을 때 환불 금액도 그 비율로 계산되므로 참고로 알아두면 좋다. Bahncard는 철도를 자주 이용하는 경우 연간 비용 대비 충분히 이득이다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">파업 예정은 어떻게 미리 확인하나요?</div>
+      <div class="faq-a">DB 공식 웹사이트(bahn.de)나 독일 뉴스 앱에서 확인할 수 있다. GDL(기관사 노조)이나 EVG(철도 노조) 파업 예고는 통상 며칠 전에 공지된다. 여행 일정 전날에 한 번 확인하는 습관을 들이면 좋다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">환불은 얼마나 걸리나요?</div>
+      <div class="faq-a">앱이나 웹으로 신청하면 처리까지 보통 2~4주가 걸린다. 계좌 이체 기준으로 그 정도 기다려야 한다. 급하게 필요하다면 창구에서 직접 처리를 요청할 수도 있지만, 창구 직원의 재량에 따라 다르다.</div>
+    </div>
+  </section>
+
+  <!-- 마무리 -->
+  <section class="post-section">
+    <h2>마치며</h2>
+    <p>독일 기차와 사이좋게 지내는 방법은 결국 기대치 조정이다. "늦을 수도 있다"를 기본 전제로 여정을 짜면, 정시에 왔을 때 오히려 기분이 좋아지는 이상한 경험을 하게 된다.</p>
+    <p>연착은 불편하다. 화가 나는 것도 당연하다. 그런데 독일에 살다 보면 이 시스템이 딱히 나아질 기미를 보이지 않는다는 것도 알게 되고, 그렇다면 내가 적응하는 게 빠르다는 결론에 이르게 된다. 체념이 아니라 일종의 적응이다.</p>
+    <p>그 적응 과정에서 역 대합실 특유의 냄새, 전광판이 바뀌는 순간의 그 긴장감, Ersatzbus에서 바라본 겨울 들판 같은 것들이 차곡차곡 쌓인다. 독일 생활이 이런 식으로 기억된다. 별거 아닌데 기억에 남을 것 같다.</p>
+
+    <div class="diary-box">
+      <span class="diary-label">✍️ 마지막 메모</span>
+      오늘도 퇴근길 기차가 12분 연착이었다. 전광판을 보고 보조배터리를 꺼내면서 팟캐스트를 틀었다. 이제는 그게 자연스럽다. 그냥 그랬다.
+    </div>
+  </section>
+
+  <!-- TAGS -->
+  <div style="padding: 32px 0 16px;">
+    <p class="tag-section-title">관련 태그</p>
+    <div class="tag-cloud">
+      <span class="tag">#독일기차</span>
+      <span class="tag">#DB연착</span>
+      <span class="tag">#DeutscheBahn</span>
+      <span class="tag">#독일대중교통</span>
+      <span class="tag">#독일생활</span>
+      <span class="tag">#독일이민</span>
+      <span class="tag">#DBNavigator</span>
+      <span class="tag">#Verspätung</span>
+      <span class="tag">#Ersatzbus</span>
+      <span class="tag">#독일기차팁</span>
+      <span class="tag">#독일교통</span>
+      <span class="tag">#독일여행</span>
+      <span class="tag">#Frankfurt</span>
+      <span class="tag">#독일생활꿀팁</span>
+    </div>
+  </div>
+
+  <div class="post-closing">
+    <p style="color: var(--text-light); font-size: 13px; font-family: 'Noto Sans KR', sans-serif;">lena-var4.com · 독일 생활 일기</p>
+  </div>
+
+</main>
+</article>
+
+      <aside class="sidebar" aria-label="글 목록">
+        <div class="sidebar-inner">
+          <div class="sidebar-title">🇩🇪 Germany Blog</div>
+          <ul class="sidebar-list" id="postList">
+            <li>
+              <a href="db-train-survival.html" class="current">
+                독일 기차(DB)는 오늘도 연착? 나의 독일 기차 서바이벌 일기
+                <span class="sidebar-date">2026.04.02</span>
+              </a>
+            </li>
+            <li>
+              <a href="spargel-blog-post.html">
+                독일 마트의 봄 전령사, 화이트 아스파라거스(Spargel) 영접기
+                <span class="sidebar-date">2026.04.01</span>
+              </a>
+            </li>
+            <li>
+              <a href="pfand-germany.html">
+                빈 병의 가치, 독일 판트(Pfand) 완벽 가이드
+                <span class="sidebar-date">2026.03.30</span>
+              </a>
+            </li>
+            <li>
+              <a href="germany-sunday-stillness.html">
+                독일 일요일의 정적 — 처음엔 무섭고, 나중엔 괜찮아졌다
+                <span class="sidebar-date">2026.03.29</span>
+              </a>
+            </li>
+            <li>
+              <a href="frankfurt-flohmarkt-mainufer.html">
+                프랑크푸르트 강변 벼룩시장 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.28</span>
+              </a>
+            </li>
+            <li>
+              <a href="munich-starkbierfest.html">
+                뮌헨 강한 맥주 축제 슈타르크비어페스트 완벽 가이드 2026
+                <span class="sidebar-date">2026.03.27</span>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-tags">
+            <span class="sidebar-tag">#독일생존기</span>
+            <span class="sidebar-tag">#독일기차연착</span>
+            <span class="sidebar-tag">#DBNavigator</span>
+          </div>
+        </div>
+      </aside>
+
+</div> <!-- content-row -->
+</div> <!-- page-wrap -->
+
+  <footer role="contentinfo">
+    <a href="../index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-dots" aria-hidden="true">
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+      <div class="footer-dot"></div>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
+
+  <script>
+    /* ── 커서 ── */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    const colors = ['--pink','--mint','--yellow','--blue'];
+    let mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', e => {
+      mx=e.clientX; my=e.clientY;
+      cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+    });
+    (function animRing(){
+      rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(animRing);
+    })();
+    document.querySelectorAll('a, .footer-dot').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        const c=colors[Math.floor(Math.random()*colors.length)];
+        cursor.style.background=`var(${c})`;
+        ring.style.borderColor=`var(${c})`;
+        cursor.style.transform='translate(-50%,-50%) scale(1.5)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.background='var(--pink)';
+        ring.style.borderColor='var(--pink)';
+        cursor.style.transform='translate(-50%,-50%) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>

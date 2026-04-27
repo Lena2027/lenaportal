@@ -81,6 +81,20 @@
       --accent-soft: #e8c4a8;
       --border:      #ddd4c0;
       --shadow:      rgba(74, 55, 40, 0.12);
+    
+      --sky: #38BDF8;
+      --sky-pale: #E0F2FE;
+      --pink: #E91E8C;
+      --pink-pale: #FCE7F3;
+      --yellow: #FACC15;
+      --green: #27AE60;
+      --green-pale: #DCFCE7;
+      --green-light: #2ECC71;
+      --radius-lg: 24px;
+      --ink: #2C1A0E;
+      --ink-soft: #5A3E28;
+      --ink-mute: #8B6E52;
+      --text-sub: #9a9a9a;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -521,19 +535,22 @@
     .hero { border-radius: 12px; margin: 0 auto; max-width: 1000px; width: calc(100% - 48px); }
 
     /* Sidebar */
-    .sidebar { position: sticky; top: 120px; }
-    .sidebar-inner { background: rgba(255,255,255,0.55); backdrop-filter: blur(12px); border: 1.5px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 18px 16px; font-family: 'Noto Sans KR', sans-serif;}
-    .sidebar-title { font-size: 14px; font-weight:900; color: #2d2d44; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; opacity: 0.7; }
+    .sidebar { position: sticky; top: 80px; }
+    .sidebar-inner { background: rgba(255,255,255,0.8); backdrop-filter: blur(12px); border: 1px solid #E0E7FF; border-radius: var(--radius-lg); padding: 18px 16px; font-family: 'Noto Sans KR', sans-serif; margin-bottom: 24px; box-shadow: 0 4px 20px var(--shadow);}
+    .sidebar-title { font-size: 14px; font-weight:900; color: var(--ink); margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
     .sidebar-list { list-style: none; padding:0; margin:0;}
     .sidebar-list li { margin-bottom: 2px; }
-    .sidebar-list a { display: block; padding: 7px 10px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600; color: #555; transition: all 0.15s; line-height: 1.4; }
-    .sidebar-list a:hover { background: rgba(255,211,61,0.3); color: #2d2d44; }
-    .sidebar-list a.current { background: rgba(255,211,61,0.5); color: #2d2d44; font-weight: 800; }
-    .sidebar-date { display: block; font-size: 10px; color: #aaa; margin-top: 1px; font-weight: 400; }
-    .sidebar-divider { height: 1px; background: rgba(0,0,0,0.06); margin: 12px 0; }
+    .sidebar-list a { display: block; padding: 7px 10px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600; color: var(--ink-soft); transition: all 0.15s; line-height: 1.4; }
+    .sidebar-list a:hover { background: var(--sky-pale); color: var(--sky); }
+    .sidebar-list a.current { background: var(--pink-pale); color: var(--pink); font-weight: 800; }
+    .sidebar-date { display: block; font-size: 10px; color: var(--ink-mute); margin-top: 1px; font-weight: 400; }
+    .sidebar-divider { height: 1px; background: #E0E7FF; margin: 12px 0; }
     .sidebar-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-    .sidebar-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; background: rgba(0,0,0,0.05); color: #666; transition: all 0.15s; text-decoration: none; }
-    .sidebar-tag:hover { background: rgba(255,107,157,0.15); color: #2d2d44; }
+    .sidebar-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 10px; background: var(--green-pale); color: var(--green); transition: all 0.15s; text-decoration: none; }
+    .sidebar-tag:hover { background: var(--green-light); color: #fff; }
+    .sidebar-card { background: #fff; border: 1px solid #E0E7FF; border-radius: var(--radius-lg); padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 20px var(--shadow); }
+    .sidebar-card-title { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--pink); margin-bottom: 14px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; }
+    .sidebar-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin-bottom:0; }
 
     @media (max-width: 800px) {
       .content-row { grid-template-columns: 1fr; }
@@ -1111,115 +1128,9 @@
 
           <!-- Pagination -->
           <div class="sidebar-pagination" style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 12px; color: var(--text-sub);">
-            <button id="sbPrev" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">&lt; 이전</button>
+            <button id="sbPrev" style="background: none; border: 1px solid #E0E7FF; color: var(--ink-mute); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">&lt; 이전</button>
             <span id="sbPageInfo">1 / 1</span>
-            <button id="sbNext" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">다음 &gt;</button>
-          </div>
-          
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const posts = document.querySelectorAll(".sidebar-post-item");
-              const ITEMS_PER_PAGE = 5;
-              const totalPages = Math.ceil(posts.length / ITEMS_PER_PAGE);
-              let currentPage = 1;
-
-              // Find the current page based on the active item
-              const activeIndex = Array.from(posts).findIndex(p => p.querySelector("a.current"));
-              if (activeIndex !== -1) {
-                currentPage = Math.floor(activeIndex / ITEMS_PER_PAGE) + 1;
-              }
-
-              function renderPage(page) {
-                posts.forEach((p, idx) => {
-                  if (idx >= (page - 1) * ITEMS_PER_PAGE && idx < page * ITEMS_PER_PAGE) {
-                    p.style.display = "block";
-                  } else {
-                    p.style.display = "none";
-                  }
-                });
-                document.getElementById("sbPageInfo").innerText = page + " / " + totalPages;
-                document.getElementById("sbPrev").style.opacity = page === 1 ? "0.3" : "1";
-                document.getElementById("sbPrev").style.pointerEvents = page === 1 ? "none" : "auto";
-                document.getElementById("sbNext").style.opacity = page === totalPages ? "0.3" : "1";
-                document.getElementById("sbNext").style.pointerEvents = page === totalPages ? "none" : "auto";
-              }
-
-              document.getElementById("sbPrev").addEventListener("click", () => {
-                if (currentPage > 1) {
-                  currentPage--;
-                  renderPage(currentPage);
-                }
-              });
-              document.getElementById("sbNext").addEventListener("click", () => {
-                if (currentPage < totalPages) {
-                  currentPage++;
-                  renderPage(currentPage);
-                }
-              });
-
-              renderPage(currentPage);
-            });
-          </script>
-
-
-          <!-- Pagination -->
-          <div class="sidebar-pagination" style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 12px; color: var(--text-sub);">
-            <button id="sbPrev" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">&lt; 이전</button>
-            <span id="sbPageInfo">1 / 1</span>
-            <button id="sbNext" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">다음 &gt;</button>
-          </div>
-          
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const posts = document.querySelectorAll(".sidebar-post-item");
-              const ITEMS_PER_PAGE = 5;
-              const totalPages = Math.ceil(posts.length / ITEMS_PER_PAGE);
-              let currentPage = 1;
-
-              // Find the current page based on the active item
-              const activeIndex = Array.from(posts).findIndex(p => p.querySelector("a.current"));
-              if (activeIndex !== -1) {
-                currentPage = Math.floor(activeIndex / ITEMS_PER_PAGE) + 1;
-              }
-
-              function renderPage(page) {
-                posts.forEach((p, idx) => {
-                  if (idx >= (page - 1) * ITEMS_PER_PAGE && idx < page * ITEMS_PER_PAGE) {
-                    p.style.display = "block";
-                  } else {
-                    p.style.display = "none";
-                  }
-                });
-                document.getElementById("sbPageInfo").innerText = page + " / " + totalPages;
-                document.getElementById("sbPrev").style.opacity = page === 1 ? "0.3" : "1";
-                document.getElementById("sbPrev").style.pointerEvents = page === 1 ? "none" : "auto";
-                document.getElementById("sbNext").style.opacity = page === totalPages ? "0.3" : "1";
-                document.getElementById("sbNext").style.pointerEvents = page === totalPages ? "none" : "auto";
-              }
-
-              document.getElementById("sbPrev").addEventListener("click", () => {
-                if (currentPage > 1) {
-                  currentPage--;
-                  renderPage(currentPage);
-                }
-              });
-              document.getElementById("sbNext").addEventListener("click", () => {
-                if (currentPage < totalPages) {
-                  currentPage++;
-                  renderPage(currentPage);
-                }
-              });
-
-              renderPage(currentPage);
-            });
-          </script>
-
-
-          <!-- Pagination -->
-          <div class="sidebar-pagination" style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 12px; color: var(--text-sub);">
-            <button id="sbPrev" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">&lt; 이전</button>
-            <span id="sbPageInfo">1 / 1</span>
-            <button id="sbNext" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">다음 &gt;</button>
+            <button id="sbNext" style="background: none; border: 1px solid #E0E7FF; color: var(--ink-mute); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">다음 &gt;</button>
           </div>
           
           <script>

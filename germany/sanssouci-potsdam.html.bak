@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로 | 독일 일상</title>
-<meta content="포츠담 상수시 궁전은 프로이센의 프리드리히 대왕이 '근심이 없다'는 뜻으로 지은 여름 별궁. 5월의 정원과 테라스 포도밭, 로코코 건축의 아름다움, 그리고 독일 생활 속 소소한 위로를 담은 일기." name="description"/>
-<meta content="상수시 궁전, Sanssouci, 포츠담, 독일 여행, 로코코 건축, 프리드리히 대왕, 5월 독일, 포츠담 정원, 독일 궁전, 헤센 일상, 독일 여행 한국어, 상수시 방문기" name="keywords"/>
-<meta content="Lena" name="author"/>
-<link href="https://lena-var4.com/sanssouci-potsdam-may" rel="canonical"/>
-<!-- Open Graph -->
-<meta content="article" property="og:type"/>
-<meta content="근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로" property="og:title"/>
-<meta content="'Sanssouci — 근심이 없다.' 프리드리히 대왕의 여름 별궁에서 5월의 정원을 거닐며 쓴 일기." property="og:description"/>
-<meta content="https://lena-var4.com/sanssouci-potsdam-may" property="og:url"/>
-<meta content="ko_KR" property="og:locale"/>
-<meta content="2026-04-27T10:00:00+02:00" property="article:published_time"/>
-<meta content="Lena" property="article:author"/>
-<meta content="독일 일상" property="article:section"/>
-<meta content="포츠담, 상수시, 독일 여행, 로코코" property="article:tag"/>
-<!-- Twitter Card -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로" name="twitter:title"/>
-<meta content="'Sanssouci — 근심이 없다.' 5월의 포츠담에서 쓴 일기." name="twitter:description"/>
-<!-- JSON-LD -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로 | 독일 일상</title>
+  <meta name="description" content="포츠담 상수시 궁전은 프로이센의 프리드리히 대왕이 '근심이 없다'는 뜻으로 지은 여름 별궁. 5월의 정원과 테라스 포도밭, 로코코 건축의 아름다움, 그리고 독일 생활 속 소소한 위로를 담은 일기." />
+  <meta name="keywords" content="상수시 궁전, Sanssouci, 포츠담, 독일 여행, 로코코 건축, 프리드리히 대왕, 5월 독일, 포츠담 정원, 독일 궁전, 헤센 일상, 독일 여행 한국어, 상수시 방문기" />
+  <meta name="author" content="Lena" />
+  <link rel="canonical" href="https://lena-var4.com/sanssouci-potsdam-may" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로" />
+  <meta property="og:description" content="'Sanssouci — 근심이 없다.' 프리드리히 대왕의 여름 별궁에서 5월의 정원을 거닐며 쓴 일기." />
+  <meta property="og:url" content="https://lena-var4.com/sanssouci-potsdam-may" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="article:published_time" content="2026-04-27T10:00:00+02:00" />
+  <meta property="article:author" content="Lena" />
+  <meta property="article:section" content="독일 일상" />
+  <meta property="article:tag" content="포츠담, 상수시, 독일 여행, 로코코" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로" />
+  <meta name="twitter:description" content="'Sanssouci — 근심이 없다.' 5월의 포츠담에서 쓴 일기." />
+
+  <!-- JSON-LD -->
+  
+
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,11 +44,13 @@
     "keywords": "상수시 궁전, 포츠담, 독일 여행, 로코코 건축, 프리드리히 대왕, 5월 독일"
   }
   </script>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=Noto+Serif+KR:wght@300;400;500;600&amp;family=Noto+Sans+KR:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
-<style>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
     :root {
       --cream:       #f9f4ec;
       --parchment:   #f0e8d5;
@@ -461,354 +468,396 @@
       .data-table th, .data-table td { padding: 10px 10px; }
     }
   </style>
-<link href="../css/portal-main.css" rel="stylesheet"/></head>
+</head>
 <body>
-<!-- 네비게이션 -->
-<nav aria-label="Main navigation" class="portal-nav" role="navigation">
-<div class="nav-inner">
-<a class="nav-logo" href="../index.html">
-<span class="logo-text">lena-var4</span>
-</a>
-<ul class="nav-links">
-<li><a class="active" href="./index.html">🇩🇪 Germany Blog</a></li>
-<li><a href="../ai/index.html">🤖 AI</a></li>
-</ul>
-</div>
-</nav>
 
-<!-- 네비게이션 -->
-<nav aria-label="Main navigation" class="portal-nav" role="navigation">
-<div class="nav-inner">
-<a class="nav-logo" href="../index.html">
-<span class="logo-text">lena-var4</span>
-</a>
-<ul class="nav-links">
-<li><a class="active" href="./index.html">🇩🇪 Germany Blog</a></li>
-<li><a href="../ai/index.html">🤖 AI</a></li>
-</ul>
-</div>
-</nav>
+    <!-- 네비게이션 -->
+    <nav class="portal-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">
+          <span class="logo-text">lena-var4</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="active">🇩🇪 Germany Blog</a></li>
+          <li><a href="../ai/index.html">🤖 AI</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+  
+
+
 <div id="progress-bar"></div>
-<div class="page-wrap"><main class="main-content post-body"><div class="container">
-<!-- ─── Hero ─────────────────────────────────── -->
-<header class="hero">
-<div class="hero-ornament">✦ ✦ ✦</div>
-<p class="hero-series">독일 일상 · Deutsches Leben</p>
-<h1>근심 없는 오후<br/><strong>포츠담 상수시 궁전,</strong><br/>5월의 정원이 주는 로코코풍 위로</h1>
-<p class="hero-sub">
-      "Sanssouci" — 프랑스어로 '근심이 없다'.<br/>
+
+<div class="container">
+
+  <!-- ─── Hero ─────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-ornament">✦ ✦ ✦</div>
+    <p class="hero-series">독일 일상 · Deutsches Leben</p>
+    <h1>근심 없는 오후<br><strong>포츠담 상수시 궁전,</strong><br>5월의 정원이 주는 로코코풍 위로</h1>
+    <p class="hero-sub">
+      "Sanssouci" — 프랑스어로 '근심이 없다'.<br>
       프리드리히 대왕이 스스로에게 허락한 여름날의 고요.
     </p>
-<p class="hero-meta">2026년 4월 27일 · Lena · 포츠담 / 헤센</p>
-<div class="hero-divider"></div>
-</header>
-<!-- ─── TOC ──────────────────────────────────── -->
-<div class="toc">
-<p class="toc-title">목차 · Inhaltsverzeichnis</p>
-<ol>
-<li><a href="#sanssouci-name">'상수시'라는 이름이 가진 무게</a></li>
-<li><a href="#history">프리드리히 대왕과 그의 여름 피난처</a></li>
-<li><a href="#architecture">로코코 건축이란 무엇인가 — 상수시의 공간 언어</a></li>
-<li><a href="#garden">5월의 상수시 정원 — 테라스 포도밭과 꽃의 계절</a></li>
-<li><a href="#how-to-visit">방문 실전 가이드 — 교통, 입장, 동선</a></li>
-<li><a href="#nearby">상수시 주변 함께 보면 좋은 곳</a></li>
-<li><a href="#feel">상수시에서 '근심 없음'을 실천하는 방법</a></li>
-<li><a href="#faq">자주 묻는 질문 FAQ</a></li>
-<li><a href="#tags">태그</a></li>
-</ol>
-</div>
-<!-- ─── S1 ────────────────────────────────────── -->
-<section id="sanssouci-name">
-<h2><span class="h2-num">I.</span>'상수시'라는 이름이 가진 무게</h2>
-<p>
+    <p class="hero-meta">2026년 4월 27일 · Lena · 포츠담 / 헤센</p>
+    <div class="hero-divider"></div>
+  </header>
+
+  <!-- ─── TOC ──────────────────────────────────── -->
+  <div class="toc">
+    <p class="toc-title">목차 · Inhaltsverzeichnis</p>
+    <ol>
+      <li><a href="#sanssouci-name">'상수시'라는 이름이 가진 무게</a></li>
+      <li><a href="#history">프리드리히 대왕과 그의 여름 피난처</a></li>
+      <li><a href="#architecture">로코코 건축이란 무엇인가 — 상수시의 공간 언어</a></li>
+      <li><a href="#garden">5월의 상수시 정원 — 테라스 포도밭과 꽃의 계절</a></li>
+      <li><a href="#how-to-visit">방문 실전 가이드 — 교통, 입장, 동선</a></li>
+      <li><a href="#nearby">상수시 주변 함께 보면 좋은 곳</a></li>
+      <li><a href="#feel">상수시에서 '근심 없음'을 실천하는 방법</a></li>
+      <li><a href="#faq">자주 묻는 질문 FAQ</a></li>
+      <li><a href="#tags">태그</a></li>
+    </ol>
+  </div>
+
+  <!-- ─── S1 ────────────────────────────────────── -->
+  <section id="sanssouci-name">
+    <h2><span class="h2-num">I.</span>'상수시'라는 이름이 가진 무게</h2>
+
+    <p>
       독일에 살면서 처음으로 '상수시(Sanssouci)'라는 단어를 들었을 때, 나는 그냥 궁전 이름이려니 했다.
       어떤 곳이든 이름은 붙여지는 거고, 궁전에는 대개 거창한 이름이 따라붙으니까.
       그런데 그 뜻을 알고 나서는 조금 달라졌다.
     </p>
-<p>
-<em>Sans souci.</em> 프랑스어로 '근심이 없다.' '걱정이 없다.'
+
+    <p>
+      <em>Sans souci.</em> 프랑스어로 '근심이 없다.' '걱정이 없다.'
     </p>
-<p>
+
+    <p>
       왕이 스스로에게 지어준 이름이다. 유럽을 뒤흔들던 전쟁의 한복판에서, 복잡한 궁정 정치의 무게를 짊어지던 사람이,
       그 모든 걸 잠시 내려놓기 위해 만든 작은 여름 궁전에 붙인 이름. 그래서인지 이 단어는 이상하게 오래 머문다.
       발음할 때마다 어딘가 가벼워지는 느낌이 든다.
     </p>
-<p>
+
+    <p>
       5월이 되면 포츠담의 상수시 공원은 독일에서 가장 아름다운 정원 중 하나로 변한다.
       테라스형 포도밭이 초록으로 무르익고, 파란 하늘 아래 노란 궁전 파사드가 선명하게 빛난다.
       봄꽃들이 아직 완전히 지지 않은 채 초여름의 기운과 뒤섞이는 그 계절.
       독일에 살면서 딱 한 번이라도 가보고 싶다면, 나는 5월을 추천한다.
     </p>
-<div class="diary">
-<p>
+
+    <div class="diary">
+      <p>
         월요일 아침이었다. 메일함은 벌써 차 있고, 할 일 목록은 지난 주보다 더 길어져 있었다.
         창밖으로 4월의 흐린 하늘이 보였다. 그냥 그랬다.
         그 상태에서 '상수시'라는 단어를 검색하다가, 뜻을 다시 읽었다.
         '근심이 없다.' 별거 아닌 단어인데, 그날따라 유독 눈에 걸렸다.
       </p>
-</div>
-<p>
+    </div>
+
+    <p>
       이 글은 그렇게 시작됐다. 포츠담에 실제로 가고 싶어서 쓰는 글이기도 하고,
       상수시라는 이름의 무게를 조금 더 오래 붙들고 싶어서 쓰는 글이기도 하다.
     </p>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S2 ────────────────────────────────────── -->
-<section id="history">
-<h2><span class="h2-num">II.</span>프리드리히 대왕과 그의 여름 피난처</h2>
-<p>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S2 ────────────────────────────────────── -->
+  <section id="history">
+    <h2><span class="h2-num">II.</span>프리드리히 대왕과 그의 여름 피난처</h2>
+
+    <p>
       상수시 궁전은 프로이센의 프리드리히 2세, 우리가 흔히 '프리드리히 대왕(Friedrich der Große)'이라고 부르는 인물이
       1745년에서 1747년 사이에 지은 여름 별궁이다.
       정식 명칭은 Schloss Sanssouci. 오늘날 유네스코 세계문화유산에 등재된 포츠담 공원 단지의 핵심이다.
     </p>
-<p>
+
+    <p>
       프리드리히 대왕은 흥미로운 인물이다. 그는 오스트리아 왕위 계승 전쟁(1740–1748)과 7년 전쟁(1756–1763)을 이끈 전략가였고,
       당대 유럽에서 가장 강력한 군주 중 하나였다. 동시에 플루트를 직접 작곡하고 연주했고,
       볼테르와 수년간 편지를 주고받으며 계몽주의 철학을 논한 지식인이었다.
       그는 독일어보다 프랑스어를 선호했고, 궁정 언어도 프랑스어를 사용했다.
     </p>
-<p>
+
+    <p>
       그런 그가 포츠담 외곽의 포도밭 테라스 위에 작고 아담한 궁전을 지었다.
       웅장함보다 아늑함을 택했다. 베르사유 궁전처럼 세상에 과시하기 위한 건물이 아니라,
       자기 자신에게 돌아오기 위한 공간.
       방은 열 개밖에 되지 않았고, 그는 이곳에서 직접 책을 읽고, 철학자들과 대화하고,
       조용한 저녁을 보냈다. 그리고 이 궁전에서 생을 마쳤다. 1786년, 74세의 나이로.
     </p>
-<div class="info-card">
-<p class="card-label">📌 역사 메모</p>
-<ul>
-<li>건축 시작: 1745년 / 완공: 1747년</li>
-<li>건축가: Georg Wenzeslaus von Knobelsdorff (프리드리히 대왕의 지시 하에)</li>
-<li>유네스코 세계문화유산 등재: 1990년 (포츠담 및 베를린 공원·궁전 단지 전체)</li>
-<li>프리드리히 대왕의 유언: "이 궁전의 테라스 계단 위에 묻어달라"</li>
-<li>현재 그의 묘: 궁전 서쪽 테라스 계단 최상단에 위치</li>
-</ul>
-</div>
-<p>
+
+    <div class="info-card">
+      <p class="card-label">📌 역사 메모</p>
+      <ul>
+        <li>건축 시작: 1745년 / 완공: 1747년</li>
+        <li>건축가: Georg Wenzeslaus von Knobelsdorff (프리드리히 대왕의 지시 하에)</li>
+        <li>유네스코 세계문화유산 등재: 1990년 (포츠담 및 베를린 공원·궁전 단지 전체)</li>
+        <li>프리드리히 대왕의 유언: "이 궁전의 테라스 계단 위에 묻어달라"</li>
+        <li>현재 그의 묘: 궁전 서쪽 테라스 계단 최상단에 위치</li>
+      </ul>
+    </div>
+
+    <p>
       특히 인상적인 건 그의 유언이다. 그는 죽기 전에, 자신이 궁전 앞 테라스 계단 위에 묻히기를 원했다.
       복잡한 왕가의 무덤이 아니라, 자신이 사랑한 포도밭과 정원이 내려다보이는 그 계단 위에.
       그의 소원은 오랫동안 이루어지지 않다가, 결국 1991년에야 그 자리에 안장됐다.
       200년이 넘게 걸린 유언 집행이었다.
     </p>
-<div class="diary">
-<p>
+
+    <div class="diary">
+      <p>
         프리드리히 대왕이 플루트를 직접 작곡했다는 사실을 처음 알았을 때 이상하게 친근해졌다.
         전쟁을 지휘하던 왕이 밤에는 플루트 소나타를 쓰고 있었다는 것.
         그게 왜인지 모르게, 그냥 사람처럼 느껴졌다.
         근심이 없고 싶었던 왕. 그러려고 이 궁전을 지은 왕.
         200년이 지난 지금도 거기 묻혀 있다는 것. 별거 아닌 것 같은데 기억에 남을 것 같다.
       </p>
-</div>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S3 ────────────────────────────────────── -->
-<section id="architecture">
-<h2><span class="h2-num">III.</span>로코코 건축이란 무엇인가 — 상수시의 공간 언어</h2>
-<p>
+    </div>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S3 ────────────────────────────────────── -->
+  <section id="architecture">
+    <h2><span class="h2-num">III.</span>로코코 건축이란 무엇인가 — 상수시의 공간 언어</h2>
+
+    <p>
       상수시 궁전을 이야기할 때 빠지지 않는 단어가 '로코코(Rokoko)'다.
       로코코는 18세기 유럽에서 바로크 양식에서 파생된 건축·예술 양식으로,
       바로크의 웅장한 권위보다 가벼움, 유희, 섬세함을 추구한다.
       프랑스어 'rocaille(조개껍데기 장식)'에서 유래했다는 설이 있을 만큼,
       곡선과 소용돌이, 꽃과 조개, 황금빛 장식이 넘친다.
     </p>
-<p>
+
+    <p>
       상수시 궁전의 파사드를 처음 보면 놀랄 수 있다. 생각보다 아담하고, 화려하면서도 가볍다.
       기둥과 기둥 사이를 채운 조각들은 마치 꽃과 포도 덩굴이 건물에서 자라나는 것처럼 보인다.
       창문 위 둥근 페디먼트(박공), 코린트식 기둥, 실제 포도넝쿨이 올라가는 테라스.
       이 모든 것이 '화려하지만 무겁지 않은' 로코코의 문법을 정확히 따른다.
     </p>
-<h3>상수시 궁전 주요 공간</h3>
-<table class="data-table">
-<thead>
-<tr>
-<th>공간</th>
-<th>특징</th>
-<th>볼거리</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>대리석 홀 (Marmorsaal)</td>
-<td>궁전 중심 타원형 홀</td>
-<td>하얀 카라라 대리석, 황금 장식</td>
-</tr>
-<tr>
-<td>음악실 (Musikzimmer)</td>
-<td>프리드리히의 플루트 연주 공간</td>
-<td>벽화와 금박 장식, 악기 전시</td>
-</tr>
-<tr>
-<td>볼테르의 방 (Voltaire-Zimmer)</td>
-<td>볼테르 방문 기념 공간</td>
-<td>벽면 가득 채운 동식물 조각</td>
-</tr>
-<tr>
-<td>도서관 (Bibliothek)</td>
-<td>프리드리히의 개인 서재</td>
-<td>삼나무 목재, 금박 장식 서가</td>
-</tr>
-<tr>
-<td>침실 (Schlafzimmer)</td>
-<td>프리드리히가 숨진 공간</td>
-<td>소박한 침대, 로코코 장식</td>
-</tr>
-</tbody>
-</table>
-<p>
+
+    <h3>상수시 궁전 주요 공간</h3>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>공간</th>
+          <th>특징</th>
+          <th>볼거리</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>대리석 홀 (Marmorsaal)</td>
+          <td>궁전 중심 타원형 홀</td>
+          <td>하얀 카라라 대리석, 황금 장식</td>
+        </tr>
+        <tr>
+          <td>음악실 (Musikzimmer)</td>
+          <td>프리드리히의 플루트 연주 공간</td>
+          <td>벽화와 금박 장식, 악기 전시</td>
+        </tr>
+        <tr>
+          <td>볼테르의 방 (Voltaire-Zimmer)</td>
+          <td>볼테르 방문 기념 공간</td>
+          <td>벽면 가득 채운 동식물 조각</td>
+        </tr>
+        <tr>
+          <td>도서관 (Bibliothek)</td>
+          <td>프리드리히의 개인 서재</td>
+          <td>삼나무 목재, 금박 장식 서가</td>
+        </tr>
+        <tr>
+          <td>침실 (Schlafzimmer)</td>
+          <td>프리드리히가 숨진 공간</td>
+          <td>소박한 침대, 로코코 장식</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
       내부 관람은 가이드 투어로만 가능하다. 자유 관람이 안 된다는 게 조금 아쉽지만,
       오히려 그 덕분에 관람 품질이 유지된다. 각 방에 대한 설명을 들으며 걷다 보면
       공간 하나하나가 다 이유가 있어서 만들어진 것임을 느끼게 된다.
     </p>
-<div class="pull-quote">
-<p>"건물은 그것을 지은 사람의 욕망을 담는다.<br/>상수시는 왕의 가장 인간적인 욕망을 담았다 — 그냥 쉬고 싶다는."</p>
-<cite>— Lena, 포츠담을 상상하며</cite>
-</div>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S4 ────────────────────────────────────── -->
-<section id="garden">
-<h2><span class="h2-num">IV.</span>5월의 상수시 정원 — 테라스 포도밭과 꽃의 계절</h2>
-<p>
+
+    <div class="pull-quote">
+      <p>"건물은 그것을 지은 사람의 욕망을 담는다.<br>상수시는 왕의 가장 인간적인 욕망을 담았다 — 그냥 쉬고 싶다는."</p>
+      <cite>— Lena, 포츠담을 상상하며</cite>
+    </div>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S4 ────────────────────────────────────── -->
+  <section id="garden">
+    <h2><span class="h2-num">IV.</span>5월의 상수시 정원 — 테라스 포도밭과 꽃의 계절</h2>
+
+    <p>
       상수시를 찾는 이유 중 상당 부분은 궁전보다 정원에 있다.
       전체 상수시 공원(Sanssouci Park)은 약 290헥타르(ha) 규모로,
       단순 산책만 해도 반나절이 훌쩍 지나간다.
       그 안에 상수시 궁전, 신궁전(Neues Palais), 오랑주리 궁전(Orangerieschloss),
       중국 찻집(Chinesisches Teehaus) 등 크고 작은 건물들이 흩어져 있다.
     </p>
-<h3>테라스 포도밭</h3>
-<p>
+
+    <h3>테라스 포도밭</h3>
+
+    <p>
       상수시 궁전의 가장 독특한 특징 중 하나는 궁전 앞 언덕에 조성된 테라스형 포도밭이다.
       총 6단의 테라스로 이루어져 있으며, 각 테라스에는 유리 돔이 설치된 포도나무들이 심겨 있다.
       프리드리히 대왕은 이 포도밭에서 수확한 포도로 와인을 만들어 마셨다고 한다.
       지금도 실제로 포도가 재배되고 있으며, 상수시에서 생산된 포도주는 소량 생산되어 특별 판매된다.
     </p>
-<p>
+
+    <p>
       5월이 되면 테라스 사이사이로 초록이 올라오기 시작한다.
       아직 포도가 열리기 전, 가지들이 부드럽게 뻗어 있는 그 시절.
       그 위로 궁전의 노란 파사드가 보이는 풍경은 사진으로는 잘 전달이 안 된다.
       직접 계단을 오르며 올려다봐야 한다.
     </p>
-<h3>5월 상수시 정원의 꽃들</h3>
-<div class="info-card">
-<p class="card-label">🌸 5월 개화 현황</p>
-<ul>
-<li><strong>튤립 (Tulpen)</strong> — 4월 말~5월 초, 네덜란드 정원 구역</li>
-<li><strong>모란 / 작약 (Pfingstrosen)</strong> — 5월 중~하순, 만개</li>
-<li><strong>장미 (Rosen)</strong> — 5월 말~6월 초, 로즈 가든 구역 시작</li>
-<li><strong>라일락 (Flieder)</strong> — 5월 초, 향기 가장 강한 시기</li>
-<li><strong>마로니에 (Kastanienblüten)</strong> — 5월 초, 가로수길 만개</li>
-<li><strong>블루벨 / 무스카리</strong> — 정원 곳곳 군락</li>
-</ul>
-</div>
-<p>
+
+    <h3>5월 상수시 정원의 꽃들</h3>
+
+    <div class="info-card">
+      <p class="card-label">🌸 5월 개화 현황</p>
+      <ul>
+        <li><strong>튤립 (Tulpen)</strong> — 4월 말~5월 초, 네덜란드 정원 구역</li>
+        <li><strong>모란 / 작약 (Pfingstrosen)</strong> — 5월 중~하순, 만개</li>
+        <li><strong>장미 (Rosen)</strong> — 5월 말~6월 초, 로즈 가든 구역 시작</li>
+        <li><strong>라일락 (Flieder)</strong> — 5월 초, 향기 가장 강한 시기</li>
+        <li><strong>마로니에 (Kastanienblüten)</strong> — 5월 초, 가로수길 만개</li>
+        <li><strong>블루벨 / 무스카리</strong> — 정원 곳곳 군락</li>
+      </ul>
+    </div>
+
+    <p>
       특히 5월의 오랑주리 궁전 주변은 라일락이 만발해서, 바람이 불 때마다 향기가 온 길을 채운다.
       독일 5월의 그 냄새. 독일에 살면서 익숙해진 냄새이지만,
       상수시 공원의 라일락은 한 번 더 멈추게 만든다. 왜인지는 모른다. 그냥 그렇다.
     </p>
-<div class="diary">
-<p>
+
+    <div class="diary">
+      <p>
         5월이 되면 독일은 확실히 달라진다.
         겨울 내내 잿빛이던 나무들이 하루아침에 초록이 되고, 사람들이 바깥으로 쏟아져 나온다.
         상수시 공원에서 피크닉하는 독일 사람들을 상상하면 그냥 기분이 좋아진다.
         담요 깔고, 빵이랑 치즈 꺼내고, 아무 말 없이 하늘 보고.
         나도 그 안에 있고 싶다는 생각. 그냥 그 안의 한 점이 되고 싶다는.
       </p>
-</div>
-<h3>상수시 공원 주요 구역별 산책 코스</h3>
-<table class="data-table">
-<thead>
-<tr>
-<th>구역</th>
-<th>거리</th>
-<th>소요 시간</th>
-<th>추천 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>메인 테라스 → 상수시 궁전</td>
-<td>약 500m</td>
-<td>20–30분</td>
-<td>포도밭 테라스, 궁전 파사드 전망</td>
-</tr>
-<tr>
-<td>오랑주리 궁전 산책로</td>
-<td>약 1.5km</td>
-<td>40–50분</td>
-<td>5월 라일락, 이탈리아풍 건축</td>
-</tr>
-<tr>
-<td>중국 찻집 구역</td>
-<td>약 2km</td>
-<td>50–60분</td>
-<td>18세기 시누아즈리(중국풍) 건물</td>
-</tr>
-<tr>
-<td>신궁전(Neues Palais) 구역</td>
-<td>약 3km (왕복)</td>
-<td>1.5–2시간</td>
-<td>바로크식 대궁전, 오픈 광장</td>
-</tr>
-<tr>
-<td>공원 전체 일주</td>
-<td>약 7–8km</td>
-<td>3–4시간</td>
-<td>소호 하우스, 드래곤 하우스 포함</td>
-</tr>
-</tbody>
-</table>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S5 ────────────────────────────────────── -->
-<section id="how-to-visit">
-<h2><span class="h2-num">V.</span>방문 실전 가이드 — 교통, 입장, 동선</h2>
-<h3>베를린에서 포츠담까지</h3>
-<p>
+    </div>
+
+    <h3>상수시 공원 주요 구역별 산책 코스</h3>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>구역</th>
+          <th>거리</th>
+          <th>소요 시간</th>
+          <th>추천 포인트</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>메인 테라스 → 상수시 궁전</td>
+          <td>약 500m</td>
+          <td>20–30분</td>
+          <td>포도밭 테라스, 궁전 파사드 전망</td>
+        </tr>
+        <tr>
+          <td>오랑주리 궁전 산책로</td>
+          <td>약 1.5km</td>
+          <td>40–50분</td>
+          <td>5월 라일락, 이탈리아풍 건축</td>
+        </tr>
+        <tr>
+          <td>중국 찻집 구역</td>
+          <td>약 2km</td>
+          <td>50–60분</td>
+          <td>18세기 시누아즈리(중국풍) 건물</td>
+        </tr>
+        <tr>
+          <td>신궁전(Neues Palais) 구역</td>
+          <td>약 3km (왕복)</td>
+          <td>1.5–2시간</td>
+          <td>바로크식 대궁전, 오픈 광장</td>
+        </tr>
+        <tr>
+          <td>공원 전체 일주</td>
+          <td>약 7–8km</td>
+          <td>3–4시간</td>
+          <td>소호 하우스, 드래곤 하우스 포함</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S5 ────────────────────────────────────── -->
+  <section id="how-to-visit">
+    <h2><span class="h2-num">V.</span>방문 실전 가이드 — 교통, 입장, 동선</h2>
+
+    <h3>베를린에서 포츠담까지</h3>
+
+    <p>
       포츠담은 베를린에서 당일치기로 충분히 다녀올 수 있다.
       베를린 중심부에서 기차나 S반(S-Bahn)을 이용하면 30~40분 거리다.
       베를린 ABC 존(Zone ABC) 티켓이 있으면 추가 요금 없이 포츠담까지 이동 가능하다.
     </p>
-<div class="info-card">
-<p class="card-label">🚆 교통 정보</p>
-<ul>
-<li><strong>RE1 (RegionalExpress)</strong>: 베를린 중앙역 → 포츠담 중앙역, 약 25분</li>
-<li><strong>S7 (S-Bahn)</strong>: 베를린 동역 → 포츠담 중앙역, 약 40분</li>
-<li><strong>포츠담 중앙역 → 상수시 공원</strong>: 버스 605, 606번 / 또는 도보 약 20분</li>
-<li><strong>유효 티켓</strong>: 베를린 ABC 존 / 독일 29유로 티켓 / 도이칠란드 티켓 모두 적용</li>
-</ul>
-</div>
-<h3>상수시 궁전 입장 정보</h3>
-<div class="tip-box">
-<p class="tip-label">💡 방문 전 꼭 알아야 할 것</p>
-<ul>
-<li>공원 자체는 <strong>무료 입장</strong> (연중무휴, 일출~일몰)</li>
-<li>상수시 궁전 내부는 <strong>가이드 투어만 가능</strong>, 사전 예약 추천</li>
-<li>궁전 입장료: 성인 약 €14 / 학생·할인 €10 (변동 가능, 공식 사이트 확인)</li>
-<li>입장권 현장 구매 시 대기 길 수 있음 — 온라인 예약(spsg.de)이 훨씬 편함</li>
-<li>신궁전, 오랑주리 등 개별 관람 추가 요금 / 패키지 티켓도 있음</li>
-<li>사진 촬영: 내부 허용 (플래시 금지), 삼각대 사용 불가</li>
-<li>월요일 휴관 — 오후에 여유롭게 방문하려면 화~일요일 추천</li>
-</ul>
-</div>
-<h3>추천 동선 (반나절 vs 하루)</h3>
-<p><strong>반나절 코스 (3–4시간):</strong></p>
-<ul class="checklist">
-<li>포츠담 중앙역 도착 → 버스로 상수시 공원 입구 이동</li>
-<li>메인 테라스 계단 올라 궁전 외관 감상 + 프리드리히 대왕 묘 확인</li>
-<li>상수시 궁전 가이드 투어 (약 45분–1시간)</li>
-<li>정원 산책 + 중국 찻집 방향으로 30분 걷기</li>
-<li>공원 내 카페에서 커피 한 잔 후 귀환</li>
-</ul>
-<p style="margin-top:20px;"><strong>하루 코스 (6–8시간):</strong></p>
-<ul class="checklist">
-<li>오전 일찍 도착 → 공원 조용할 때 테라스 산책</li>
-<li>상수시 궁전 투어 오전 타임</li>
-<li>오랑주리 궁전 방향으로 걸으며 점심 피크닉</li>
-<li>오후: 신궁전(Neues Palais) 외관 관람</li>
-<li>중국 찻집 + 포츠담 구시가지(Holländisches Viertel) 저녁 식사</li>
-</ul>
-<div class="diary">
-<p>
+
+    <div class="info-card">
+      <p class="card-label">🚆 교통 정보</p>
+      <ul>
+        <li><strong>RE1 (RegionalExpress)</strong>: 베를린 중앙역 → 포츠담 중앙역, 약 25분</li>
+        <li><strong>S7 (S-Bahn)</strong>: 베를린 동역 → 포츠담 중앙역, 약 40분</li>
+        <li><strong>포츠담 중앙역 → 상수시 공원</strong>: 버스 605, 606번 / 또는 도보 약 20분</li>
+        <li><strong>유효 티켓</strong>: 베를린 ABC 존 / 독일 29유로 티켓 / 도이칠란드 티켓 모두 적용</li>
+      </ul>
+    </div>
+
+    <h3>상수시 궁전 입장 정보</h3>
+
+    <div class="tip-box">
+      <p class="tip-label">💡 방문 전 꼭 알아야 할 것</p>
+      <ul>
+        <li>공원 자체는 <strong>무료 입장</strong> (연중무휴, 일출~일몰)</li>
+        <li>상수시 궁전 내부는 <strong>가이드 투어만 가능</strong>, 사전 예약 추천</li>
+        <li>궁전 입장료: 성인 약 €14 / 학생·할인 €10 (변동 가능, 공식 사이트 확인)</li>
+        <li>입장권 현장 구매 시 대기 길 수 있음 — 온라인 예약(spsg.de)이 훨씬 편함</li>
+        <li>신궁전, 오랑주리 등 개별 관람 추가 요금 / 패키지 티켓도 있음</li>
+        <li>사진 촬영: 내부 허용 (플래시 금지), 삼각대 사용 불가</li>
+        <li>월요일 휴관 — 오후에 여유롭게 방문하려면 화~일요일 추천</li>
+      </ul>
+    </div>
+
+    <h3>추천 동선 (반나절 vs 하루)</h3>
+
+    <p><strong>반나절 코스 (3–4시간):</strong></p>
+    <ul class="checklist">
+      <li>포츠담 중앙역 도착 → 버스로 상수시 공원 입구 이동</li>
+      <li>메인 테라스 계단 올라 궁전 외관 감상 + 프리드리히 대왕 묘 확인</li>
+      <li>상수시 궁전 가이드 투어 (약 45분–1시간)</li>
+      <li>정원 산책 + 중국 찻집 방향으로 30분 걷기</li>
+      <li>공원 내 카페에서 커피 한 잔 후 귀환</li>
+    </ul>
+
+    <p style="margin-top:20px;"><strong>하루 코스 (6–8시간):</strong></p>
+    <ul class="checklist">
+      <li>오전 일찍 도착 → 공원 조용할 때 테라스 산책</li>
+      <li>상수시 궁전 투어 오전 타임</li>
+      <li>오랑주리 궁전 방향으로 걸으며 점심 피크닉</li>
+      <li>오후: 신궁전(Neues Palais) 외관 관람</li>
+      <li>중국 찻집 + 포츠담 구시가지(Holländisches Viertel) 저녁 식사</li>
+    </ul>
+
+    <div class="diary">
+      <p>
         독일 여행에서 가장 좋은 건 기차로 다 된다는 것.
         베를린에서 30분이면 포츠담이고, 포츠담 역에서 버스 타면 10분이면 상수시 공원이다.
         차 없어도 된다. 복잡하지 않다. 그냥 티켓 하나 들고 가면 된다.
@@ -816,70 +865,80 @@
         여기서는 그냥 발 뻗으면 유럽 어딘가에 닿는 느낌이다.
         그게 아직도 가끔 신기하다.
       </p>
-</div>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S6 ────────────────────────────────────── -->
-<section id="nearby">
-<h2><span class="h2-num">VI.</span>상수시 주변 함께 보면 좋은 곳</h2>
-<p>
+    </div>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S6 ────────────────────────────────────── -->
+  <section id="nearby">
+    <h2><span class="h2-num">VI.</span>상수시 주변 함께 보면 좋은 곳</h2>
+
+    <p>
       포츠담은 상수시만 있는 곳이 아니다.
       공원 안에도 볼 것이 많지만, 포츠담 도시 자체에도 매력적인 구역들이 있다.
     </p>
-<table class="data-table">
-<thead>
-<tr>
-<th>장소</th>
-<th>거리</th>
-<th>특징</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>홀렌디쉬 비어텔 (Holländisches Viertel)</td>
-<td>공원에서 차로 10분</td>
-<td>17세기 네덜란드풍 붉은 벽돌 구시가지, 카페·갤러리 밀집</td>
-</tr>
-<tr>
-<td>체칠리엔호프 궁전 (Cecilienhof)</td>
-<td>포츠담 북쪽, 차로 15분</td>
-<td>1945년 포츠담 협정 장소, 튜더 스타일 궁전</td>
-</tr>
-<tr>
-<td>신궁전 (Neues Palais)</td>
-<td>상수시 공원 서쪽 끝</td>
-<td>바로크 대궁전, 프리드리히 대왕 시대 규모 과시용 건물</td>
-</tr>
-<tr>
-<td>오랑주리 궁전 (Orangerieschloss)</td>
-<td>상수시 공원 내</td>
-<td>이탈리아 르네상스 스타일, 라파엘 모작 회화 컬렉션</td>
-</tr>
-<tr>
-<td>브란덴부르크 문 (포츠담)</td>
-<td>구시가지 중심</td>
-<td>베를린 것과 다른 포츠담 고유의 개선문, 1770년 건축</td>
-</tr>
-</tbody>
-</table>
-<p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>장소</th>
+          <th>거리</th>
+          <th>특징</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홀렌디쉬 비어텔 (Holländisches Viertel)</td>
+          <td>공원에서 차로 10분</td>
+          <td>17세기 네덜란드풍 붉은 벽돌 구시가지, 카페·갤러리 밀집</td>
+        </tr>
+        <tr>
+          <td>체칠리엔호프 궁전 (Cecilienhof)</td>
+          <td>포츠담 북쪽, 차로 15분</td>
+          <td>1945년 포츠담 협정 장소, 튜더 스타일 궁전</td>
+        </tr>
+        <tr>
+          <td>신궁전 (Neues Palais)</td>
+          <td>상수시 공원 서쪽 끝</td>
+          <td>바로크 대궁전, 프리드리히 대왕 시대 규모 과시용 건물</td>
+        </tr>
+        <tr>
+          <td>오랑주리 궁전 (Orangerieschloss)</td>
+          <td>상수시 공원 내</td>
+          <td>이탈리아 르네상스 스타일, 라파엘 모작 회화 컬렉션</td>
+        </tr>
+        <tr>
+          <td>브란덴부르크 문 (포츠담)</td>
+          <td>구시가지 중심</td>
+          <td>베를린 것과 다른 포츠담 고유의 개선문, 1770년 건축</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
       특히 홀렌디쉬 비어텔(네덜란드 구역)은 많이 알려지지 않아서인지,
       상수시에 비해 한산하다. 붉은 벽돌 골목을 걸으면서 작은 카페에서 커피 한 잔 하기 딱 좋다.
       5월이면 골목 사이로 꽃 화분들이 놓이고, 햇살이 벽돌 위에 내려앉는다.
       그런 데서 아무것도 안 하는 게 사실 여행에서 제일 기억에 남더라.
     </p>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S7 ────────────────────────────────────── -->
-<section id="feel">
-<h2><span class="h2-num">VII.</span>상수시에서 '근심 없음'을 실천하는 방법</h2>
-<p>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S7 ────────────────────────────────────── -->
+  <section id="feel">
+    <h2><span class="h2-num">VII.</span>상수시에서 '근심 없음'을 실천하는 방법</h2>
+
+    <p>
       상수시를 관광지로만 접근하면 놓치는 게 있다.
       이곳은 원래 '아무것도 하지 않기 위해' 만들어진 공간이다.
       그러니 여기서는 아무것도 안 해도 된다.
     </p>
-<h3>테라스 계단에 앉아보기</h3>
-<p>
+
+    <h3>테라스 계단에 앉아보기</h3>
+
+    <p>
       많은 방문객들이 사진 찍고 궁전 내부 들어가는 것으로 일정을 채운다.
       그런데 나는 테라스 계단에 그냥 앉아 있는 것을 추천하고 싶다.
       계단을 올라 꼭대기에 앉으면, 아래로 포도밭 테라스가 펼쳐지고,
@@ -887,22 +946,27 @@
       프리드리히 대왕이 거기 묻혀 있는 자리 바로 옆에 앉아서,
       그냥 있어 보는 것.
     </p>
-<h3>피크닉</h3>
-<p>
+
+    <h3>피크닉</h3>
+
+    <p>
       상수시 공원은 피크닉이 허용된다. 오히려 그게 이 공원의 분위기다.
       독일 사람들은 주말이면 담요와 간식을 들고 공원에 나온다.
       포츠담 역 근처 슈퍼마켓에서 빵과 치즈, 음료를 사서 공원으로 가면
       완벽한 점심이 된다. 근심 없이 먹는 점심.
     </p>
-<h3>아무 방향이나 걷기</h3>
-<p>
+
+    <h3>아무 방향이나 걷기</h3>
+
+    <p>
       지도 없이, 목적지 없이 걸으면 어디든 나온다.
       290헥타르 공원은 넓지만 길을 잃을 것 같지 않다. 다 연결되어 있다.
       그냥 걷다 보면 오랑주리가 나오고, 중국 찻집이 나오고, 작은 연못이 나온다.
       이 정도면 충분하다. 더 이상 무언가를 '발견'하려고 애쓰지 않아도 된다.
     </p>
-<div class="diary">
-<p>
+
+    <div class="diary">
+      <p>
         사실 나는 아직 상수시에 가보지 못했다.
         헤센에 살면서 포츠담은 언젠가, 언젠가 하며 미루고 있다.
         베를린을 가야 하고, 베를린 갔을 때 당일치기로 포츠담까지 가야 하는데,
@@ -911,107 +975,122 @@
         5월에 가야겠다. 그냥 빵이랑 치즈 사서 테라스 계단에 앉아 있어야겠다.
         별거 아닌 것 같은데, 그게 기억에 남을 것 같다.
       </p>
-</div>
-<div class="pull-quote">
-<p>"왕도 때로는 그냥 아무것도 안 하고 싶었다.<br/>상수시는 그 마음으로 지어진 곳이다."</p>
-<cite>— Lena, 헤센에서</cite>
-</div>
-<h3>상수시 방문 전 체크리스트</h3>
-<ul class="checklist">
-<li>궁전 내부 투어 사전 예약 (spsg.de)</li>
-<li>도이칠란드 티켓 or 베를린 ABC 존 티켓 준비</li>
-<li>걷기 편한 신발 착용 (테라스 계단, 돌바닥 많음)</li>
-<li>피크닉 준비 — 포츠담 역 근처 REWE 또는 Lidl에서 구입 가능</li>
-<li>물 충분히 챙기기 (공원 내 매점 제한적)</li>
-<li>날씨 체크 — 5월도 독일은 갑자기 흐려질 수 있음</li>
-<li>월요일 피하기 (궁전 휴관일)</li>
-<li>아침 일찍 또는 오후 늦게 방문 (낮 시간대 혼잡)</li>
-</ul>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── S8 FAQ ─────────────────────────────────── -->
-<section id="faq">
-<h2><span class="h2-num">VIII.</span>자주 묻는 질문 FAQ</h2>
-<div class="faq-list">
-<details>
-<summary>상수시 궁전은 베를린 당일치기로 가능한가요?</summary>
-<div class="faq-body">
+    </div>
+
+    <div class="pull-quote">
+      <p>"왕도 때로는 그냥 아무것도 안 하고 싶었다.<br>상수시는 그 마음으로 지어진 곳이다."</p>
+      <cite>— Lena, 헤센에서</cite>
+    </div>
+
+    <h3>상수시 방문 전 체크리스트</h3>
+
+    <ul class="checklist">
+      <li>궁전 내부 투어 사전 예약 (spsg.de)</li>
+      <li>도이칠란드 티켓 or 베를린 ABC 존 티켓 준비</li>
+      <li>걷기 편한 신발 착용 (테라스 계단, 돌바닥 많음)</li>
+      <li>피크닉 준비 — 포츠담 역 근처 REWE 또는 Lidl에서 구입 가능</li>
+      <li>물 충분히 챙기기 (공원 내 매점 제한적)</li>
+      <li>날씨 체크 — 5월도 독일은 갑자기 흐려질 수 있음</li>
+      <li>월요일 피하기 (궁전 휴관일)</li>
+      <li>아침 일찍 또는 오후 늦게 방문 (낮 시간대 혼잡)</li>
+    </ul>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── S8 FAQ ─────────────────────────────────── -->
+  <section id="faq">
+    <h2><span class="h2-num">VIII.</span>자주 묻는 질문 FAQ</h2>
+    <div class="faq-list">
+
+      <details>
+        <summary>상수시 궁전은 베를린 당일치기로 가능한가요?</summary>
+        <div class="faq-body">
           충분히 가능합니다. 베를린 중앙역에서 RE1 열차로 약 25분이면 포츠담 중앙역에 도착합니다.
           베를린 ABC 존 티켓이나 도이칠란드 티켓이 있으면 추가 요금 없이 이용 가능합니다.
           포츠담 역에서 상수시 공원까지는 버스로 10분 또는 도보 20분 거리입니다.
           공원 관람 + 궁전 투어 + 점심 포함해서 5–6시간이면 충분하고,
           여유롭게 즐기려면 하루를 잡는 게 좋습니다.
         </div>
-</details>
-<details>
-<summary>상수시 공원 입장은 무료인가요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>상수시 공원 입장은 무료인가요?</summary>
+        <div class="faq-body">
           공원 자체는 무료입니다. 연중무휴, 일출부터 일몰까지 자유롭게 입장할 수 있습니다.
           다만 상수시 궁전 내부, 신궁전, 오랑주리 궁전 등 건물 내부 관람은 별도 입장료가 있으며,
           상수시 궁전의 경우 가이드 투어만 허용됩니다. 성인 기준 약 €14,
           정확한 금액은 spsg.de 공식 사이트에서 확인하세요.
         </div>
-</details>
-<details>
-<summary>상수시 궁전에서 사진 촬영이 가능한가요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>상수시 궁전에서 사진 촬영이 가능한가요?</summary>
+        <div class="faq-body">
           내부 사진 촬영은 가능합니다. 단, 플래시와 삼각대 사용은 금지되어 있습니다.
           상업적 목적의 촬영은 별도 허가가 필요합니다.
           야외 정원과 테라스는 자유롭게 촬영 가능합니다.
         </div>
-</details>
-<details>
-<summary>상수시는 5월 외에 언제 가는 게 좋을까요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>상수시는 5월 외에 언제 가는 게 좋을까요?</summary>
+        <div class="faq-body">
           5월이 가장 아름다운 계절이지만, 계절마다 매력이 다릅니다.
           6월~7월은 장미가 만발하고 포도 덩굴이 자라는 시기로 녹음이 가득합니다.
           9월~10월은 단풍과 함께 황금빛 정원을 즐길 수 있습니다.
           겨울(12~2월)은 관광객이 적어 한산하지만 일부 건물이 비수기 운영을 합니다.
           4월 말~6월 초, 9월 중순~10월 말을 최적 시기로 꼽습니다.
         </div>
-</details>
-<details>
-<summary>상수시에서 점심 먹을 수 있나요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>상수시에서 점심 먹을 수 있나요?</summary>
+        <div class="faq-body">
           공원 내에 몇 군데 카페와 레스토랑이 있지만 비교적 비싸고 혼잡할 수 있습니다.
           추천 방법은 포츠담 역 근처 슈퍼마켓(REWE, Lidl)에서 피크닉 재료를 사서 공원 안에서 먹는 것입니다.
           공원 내 피크닉은 허용되어 있으며, 5월이면 잔디밭에서 편안하게 즐길 수 있습니다.
           포츠담 구시가지(홀렌디쉬 비어텔)에도 좋은 레스토랑과 카페가 많습니다.
         </div>
-</details>
-<details>
-<summary>프리드리히 대왕의 무덤은 어디에 있나요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>프리드리히 대왕의 무덤은 어디에 있나요?</summary>
+        <div class="faq-body">
           상수시 궁전 앞 테라스 계단 최상단 왼쪽에 위치해 있습니다.
           단순한 묘비 형태로, 관광객들이 꽃이나 감자(그가 독일에 감자를 보급한 왕으로 유명하여
           감자를 올려두는 전통이 있습니다)를 올려놓는 것을 볼 수 있습니다.
           무료로 접근 가능하며 공원 내에서 찾기 어렵지 않습니다.
         </div>
-</details>
-<details>
-<summary>프리드리히 대왕 묘에 감자를 올려두는 이유는 무엇인가요?</summary>
-<div class="faq-body">
+      </details>
+
+      <details>
+        <summary>프리드리히 대왕 묘에 감자를 올려두는 이유는 무엇인가요?</summary>
+        <div class="faq-body">
           프리드리히 대왕은 18세기 프로이센에 감자 재배를 보급한 왕으로 알려져 있습니다.
           당시 감자는 생소한 작물이었고, 백성들이 먹기를 꺼렸다고 합니다.
           그가 감자 재배를 장려하여 기근을 막는 데 기여했다는 이야기가 전해지면서,
           방문객들이 존경의 표시로 감자를 묘 위에 올려두는 전통이 생겼습니다.
           지금도 그의 무덤에는 항상 감자 몇 개가 놓여 있습니다.
         </div>
-</details>
-</div>
-</section>
-<div class="divider">· · ·</div>
-<!-- ─── Closing diary ─────────────────────────── -->
-<section>
-<div class="diary">
-<p>
+      </details>
+
+    </div>
+  </section>
+
+  <div class="divider">· · ·</div>
+
+  <!-- ─── Closing diary ─────────────────────────── -->
+  <section>
+    <div class="diary">
+      <p>
         이 글을 다 쓰고 나니 포츠담이 더 가고 싶어졌다.
         원래 알던 것들인데, 다시 찾아보고 다시 쓰다 보면 뭔가 새로 발견한 것처럼 느껴지는 게 있다.
         프리드리히 대왕이 플루트를 연주하던 그 방,
         그의 묘 위에 누군가 올려둔 감자 몇 개,
         5월의 라일락 냄새가 가득한 오랑주리 궁전 옆 산책로.
       </p>
-<p>
+      <p>
         'Sanssouci.' 근심이 없다.
         그게 꼭 나쁜 감정을 없애겠다는 게 아닌 것 같다.
         그냥, 잠깐, 내려놓는다는 것.
@@ -1019,229 +1098,36 @@
         왕도 그랬다. 우리도 그래도 된다.
         월요일 오후에도.
       </p>
-</div>
-</section>
-<!-- ─── Tags ──────────────────────────────────── -->
-<section id="tags">
-<h2><span class="h2-num">·</span>태그</h2>
-<div class="tag-cloud">
-<span class="tag">#상수시궁전</span>
-<span class="tag">#Sanssouci</span>
-<span class="tag">#포츠담</span>
-<span class="tag">#Potsdam</span>
-<span class="tag">#독일여행</span>
-<span class="tag">#로코코건축</span>
-<span class="tag">#프리드리히대왕</span>
-<span class="tag">#FriedrichDerGroße</span>
-<span class="tag">#5월독일</span>
-<span class="tag">#독일정원</span>
-<span class="tag">#독일일상</span>
-<span class="tag">#헤센</span>
-<span class="tag">#베를린당일치기</span>
-<span class="tag">#독일궁전</span>
-<span class="tag">#유네스코세계문화유산</span>
-<span class="tag">#SchlossGärten</span>
-<span class="tag">#독일봄여행</span>
-<span class="tag">#근심없음</span>
-</div>
-</section>
-</div></main>
-<!-- SIDEBAR -->
-<aside aria-label="글 목록" class="sidebar">
-<div class="sidebar-inner">
-<div class="sidebar-title">🇩🇪 Germany Blog</div>
-<ul class="sidebar-list" id="postList">
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="cologne-cathedral.html">
-                쾰른 대성당 533계단 등반 후기 | 라인강 파노라마 뷰
-                <span class="sidebar-date">2026.04.27</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="sanssouci-potsdam.html" class="current">
-                근심 없는 오후: 포츠담 상수시 궁전, 5월의 정원이 주는 로코코풍 위로
-                <span class="sidebar-date">2026.04.27</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="mercedes-benz-museum.html">
-                시대를 앞서가는 예술: 자동차, 그 이상의 역사 — 메르세데스-벤츠 박물관
-                <span class="sidebar-date">2026.04.27</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="wasen-spring-festival.html">
-                옥토버페스트의 동생? 슈투트가르트 봄 축제 Wasen 완전 정복
-                <span class="sidebar-date">2026.04.24</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="maibaum-festival-germany.html">
-                독일의 5월 1일 마이바움(Maibaum) 축제 — 마을의 봄을 세우는 날
-                <span class="sidebar-date">2026.04.24</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="feierabend-germany.html">
-                일과 삶의 선을 긋는 마법의 단어, 파이어아벤트(Feierabend) 즐기기
-                <span class="sidebar-date">2026.04.18</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="zu-verschenken-germany.html">
-                길 위에서 만난 다정한 선물, 독일의 'Zu verschenken' 상자
-                <span class="sidebar-date">2026.04.12</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="april-zwiebellook.html">
-                종잡을 수 없는 4월 날씨, 독일인의 생존 패션 '양파링 코디법'
-                <span class="sidebar-date">2026.04.10</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="burg-eltz.html">
-                비밀의 숲속에서 만난 850년의 시간 — 부르크 엘츠(Burg Eltz) 답사기
-                <span class="sidebar-date">2026.04.10</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="grune-sosse-frankfurt.html">
-                초록 소스(Grüne Soße)의 날: 프랑크푸르트 명물, 7가지 허브로 만든 봄의 맛
-                <span class="sidebar-date">2026.04.07</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="balcony-spring-10euro.html">
-                단돈 10유로로 독일 발코니에 봄 들여오기
-                <span class="sidebar-date">2026.04.06</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="germany-hallo-culture.html">
-                독일 살이의 첫걸음, 눈만 마주치면 건네는 'Hallo'의 마법
-                <span class="sidebar-date">2026.04.03</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="db-train-survival.html">
-                독일 기차(DB)는 오늘도 연착? 나의 독일 기차 서바이벌 일기
-                <span class="sidebar-date">2026.04.02</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="spargel-blog-post.html">
-                독일 마트의 봄 전령사, 화이트 아스파라거스(Spargel) 영접기
-                <span class="sidebar-date">2026.04.01</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="pfand-germany.html">
-                빈 병의 가치, 독일 판트(Pfand) 완벽 가이드
-                <span class="sidebar-date">2026.03.30</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="germany-sunday-stillness.html">
-                독일 일요일의 정적 — 처음엔 무섭고, 나중엔 괜찮아졌다
-                <span class="sidebar-date">2026.03.29</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="frankfurt-flohmarkt-mainufer.html">
-                프랑크푸르트 강변 벼룩시장 완벽 가이드 2026
-                <span class="sidebar-date">2026.03.28</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="munich-starkbierfest.html">
-                뮌헨 강한 맥주 축제 슈타르크비어페스트 완벽 가이드 2026
-                <span class="sidebar-date">2026.03.27</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="lidl-walnuss-honig-brot-v2.html">
-                Lidl 호두꿀빵, 올해도 나를 비껴갔다
-                <span class="sidebar-date">2026.03.17</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="german-sick.html">
-                독일에서 아프면 벌어지는 일
-                <span class="sidebar-date">2026.03.15</span>
-              </a>
-            </li>
-            <li class="sidebar-post-item" style="display: none;">
-              <a href="german-weather.html">
-                독일 날씨가 정신병자인 이유 8가지
-                <span class="sidebar-date">2026.03.12</span>
-              </a>
-            </li>
-          </ul>
+    </div>
+  </section>
 
-          <!-- Pagination -->
-          <div class="sidebar-pagination" style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 12px; color: var(--text-sub);">
-            <button id="sbPrev" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">&lt; 이전</button>
-            <span id="sbPageInfo">1 / 1</span>
-            <button id="sbNext" style="background: none; border: 1px solid var(--border); color: var(--cream-muted); cursor: pointer; padding: 4px 10px; border-radius: 6px; font-size: 11px;">다음 &gt;</button>
-          </div>
-          
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const posts = document.querySelectorAll(".sidebar-post-item");
-              const ITEMS_PER_PAGE = 5;
-              const totalPages = Math.ceil(posts.length / ITEMS_PER_PAGE);
-              let currentPage = 1;
+  <!-- ─── Tags ──────────────────────────────────── -->
+  <section id="tags">
+    <h2><span class="h2-num">·</span>태그</h2>
+    <div class="tag-cloud">
+      <span class="tag">#상수시궁전</span>
+      <span class="tag">#Sanssouci</span>
+      <span class="tag">#포츠담</span>
+      <span class="tag">#Potsdam</span>
+      <span class="tag">#독일여행</span>
+      <span class="tag">#로코코건축</span>
+      <span class="tag">#프리드리히대왕</span>
+      <span class="tag">#FriedrichDerGroße</span>
+      <span class="tag">#5월독일</span>
+      <span class="tag">#독일정원</span>
+      <span class="tag">#독일일상</span>
+      <span class="tag">#헤센</span>
+      <span class="tag">#베를린당일치기</span>
+      <span class="tag">#독일궁전</span>
+      <span class="tag">#유네스코세계문화유산</span>
+      <span class="tag">#SchlossGärten</span>
+      <span class="tag">#독일봄여행</span>
+      <span class="tag">#근심없음</span>
+    </div>
+  </section>
 
-              // Find the current page based on the active item
-              const activeIndex = Array.from(posts).findIndex(p => p.querySelector("a.current"));
-              if (activeIndex !== -1) {
-                currentPage = Math.floor(activeIndex / ITEMS_PER_PAGE) + 1;
-              }
-
-              function renderPage(page) {
-                posts.forEach((p, idx) => {
-                  if (idx >= (page - 1) * ITEMS_PER_PAGE && idx < page * ITEMS_PER_PAGE) {
-                    p.style.display = "block";
-                  } else {
-                    p.style.display = "none";
-                  }
-                });
-                document.getElementById("sbPageInfo").innerText = page + " / " + totalPages;
-                document.getElementById("sbPrev").style.opacity = page === 1 ? "0.3" : "1";
-                document.getElementById("sbPrev").style.pointerEvents = page === 1 ? "none" : "auto";
-                document.getElementById("sbNext").style.opacity = page === totalPages ? "0.3" : "1";
-                document.getElementById("sbNext").style.pointerEvents = page === totalPages ? "none" : "auto";
-              }
-
-              document.getElementById("sbPrev").addEventListener("click", () => {
-                if (currentPage > 1) {
-                  currentPage--;
-                  renderPage(currentPage);
-                }
-              });
-              document.getElementById("sbNext").addEventListener("click", () => {
-                if (currentPage < totalPages) {
-                  currentPage++;
-                  renderPage(currentPage);
-                }
-              });
-
-              renderPage(currentPage);
-            });
-          </script>
-
-</div>
-</aside>
 </div><!-- /.container -->
 
-<!-- 푸터 -->
-<footer class="portal-footer" role="contentinfo">
-<div class="footer-inner">
-<a class="footer-logo" href="../index.html">lena-var4.com</a>
-<p class="footer-copy">Made with ☕ somewhere in Germany</p>
-</div>
-</footer>
 <script>
   // Progress bar
   const bar = document.getElementById('progress-bar');

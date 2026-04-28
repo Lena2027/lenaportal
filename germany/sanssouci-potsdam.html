@@ -2,8 +2,100 @@
 
 <html lang="ko">
 <head>
+  <!-- Google Consent Mode v2 – defaults (must be before GA4) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage:   (localStorage.getItem('silktideCookieChoice_analytics')    === 'true') ? 'granted' : 'denied',
+      ad_storage:          (localStorage.getItem('silktideCookieChoice_advertising')  === 'true') ? 'granted' : 'denied',
+      ad_user_data:        (localStorage.getItem('silktideCookieChoice_advertising')  === 'true') ? 'granted' : 'denied',
+      ad_personalization:  (localStorage.getItem('silktideCookieChoice_advertising')  === 'true') ? 'granted' : 'denied',
+      functionality_storage:(localStorage.getItem('silktideCookieChoice_externe_medien') === 'true') ? 'granted' : 'denied',
+      wait_for_update: 500
+    });
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0Y00EL355"></script>
+  <!-- Cookie Consent Manager (Silktide) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@main/silktide-consent-manager.css">
+  <script src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@main/silktide-consent-manager.js"></script>
+  <script>
+  window.silktideConsentManager.init({
+    consentTypes: [
+      {
+        id: "necessary",
+        name: "Notwendig",
+        description: "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden.",
+        required: true,
+        onAccept: function() {}
+      },
+      {
+        id: "analytics",
+        name: "Analytik",
+        description: "Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren (z. B. Google Analytics). Alle Daten werden anonymisiert erhoben.",
+        required: false,
+        onAccept: function() {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+        },
+        onReject: function() {
+          gtag('consent', 'update', { analytics_storage: 'denied' });
+        }
+      },
+      {
+        id: "advertising",
+        name: "Werbung",
+        description: "Diese Cookies werden verwendet, um Ihnen relevante Werbeanzeigen zu zeigen (z. B. Google AdSense). Ohne Ihre Einwilligung sehen Sie nur nicht-personalisierte Werbung.",
+        required: false,
+        onAccept: function() {
+          gtag('consent', 'update', {
+            ad_storage: 'granted',
+            ad_user_data: 'granted',
+            ad_personalization: 'granted'
+          });
+        },
+        onReject: function() {
+          gtag('consent', 'update', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
+          });
+        }
+      },
+      {
+        id: "externe_medien",
+        name: "Externe Medien",
+        description: "Diese Cookies ermöglichen das Laden externer Inhalte wie Videos oder Karten. Ohne Ihre Einwilligung werden diese Inhalte blockiert.",
+        required: false,
+        onAccept: function() {
+          gtag('consent', 'update', { functionality_storage: 'granted' });
+        },
+        onReject: function() {
+          gtag('consent', 'update', { functionality_storage: 'denied' });
+        }
+      }
+    ],
+    text: {
+      title: "Wir verwenden Cookies",
+      description: "Wir setzen Cookies ein, um die Nutzung der Website zu analysieren und Ihnen relevante Inhalte und Werbung anzuzeigen. Sie können Ihre Einstellungen jederzeit ändern.",
+      acceptAll: "Alle akzeptieren",
+      rejectAll: "Alle ablehnen",
+      customize: "Einstellungen",
+      save: "Speichern",
+      privacyPolicy: "Datenschutzerklärung",
+      poweredBy: "Cookie-Einstellungen"
+    },
+    links: {
+      privacyPolicy: "https://lena-var4.com/privacy-policy.html"
+    },
+    prompt: {
+      banner: "bottomLeft"
+    },
+    icon: {
+      position: "bottomLeft"
+    }
+  });
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

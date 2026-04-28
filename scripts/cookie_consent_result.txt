@@ -1,0 +1,3 @@
+Installed cookie consent on 33 files
+Skipped (already present): 0 files
+Total HTML files scanned: 33

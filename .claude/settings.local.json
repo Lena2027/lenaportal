@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(gh pr create --title 'Fix nav/footer/sidebar on today'\\\\''s 3 new Germany pages' --body ' *)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\GitHub CLI\\\\\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\\\\GitHub CLI\\\\\" -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Users\\\\Leona\\\\AppData\\\\Local\\\\Programs\\\\\" -ErrorAction SilentlyContinue | Select-Object Name)",
+      "Bash(git commit -m ' *)",
+      "Bash(python3)",
+      "PowerShell($r = Invoke-RestMethod -Uri \"https://api.github.com/repos/Lena2027/lenaportal/pulls?head=Lena2027:claude/lucid-shtern-f81fee&state=open\" -Headers @{\"User-Agent\"=\"PowerShell\"}; if \\($r.Count -gt 0\\) { $r[0].html_url } else { \"No open PR\" })",
+      "Bash(git add *)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

@@ -481,6 +481,13 @@
     @media (max-width: 900px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { position: static; } }
     @media (max-width: 800px) { nav { padding: 14px 20px; } footer { padding: 12px 20px; } }
     @media (max-width: 480px) { .nav-links { display: none; } }
+
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a {
+      font-size: 12px; font-weight: 700; color: #999;
+      text-decoration: none; font-family: 'Nunito', sans-serif;
+    }
+    .footer-links a:hover { color: var(--pink); }
   </style>
 </head>
 <body>
@@ -987,6 +994,10 @@
     <div class="footer-dot"></div>
   </div>
   <p class="footer-text">Made with ☕ somewhere in Germany</p>
+    <div class="footer-links">
+      <a href="../about/index.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+    </div>
 </footer>
 <script>
   // Scroll progress bar

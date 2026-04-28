@@ -1,0 +1,41 @@
+name: Auto-update sitemap.xml
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'germany/*.html'
+      - 'en/germany/*.html'
+      - 'about/index.html'
+      - 'privacy-policy.html'
+      - 'index.html'
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate sitemap.xml
+        run: python3 scripts/generate_sitemap.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --staged --quiet && echo "No changes to sitemap.xml" || (
+            git commit -m "auto: update sitemap.xml [skip ci]" &&
+            git push
+          )

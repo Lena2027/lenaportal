@@ -60,7 +60,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -512,20 +512,58 @@
     html { cursor: none; }
     .cursor { width: 14px; height: 14px; background: #FF6B9D; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); mix-blend-mode: multiply; transition: background 0.2s, transform 0.1s; }
     .cursor-ring { width: 36px; height: 36px; border: 2.5px solid #FF6B9D; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9998; transform: translate(-50%, -50%); transition: all 0.15s ease; opacity: 0.5; }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-bottom: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif;}
-    .nav-logo { font-size: 22px; color: #2d2d44; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight:900;}
-    .logo-dot { width: 10px; height: 10px; border-radius: 50%; background: #FF6B9D; animation: dotpop 1.4s ease-in-out infinite alternate; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e0e0e0;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; background: var(--pink);
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
     @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
     .nav-links { display: flex; gap: 8px; list-style: none; }
-    .nav-links a { font-size: 13px; font-weight: 700; text-decoration: none; color: #2d2d44; padding: 6px 14px; border-radius: 20px; border: 2px solid transparent; transition: all 0.2s;}
-    .nav-links a:hover, .nav-links a.active { border-color: #2d2d44; background: #FFD93D; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: var(--ink);
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s; letter-spacing: 0.3px;
+      font-family: 'Nunito', sans-serif;
+    }
+    .nav-links a:hover, .nav-links a.active { border-color: var(--ink); background: var(--yellow); }
     .nav-links .disabled { opacity: 0.35; pointer-events: none; }
-    footer { position: relative; bottom: 0; left: 0; right: 0; z-index: 200; padding: 14px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(254,254,254,0.92); backdrop-filter: blur(16px); border-top: 2.5px dashed #e0e0e0; font-family: 'Noto Sans KR', sans-serif; margin-top: 60px;}
-    .footer-logo { font-size: 20px; color: #2d2d44; text-decoration: none; font-weight:900;}
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 200; padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e0e0e0;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); text-decoration: none; }
     .footer-dots { display: flex; gap: 8px; }
-    .footer-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #2d2d44; transition: background 0.2s; cursor: none; }
-    .footer-dot:nth-child(1) { background: #FFD93D; } .footer-dot:nth-child(2) { background: #FF6B9D; } .footer-dot:nth-child(3) { background: #4ECDC4; } .footer-dot:nth-child(4) { background: #4D96FF; }
-    .footer-dot:hover { background: #2d2d44 !important; }
+    .footer-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid var(--ink);
+      transition: background 0.2s; cursor: none;
+    }
+    .footer-dot:nth-child(1) { background: #FFD93D; }
+    .footer-dot:nth-child(2) { background: var(--pink); }
+    .footer-dot:nth-child(3) { background: #4ECDC4; }
+    .footer-dot:nth-child(4) { background: #4D96FF; }
+    .footer-dot:hover { background: var(--ink) !important; }
     .footer-text { font-size: 13px; font-weight: 600; color: #aaa; }
 
     /* Layout */

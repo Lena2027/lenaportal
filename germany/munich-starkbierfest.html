@@ -113,7 +113,8 @@
        NAV (index와 동일)
     ══════════════════════════════════ */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
       padding: 16px 32px;
       display: flex; justify-content: space-between; align-items: center;
       background: rgba(254,254,254,0.92);
@@ -141,16 +142,12 @@
       transition: all 0.2s; letter-spacing: 0.3px;
       font-family: 'Nunito', sans-serif;
     }
-    .nav-links a:hover { border-color: var(--ink); background: var(--yellow); }
-    .nav-links a.active { border-color: var(--ink); background: var(--yellow); }
+    .nav-links a:hover, .nav-links a.active { border-color: var(--ink); background: var(--yellow); }
     .nav-links .disabled { opacity: 0.35; pointer-events: none; }
 
-    /* ══════════════════════════════════
-       FOOTER (index와 동일)
-    ══════════════════════════════════ */
     footer {
-      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
-      padding: 14px 40px;
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 200; padding: 14px 40px;
       display: flex; justify-content: space-between; align-items: center;
       background: rgba(254,254,254,0.92);
       backdrop-filter: blur(16px);
@@ -160,14 +157,15 @@
     .footer-dots { display: flex; gap: 8px; }
     .footer-dot {
       width: 12px; height: 12px; border-radius: 50%;
-      border: 2px solid var(--ink); transition: background 0.2s; cursor: none;
+      border: 2px solid var(--ink);
+      transition: background 0.2s; cursor: none;
     }
-    .footer-dot:nth-child(1) { background: var(--yellow); }
+    .footer-dot:nth-child(1) { background: #FFD93D; }
     .footer-dot:nth-child(2) { background: var(--pink); }
-    .footer-dot:nth-child(3) { background: var(--mint); }
-    .footer-dot:nth-child(4) { background: var(--blue); }
+    .footer-dot:nth-child(3) { background: #4ECDC4; }
+    .footer-dot:nth-child(4) { background: #4D96FF; }
     .footer-dot:hover { background: var(--ink) !important; }
-    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; font-family: 'Nunito', sans-serif; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; }
 
     /* ══════════════════════════════════
        PAGE LAYOUT

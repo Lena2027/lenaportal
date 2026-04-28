@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 | lena-var4</title>
+  <meta name="description" content="lena-var4.com 개인정보처리방침 — 쿠키, 광고, 데이터 수집에 관한 안내입니다.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lena-var4.com/privacy-policy.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pink: #FF6B9D;
+      --yellow: #FFD93D;
+      --ink: #2d2d44;
+      --ink-soft: #4a4a6a;
+      --bg: #fafafa;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans KR', 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e0e0e0;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; background: var(--pink);
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: var(--ink);
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+    .nav-links a:hover { border-color: var(--ink); background: var(--yellow); }
+    @media (max-width: 768px) { nav { padding: 14px 20px; } }
+    @media (max-width: 480px) { .nav-links { display: none; } }
+
+    /* LAYOUT */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 110px 32px 120px;
+    }
+
+    /* CONTENT */
+    .page-label {
+      font-size: 12px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--pink); margin-bottom: 12px;
+      font-family: 'Nunito', sans-serif;
+    }
+    h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(28px, 5vw, 42px);
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .updated {
+      font-size: 13px; color: #999; margin-bottom: 48px;
+      font-family: 'Nunito', sans-serif;
+    }
+    h2 {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 18px; font-weight: 700;
+      color: var(--ink);
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed #e0e0e0;
+    }
+    p {
+      font-size: 15px;
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+      line-height: 1.9;
+    }
+    ul {
+      margin: 0 0 16px 20px;
+    }
+    ul li {
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.9;
+      margin-bottom: 6px;
+    }
+    a { color: var(--pink); text-decoration: underline; }
+    a:hover { color: var(--ink); }
+
+    .highlight-box {
+      background: #fff8f0;
+      border: 1px solid #ffd6a5;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { margin-bottom: 0; }
+
+    /* FOOTER */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 200; padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e0e0e0;
+      flex-wrap: wrap; gap: 8px;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); text-decoration: none; }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a {
+      font-size: 12px; font-weight: 700; color: #999;
+      text-decoration: none; font-family: 'Nunito', sans-serif;
+    }
+    .footer-links a:hover { color: var(--pink); text-decoration: none; }
+    .footer-text { font-size: 13px; font-weight: 600; color: #aaa; font-family: 'Nunito', sans-serif; }
+    @media (max-width: 768px) { footer { padding: 12px 20px; } }
+  </style>
+</head>
+<body>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="./index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="./germany/index.html">🇩🇪 Germany Blog</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <p class="page-label">Legal</p>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">최종 업데이트: 2026년 4월 28일</p>
+
+    <p>lena-var4.com(이하 "본 사이트")은 방문자의 개인정보 보호를 중요하게 생각합니다. 이 페이지는 본 사이트를 방문하실 때 어떤 정보가 수집되고, 어떻게 사용되는지 안내합니다.</p>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>본 사이트는 직접적으로 이름, 이메일, 주소 등의 개인정보를 수집하지 않습니다. 다만, 아래의 제3자 서비스가 자동으로 일부 데이터를 수집할 수 있습니다.</p>
+    <ul>
+      <li><strong>Google Analytics</strong>: 방문자 수, 페이지뷰, 유입 경로, 체류 시간 등 익명 통계 데이터를 수집합니다.</li>
+      <li><strong>Google AdSense</strong>: 방문자의 관심사에 맞는 광고를 제공하기 위해 쿠키와 유사 기술을 사용합니다.</li>
+      <li><strong>IP 주소</strong>: 서버 로그에 의해 자동으로 기록될 수 있습니다.</li>
+    </ul>
+
+    <h2>2. 쿠키(Cookies)</h2>
+    <p>본 사이트는 쿠키를 사용합니다. 쿠키는 브라우저에 저장되는 작은 텍스트 파일로, 사이트 이용 편의성 향상 및 광고 최적화에 활용됩니다.</p>
+    <ul>
+      <li><strong>분석 쿠키</strong>: Google Analytics가 사이트 이용 패턴을 분석하는 데 사용됩니다.</li>
+      <li><strong>광고 쿠키</strong>: Google AdSense가 관련성 높은 광고를 표시하는 데 사용됩니다.</li>
+    </ul>
+    <p>브라우저 설정에서 쿠키를 비활성화할 수 있으나, 일부 기능이 정상 작동하지 않을 수 있습니다.</p>
+
+    <h2>3. Google AdSense 및 제3자 광고</h2>
+    <p>본 사이트는 Google AdSense를 통해 광고를 게재할 수 있습니다. Google은 사용자의 이전 방문 기록을 기반으로 개인화된 광고를 표시하기 위해 쿠키를 사용합니다.</p>
+
+    <div class="highlight-box">
+      <p>💡 Google의 광고 쿠키 사용을 원하지 않으시면 <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google 광고 설정</a>에서 개인화 광고를 비활성화하거나, <a href="https://www.aboutads.info" target="_blank" rel="noopener">aboutads.info</a>를 통해 옵트아웃할 수 있습니다.</p>
+    </div>
+
+    <h2>4. EU 방문자 — GDPR 권리</h2>
+    <p>EU/EEA 거주자(독일 포함)에게는 GDPR(일반 데이터 보호 규정)에 따라 아래 권리가 보장됩니다.</p>
+    <ul>
+      <li>수집된 개인 데이터에 대한 <strong>열람권</strong></li>
+      <li>부정확한 데이터의 <strong>수정 요청권</strong></li>
+      <li>데이터 <strong>삭제 요청권</strong> (잊힐 권리)</li>
+      <li>데이터 처리 <strong>이의 제기권</strong></li>
+      <li>데이터 <strong>이동권</strong></li>
+    </ul>
+    <p>관련 요청은 아래 연락처로 보내주세요.</p>
+
+    <h2>5. 외부 링크</h2>
+    <p>본 사이트는 외부 사이트로의 링크를 포함할 수 있습니다. 외부 사이트의 개인정보 처리 방식에 대해 본 사이트는 책임을 지지 않습니다.</p>
+
+    <h2>6. 정보 보안</h2>
+    <p>본 사이트는 정적 HTML 사이트로 운영되며, 별도로 사용자 계정이나 데이터베이스를 운영하지 않습니다. 수집되는 데이터는 Google 등 제3자 서비스의 보안 정책에 따라 관리됩니다.</p>
+
+    <h2>7. 방침 변경</h2>
+    <p>본 개인정보처리방침은 법적 요건 변경이나 서비스 변화에 따라 업데이트될 수 있습니다. 중요한 변경 사항은 본 페이지에 공지됩니다.</p>
+
+    <h2>8. 연락처</h2>
+    <p>개인정보 처리와 관련한 문의나 요청은 아래로 연락해 주세요.</p>
+    <ul>
+      <li>블로그: <a href="https://lena-var4.com">lena-var4.com</a></li>
+      <li>운영자: Lena (독일 거주)</li>
+    </ul>
+  </main>
+
+  <footer role="contentinfo">
+    <a href="./index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-links">
+      <a href="./about/index.html">About</a>
+      <a href="./privacy-policy.html" aria-current="page">Privacy Policy</a>
+    </div>
+    <p class="footer-text">Made with ☕ somewhere in Germany</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Lena | lena-var4</title>
+  <meta name="description" content="독일에 사는 한국인 솔로 빌더 Lena입니다. 독일 일상, 여행, 생존기를 한국어로 씁니다.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lena-var4.com/about/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://lena-var4.com/about/">
+  <meta property="og:title" content="About Lena | lena-var4">
+  <meta property="og:description" content="독일에 사는 한국인 솔로 빌더 Lena입니다. 독일 일상, 여행, 생존기를 한국어로 씁니다.">
+  <meta property="og:site_name" content="lena-var4">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pink: #FF6B9D;
+      --yellow: #FFD93D;
+      --mint: #4ECDC4;
+      --blue: #4D96FF;
+      --ink: #2d2d44;
+      --ink-soft: #4a4a6a;
+      --bg: #fafafa;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans KR', 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 200;
+      padding: 16px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 2.5px dashed #e0e0e0;
+    }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px; color: var(--ink);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .logo-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%; background: var(--pink);
+      animation: dotpop 1.4s ease-in-out infinite alternate;
+    }
+    @keyframes dotpop { from { transform: scale(1); } to { transform: scale(1.6); } }
+    .nav-links { display: flex; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; color: var(--ink);
+      padding: 6px 14px; border-radius: 20px;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+    .nav-links a:hover { border-color: var(--ink); background: var(--yellow); }
+    @media (max-width: 768px) { nav { padding: 14px 20px; } }
+    @media (max-width: 480px) { .nav-links { display: none; } }
+
+    /* LAYOUT */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 110px 32px 120px;
+    }
+
+    /* HERO */
+    .about-hero {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 56px;
+      flex-wrap: wrap;
+    }
+    .avatar {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--yellow), var(--pink));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 52px;
+      flex-shrink: 0;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 24px rgba(255,107,157,0.25);
+    }
+    .about-intro-label {
+      font-size: 12px; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--pink); margin-bottom: 10px;
+      font-family: 'Nunito', sans-serif;
+    }
+    h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(28px, 5vw, 40px);
+      color: var(--ink);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .about-subtitle {
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    /* CARDS */
+    .about-section {
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 18px; font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+      line-height: 1.9;
+    }
+
+    .tag-row {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 24px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 13px; font-weight: 700;
+      padding: 6px 14px; border-radius: 20px;
+      font-family: 'Nunito', sans-serif;
+    }
+    .tag-pink { background: #fff0f5; color: var(--pink); border: 1.5px solid var(--pink); }
+    .tag-yellow { background: #fffbea; color: #b8860b; border: 1.5px solid var(--yellow); }
+    .tag-mint { background: #f0fdfb; color: #0e9488; border: 1.5px solid var(--mint); }
+    .tag-blue { background: #eff6ff; color: #2563eb; border: 1.5px solid var(--blue); }
+
+    .blog-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    @media (max-width: 480px) { .blog-links { grid-template-columns: 1fr; } }
+    .blog-link-card {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 18px;
+      background: #fff;
+      border: 1.5px solid #e0e7ff;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 700; font-size: 14px;
+      transition: all 0.2s;
+      font-family: 'Nunito', sans-serif;
+    }
+    .blog-link-card:hover {
+      border-color: var(--pink);
+      background: #fff0f5;
+      transform: translateY(-2px);
+    }
+    .blog-link-card .bl-icon { font-size: 24px; }
+
+    /* DIVIDER */
+    .dot-divider {
+      display: flex; gap: 8px; justify-content: center;
+      margin: 40px 0;
+    }
+    .div-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+    }
+    .div-dot:nth-child(1) { background: var(--yellow); }
+    .div-dot:nth-child(2) { background: var(--pink); }
+    .div-dot:nth-child(3) { background: var(--mint); }
+    .div-dot:nth-child(4) { background: var(--blue); }
+    .div-dot:nth-child(5) { background: var(--yellow); }
+
+    /* FOOTER */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 200; padding: 14px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(254,254,254,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 2.5px dashed #e0e0e0;
+      flex-wrap: wrap; gap: 8px;
+    }
+    .footer-logo { font-family: 'Fredoka One', cursive; font-size: 20px; color: var(--ink); text-decoration: none; }
+    .footer-dots { display: flex; gap: 8px; }
+    .footer-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 2px solid var(--ink); transition: background 0.2s;
+    }
+    .footer-dot:nth-child(1) { background: #FFD93D; }
+    .footer-dot:nth-child(2) { background: var(--pink); }
+    .footer-dot:nth-child(3) { background: #4ECDC4; }
+    .footer-dot:nth-child(4) { background: #4D96FF; }
+    .footer-dot:hover { background: var(--ink) !important; }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a {
+      font-size: 12px; font-weight: 700; color: #999;
+      text-decoration: none; font-family: 'Nunito', sans-serif;
+    }
+    .footer-links a:hover { color: var(--pink); }
+    @media (max-width: 768px) { footer { padding: 12px 20px; } }
+  </style>
+</head>
+<body>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo" aria-label="lena-var4 home">
+      <span class="logo-dot" aria-hidden="true"></span>
+      lena-var4
+    </a>
+    <ul class="nav-links">
+      <li><a href="../germany/index.html">🇩🇪 Germany Blog</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <div class="about-hero">
+      <div class="avatar" aria-hidden="true">👩‍💻</div>
+      <div>
+        <p class="about-intro-label">Who is Lena?</p>
+        <h1>안녕하세요, Lena입니다 👋</h1>
+        <p class="about-subtitle">독일에 사는 한국인. AI, 글쓰기, 그리고 혼자 뭔가를 만드는 것을 좋아합니다.</p>
+      </div>
+    </div>
+
+    <section class="about-section">
+      <h2>📖 이 블로그에 대해서</h2>
+      <p>
+        <strong>lena-var4.com</strong>은 독일에서 살면서 겪는 일상을 있는 그대로 쓰는 한국어 블로그입니다.
+        비자, 날씨, 음식, 마트, 대중교통, 문화 충격…
+        아무도 정확히 알려주지 않았던 것들을 직접 겪으면서 기록합니다.
+      </p>
+      <p>
+        화려한 여행기가 아닙니다. 독일에 오기 전에, 혹은 살면서 한 번쯤 궁금했을 현실적인 이야기들을 씁니다.
+      </p>
+
+      <div class="tag-row">
+        <span class="tag tag-pink">🇩🇪 독일 생활</span>
+        <span class="tag tag-yellow">☕ 일상 에세이</span>
+        <span class="tag tag-mint">🗺️ 여행 후기</span>
+        <span class="tag tag-blue">🛒 독일 마트·쇼핑</span>
+      </div>
+    </section>
+
+    <div class="dot-divider" aria-hidden="true">
+      <div class="div-dot"></div><div class="div-dot"></div>
+      <div class="div-dot"></div><div class="div-dot"></div>
+      <div class="div-dot"></div>
+    </div>
+
+    <section class="about-section">
+      <h2>✍️ 어떤 글을 쓰나요?</h2>
+      <p>
+        독일 생활의 모든 것 — 좋은 것도, 불편한 것도, 웃긴 것도 솔직하게 씁니다.
+        슈퍼마켓에서 줄 서는 방법부터 축제 가이드까지, 한국어로 된 정보가 부족한 곳을 채우려고 합니다.
+      </p>
+      <div class="blog-links">
+        <a href="../germany/index.html" class="blog-link-card">
+          <span class="bl-icon">🇩🇪</span>
+          <span>Germany 블로그</span>
+        </a>
+        <a href="../index.html" class="blog-link-card">
+          <span class="bl-icon">🏠</span>
+          <span>홈으로</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>📬 연락하기</h2>
+      <p>
+        블로그 관련 문의, 협업 제안, 혹은 그냥 독일 생활에 대해 궁금한 점이 있으시면 언제든지 연락 주세요.
+        최대한 빠르게 답장드리겠습니다.
+      </p>
+      <p>
+        개인정보 처리 및 광고 관련 문의는 <a href="../privacy-policy.html">개인정보처리방침</a>을 참고해 주세요.
+      </p>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <a href="../index.html" class="footer-logo">lena-var4.com</a>
+    <div class="footer-dots" aria-hidden="true">
+      <div class="footer-dot"></div><div class="footer-dot"></div>
+      <div class="footer-dot"></div><div class="footer-dot"></div>
+    </div>
+    <div class="footer-links">
+      <a href="../about/index.html" aria-current="page">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -91,6 +91,13 @@
     .post-card .post-tag { align-self: flex-start; background: var(--yellow); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; border: 1.5px solid var(--ink); }
 
     @media (max-width: 768px) { .nav-links { display: none; } .blog-hero h1 { font-size: 2.2rem; } }
+
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a {
+      font-size: 12px; font-weight: 700; color: #999;
+      text-decoration: none; font-family: 'Nunito', sans-serif;
+    }
+    .footer-links a:hover { color: var(--pink); }
   </style>
 </head>
 <body>
@@ -232,6 +239,10 @@
       <div class="footer-dot"></div>
     </div>
     <p class="footer-text">Made with ☕ somewhere in Germany</p>
+    <div class="footer-links">
+      <a href="../about/index.html">About</a>
+      <a href="../privacy-policy.html">Privacy Policy</a>
+    </div>
   </footer>
 
   <script>
